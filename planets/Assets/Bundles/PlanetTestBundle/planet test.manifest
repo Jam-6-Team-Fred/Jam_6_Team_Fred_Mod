@@ -1,0 +1,55 @@
+ManifestFileVersion: 0
+CRC: 4203868076
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 31c51723de064d18088e4148df54a040
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7f28b0042d540126d9618bbda30aec9c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 567b10f3592a22d2bef7141ba8f84acb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 651bf6a97f095be1000b67022b3d85c7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2145ed3a866d4bd5a94d98ee05d0fa4f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cfd736a3952486c93e9a5d8f58c79c3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7f2e3f7cc6baeb3499f9963353d7b458, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9893321d896ff975d056df09969d1ee0, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Jam6/Planet test.prefab
+Dependencies: []
