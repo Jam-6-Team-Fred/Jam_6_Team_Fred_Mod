@@ -1,7 +1,10 @@
 ManifestFileVersion: 0
-CRC: 3684157393
+CRC: 2259304538
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: planet test
+      Name: prefabs
+      Dependencies: {}
+    Info_1:
+      Name: testarea
       Dependencies: {}

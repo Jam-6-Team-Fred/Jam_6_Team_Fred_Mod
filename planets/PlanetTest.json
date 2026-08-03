@@ -3,11 +3,12 @@
     "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
     "starSystem": "SolarSystem",
     "Base": {
-        "surfaceSize": 101,
-        "surfaceGravity": 0
+        "surfaceSize": 500,
+        "surfaceGravity": 1,
+        "atmosphereSize": 1000
     },
     "Orbit": {
-        "semiMajorAxis": 130000,
+        "semiMajorAxis": 11000,
         "primaryBody": "SUN",
         "isMoon": false,
         "isTidallyLocked": true
@@ -15,9 +16,14 @@
     "Props": {
         "details": [
             {
-                "assetBundle": "planets/Assets/Bundles/PlanetTestBundle",
-                "path": "Assets/Jam6/Planet test.prefab",
+                "assetBundle": "planets/Assets/Bundles/PlanetTestBundle/prefabs",
+                "path": "Assets/Prefabs_Art/Volumes/Sphere.prefab",
                 "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
                     "x": 0,
                     "y": 0,
                     "z": 0
