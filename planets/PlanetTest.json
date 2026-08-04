@@ -29,6 +29,22 @@
                     "z": 0
                 },
                 "keepLoaded": true
+            },
+            
+            {
+                "assetBundle": "planets/Assets/Bundles/PlanetTestBundle/foliage",
+                "path": "Assets/Prefabs_Art/Foliage/Foliage_Past_A.prefab",
+                "position": {
+                    "x": 0,
+                    "y": 10,
+                    "z": 0
+                },
+                "localrotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "keepLoaded": true
             }
         ]
     },

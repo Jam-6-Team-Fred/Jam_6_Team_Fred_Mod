@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2566576865
+CRC: 3386835665
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6f2bc1b39e6de172c6be961f461690eb
+    Hash: c9ca7e5e7932a33cd0abcb8367632ea2
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 9573e8f83ff752be1a88d48ad616f6d1
+    Hash: 5446f67625a5ec819eeb184a077dfa6a
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -79,15 +79,9 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 136
   Script: {instanceID: 0}
-- Class: 213
-  Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Prefabs_Art/Volumes/Volume_Lake.prefab
 - Assets/Prefabs_Art/Volumes/Sphere.prefab
-- Assets/Prefabs_Art/Volumes/Savannah_Bush_2.png
 - Assets/Prefabs_Art/GyroWorldpart2.fbx
-- Assets/Prefabs_Art/Volumes/Savannah_Bush_Past_1.png
-- Assets/Prefabs_Art/Volumes/Foliage_TH_Crater_Grass_mat.mat
-- Assets/Prefabs_Art/Volumes/Savannah_Bush_1.png
 Dependencies: []
