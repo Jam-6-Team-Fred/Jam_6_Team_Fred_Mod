@@ -3,13 +3,13 @@
     "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
     "starSystem": "TeamFred.FredsSystem",
     "Base": {
-        "surfaceSize": 200,
+        "surfaceSize": 300,
         "surfaceGravity": 1,
         "atmosphereSize": 600
     },
     "Orbit": {
         "primaryBody": "Pistachio Pulsar",
-        "semiMajorAxis": 3000,
+        "semiMajorAxis": 4500,
         "isMoon": false,
         "isTidallyLocked": true
     },
