@@ -1,24 +1,25 @@
 {
-    "name": "Wetrock",
+    "name": "DoubleDome",
     "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
-    "starSystem": "SolarSystem",
+    "starSystem": "TeamFred.FredsSystem",
     "Base": {
-        "surfaceSize": 500,
+        "surfaceSize": 200,
         "surfaceGravity": 1,
-        "atmosphereSize": 1000
+        "atmosphereSize": 600
     },
     "Orbit": {
-        "semiMajorAxis": 11000,
-        "primaryBody": "SUN",
+        "primaryBody": "Pistachio Pulsar",
+        "semiMajorAxis": 3000,
         "isMoon": false,
         "isTidallyLocked": true
     },
+    
     "Props": {
         "details": [
             {
                 "assetBundle": "planets/Assets/Bundles/PlanetTestBundle/prefabs",
                 "path": "Assets/Prefabs_Art/Volumes/Sphere.prefab",
-                "position": {
+                "localposition": {
                     "x": 0,
                     "y": 0,
                     "z": 0
