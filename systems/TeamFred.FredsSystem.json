@@ -12,5 +12,8 @@
       "y": 50
     },
     "disappearanceTime": 22.667
-  }
+  },
+    "GlobalMusic": {
+        "endTimesAudio": "planets/Assets/Audio/Jam_6_EndTimes.ogg"
+    }
 }
