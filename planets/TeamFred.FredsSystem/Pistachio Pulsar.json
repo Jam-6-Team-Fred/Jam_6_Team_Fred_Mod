@@ -6,7 +6,7 @@
     "centerOfSolarSystem": true,
     "surfaceSize": 1500,
     "gravityFallOff": "inverseSquared",
-    "surfaceGravity": 20
+    "surfaceGravity": 10
   },
   "Star": {
     "hasAtmosphere": true,

@@ -2,18 +2,59 @@
     "name": "DoubleDome",
     "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
     "starSystem": "TeamFred.FredsSystem",
+    "checkForExisting": false,
     "Base": {
         "surfaceSize": 300,
         "surfaceGravity": 1,
-        "atmosphereSize": 600
+        "atmosphereSize": 600,
+        "hasFluidDetector": false
     },
     "Orbit": {
         "primaryBody": "Pistachio Pulsar",
-        "semiMajorAxis": 4500,
-        "isMoon": false,
-        "isTidallyLocked": true
+        "isStatic": true,
+        "staticPosition": {
+            "x": 4242.64069,
+            "y": 4242.64069,
+            "z": 0
+        }
     },
-    
+    "AmbientLights": [
+    {
+      "outerRadius": 200,
+      "tint": {
+        "r": 240,
+        "g": 246,
+        "b": 255,
+        "a": 255
+      },
+      "intensity": 0.2
+    }
+  ],
+  "Spawn": {
+    "playerSpawnPoints": [
+      {
+        "isDefault": true,
+        "startWithSuit": true,
+        "startInShip": true
+      }
+    ],
+    "shipSpawnPoints": [
+      {
+        "isDefault": true,
+        "isRelativeToParent": true,
+        "offset": {
+            "x": 0,
+            "y": 0,
+            "z": -1500
+        },
+        "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 180
+        }
+      }
+    ]
+  },
     "Props": {
         "details": [
             {

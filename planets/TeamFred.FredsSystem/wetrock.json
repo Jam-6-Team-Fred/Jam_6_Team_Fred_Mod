@@ -40,40 +40,5 @@
         "prompt": "Press me pls"
       }
     ]
-  },
-  "Spawn": {
-    "playerSpawnPoints": [
-      {
-        "isDefault": true,
-        "startWithSuit": true,
-        "position": {
-          "x": 60.7526,
-          "y": 100.50699,
-          "z": 100.57919
-        },
-        "rotation": {
-          "x": 71.348,
-          "y": 287.2074,
-          "z": 191.4223
-        },
-        "isRelativeToParent": true
-      }
-    ],
-    "shipSpawnPoints": [
-      {
-        "isDefault": true,
-        "localposition": {
-          "x": 99.93931,
-          "y": -16.19621,
-          "z": -26.81498
-        },
-        "rotation": {
-          "x": 72.4142,
-          "y": 116.6683,
-          "z": 12.8343
-        },
-        "isRelativeToParent": true
-      }
-    ]
   }
 }

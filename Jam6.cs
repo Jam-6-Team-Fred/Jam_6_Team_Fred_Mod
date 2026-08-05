@@ -43,9 +43,9 @@ public class Jam6 : ModBehaviour
     }
 
     public override void Configure(IModConfig config)
-{
-    base.Configure(config);
+    {
+        base.Configure(config);
 
-    AllowSpawnOverride = config.GetSettingsValue<bool>("allowSpawnOverride");
-}
+        AllowSpawnOverride = config.GetSettingsValue<bool>("allowSpawnOverride");
+    }
 }
