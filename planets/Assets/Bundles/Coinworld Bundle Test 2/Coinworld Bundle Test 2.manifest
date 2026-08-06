@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 3357471230
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: disc
+      Dependencies: {}
+    Info_1:
+      Name: dome
+      Dependencies: {}
