@@ -97,8 +97,8 @@
     "Props": {
         "details": [
             {
-                "assetBundle": "planets/Assets/Bundles/PlanetTestBundle/prefabs",
-                "path": "Assets/Prefabs_Art/Volumes/Sphere.prefab",
+                "assetBundle": "planets/Assets/Bundles/Coinworld Bundle Test 3/coinworld",
+                "path": "Assets/Prefabs (New)/Coinworld.prefab",
                 "position": {
                     "x": 0,
                     "y": 0,
