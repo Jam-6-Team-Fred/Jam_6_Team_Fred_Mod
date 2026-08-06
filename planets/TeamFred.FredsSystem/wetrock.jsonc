@@ -1,0 +1,44 @@
+{
+  "name": "Wetrock",
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "starSystem": "TeamFred.FredsSystem",
+  "Base": {
+    "groundSize": 2,
+    "surfaceSize": 2,
+    "surfaceGravity": 12
+  },
+  "Orbit": {
+    "semiMajorAxis": 8000,
+    "primaryBody": "Pistachio Pulsar",
+    "isTidallyLocked": true
+  },
+  "Atmosphere": {
+    "size": 150,
+    "fogTint": {
+      "r": 200,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "fogSize": 150,
+    "fogDensity": 0.2,
+    "hasRain": true
+  },
+  "Volumes": {
+    "interactionVolumes": [
+      {
+        "position": {
+          "x": -10.2826,
+          "y": -33.17865,
+          "z": -93.77338
+        },
+        "rotation": {
+          "x": 289.4604,
+          "y": 191.7654,
+          "z": 174.8051
+        },
+        "prompt": "Press me pls"
+      }
+    ]
+  }
+}
