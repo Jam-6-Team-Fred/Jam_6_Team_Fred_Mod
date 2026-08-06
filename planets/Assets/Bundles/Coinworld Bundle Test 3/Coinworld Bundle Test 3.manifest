@@ -1,0 +1,15 @@
+ManifestFileVersion: 0
+CRC: 3607448457
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: disc
+      Dependencies: {}
+    Info_1:
+      Name: dome
+      Dependencies: {}
+    Info_2:
+      Name: coinworld
+      Dependencies:
+        Dependency_0: disc
+        Dependency_1: dome
