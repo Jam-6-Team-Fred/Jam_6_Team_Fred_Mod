@@ -22,7 +22,8 @@
         // Xen told us to turn this off, since we will be doing
         //   "Planet within a Planet". For Reference:
         //   https://discord.com/channels/929708786027999262/1055610226394537994/1534027298867515523
-        "hasFluidDetector": false
+        "hasFluidDetector": false,
+        "showMinimap": false
     },
     // Atmosphere settings
     "Atmosphere": {
