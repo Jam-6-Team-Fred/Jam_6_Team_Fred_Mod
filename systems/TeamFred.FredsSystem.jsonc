@@ -1,0 +1,25 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
+    // Setup IDs
+    "shipLogStartingPlanetID": "Double Dome",
+    "warpDriveSpawnPointID": "Double Dome",
+    // Warp Drive Setup
+    "canEnterViaWarpDrive": true,
+    "canExitViaWarpDrive": true,
+    // If Mod is installed, start here from title screen
+    "startHere": true,
+    // Respawn here if you die in the system
+    "respawnHere": true,
+    // Location within the Star Chart / Warp Drive menu
+    "StarChart": {
+        "position": {
+            "x": 50,
+            "y": 50
+        },
+        "disappearanceTime": 22.667
+    },
+    "GlobalMusic": {
+        // Cool End Times Audio
+        "endTimesAudio": "planets/Assets/Audio/Jam_6_EndTimes.ogg"
+    }
+}

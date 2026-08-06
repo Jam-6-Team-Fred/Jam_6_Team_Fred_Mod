@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 env:
-  PROJ_USERNAME: T3rtu
+  PROJ_USERNAME: TeamFred
   PROJ_NAME: Jam6
 
 jobs:

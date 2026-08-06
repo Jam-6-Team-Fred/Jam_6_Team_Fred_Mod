@@ -1,0 +1,45 @@
+{
+  "name": "Pistachio Pulsar",
+  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "starSystem": "TeamFred.FredsSystem",
+  "Base": {
+    "centerOfSolarSystem": true,
+    "surfaceSize": 1500,
+    "gravityFallOff": "inverseSquared",
+    "surfaceGravity": 10
+  },
+  "Star": {
+    "hasAtmosphere": true,
+    "tint": {
+      "r": 147,
+      "g": 197,
+      "b": 114,
+      "a": 255
+    },
+    "lightTint": {
+      "r": 147,
+      "g": 197,
+      "b": 114,
+      "a": 255
+    },
+    "size": 1500,
+    "endTint": {
+      "r": 183,
+      "g": 191,
+      "b": 107,
+      "a": 255
+    },
+    "solarLuminosity": 0.75,
+    "supernovaTint": {
+      "r": 255,
+      "g": 242,
+      "b": 215,
+      "a": 255
+    },
+    "stellarDeathType": "supernova"
+  },
+  "Orbit": {
+    "showOrbitLine": false,
+    "isStatic": true
+  }
+}
