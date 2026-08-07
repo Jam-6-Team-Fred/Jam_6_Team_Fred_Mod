@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 20801495
+CRC: 3434775106
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5c78626211d9bdfe3215b84f4b6050e7
+    Hash: d29d16a6efa40bb4236cb7607469780a
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 0d58fbfade557d6768458e8c797610af
+    Hash: ae2cf77de671e115b4e55d2b65767202
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -23,9 +23,7 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
-- Class: 64
-  Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Prefabs (New)/Dome.prefab
+- Assets/Prefabs (New)/Coinworld 2.prefab
 Dependencies: []
