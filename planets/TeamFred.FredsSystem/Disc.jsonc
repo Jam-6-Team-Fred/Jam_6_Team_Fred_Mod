@@ -9,7 +9,7 @@
     //////////// END OF NOTES ////////////
     "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
     // Name of the planet in game
-    "name": "DoubleDome",
+    "name": "Disc",
     // System the planet belongs to (our Mod Jam system)
     "starSystem": "TeamFred.FredsSystem",
     // This is a performance optimization,
@@ -43,62 +43,14 @@
             "z": 0
         }
     },
-    // If we want the planet to glow.
-    //   Currently just playing around with this - Crystal
-    "AmbientLights": [
-        {
-            "outerRadius": 200,
-            "tint": {
-                "r": 240,
-                "g": 246,
-                "b": 255,
-                "a": 255
-            },
-            "intensity": 0.2
-        }
-    ],
-    // Defines the player & ship as spawning relative to the planet
-    "Spawn": {
-        "playerSpawnPoints": [
-            {
-                // Default for the system
-                "isDefault": true,
-                // Suit is equipped
-                "startWithSuit": true,
-                // Sitting in cockpit
-                "startInShip": true
-            }
-        ],
-        "shipSpawnPoints": [
-            {
-                // Default for the system
-                "isDefault": true,
-                // below settings are relative to the planet
-                "isRelativeToParent": true,
-                // This offset puts you directly in front of the
-                //   (current) opening in the double dome
-                "offset": {
-                    "x": 0,
-                    "y": 0,
-                    "z": -1500
-                },
-                // Rotate 180, because we were starting
-                //   upside down relative to the opening
-                "rotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 180
-                }
-            }
-        ]
-    },
     // "Props" or objects placed at the location marked by NH in prior config
     //   This includes the station itself
     "Props": {
         "details": [
+            // Just the Disc
             {
-                "assetBundle": "planets/Assets/Bundles/PlanetTestBundle/prefabs",
-                "path": "Assets/Prefabs_Art/Volumes/Sphere.prefab",
+                "assetBundle": "planets/Assets/Bundles/Coinworld Bundle Test 5/coinworld",
+                "path": "Assets/Prefabs (New)/Disc.prefab",
                 "position": {
                     "x": 0,
                     "y": 0,
@@ -115,6 +67,6 @@
     },
     // Will only want one of these between the Double Dome & the Coin, otherwise 2 different autopilot points will be set up
     "MapMarker": {
-        "enabled": true
+        "enabled": false
     }
 }
