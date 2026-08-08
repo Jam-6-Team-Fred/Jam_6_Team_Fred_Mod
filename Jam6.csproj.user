@@ -1,5 +1,6 @@
 ﻿<Project>
   <PropertyGroup>
-    <OutputPath>$(AppData)/OuterWildsModManager/OWML/Mods/TeamFred.Jam6</OutputPath>
+	  <OutputPath>S:/Outer Wilds Mod Manager/OWML/Mods/TeamFred.Jam6</OutputPath>
+	  <UnityDllsDir>S:\Outer Wilds modding\Unity stuff (scary)\Jam6\Assets\Dlls</UnityDllsDir>
   </PropertyGroup>
 </Project>
