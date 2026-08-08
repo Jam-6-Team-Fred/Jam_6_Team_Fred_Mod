@@ -1,5 +1,0 @@
-﻿<Project>
-  <PropertyGroup>
-    <OutputPath>$(AppData)/OuterWildsModManager/OWML/Mods/TeamFred.Jam6</OutputPath>
-  </PropertyGroup>
-</Project>

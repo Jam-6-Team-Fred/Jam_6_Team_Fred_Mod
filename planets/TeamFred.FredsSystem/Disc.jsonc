@@ -49,8 +49,8 @@
         "details": [
             // Just the Disc
             {
-                "assetBundle": "planets/Assets/Bundles/Coinworld Bundle Test 5/coinworld",
-                "path": "Assets/Prefabs (New)/Disc.prefab",
+                "assetBundle": "planets/Assets/Bundles/Coinworld Bundle Test 6/coinworld",
+                "path": "Assets/Prefabs/Disc.prefab",
                 "position": {
                     "x": 0,
                     "y": 0,
