@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2297922715
+CRC: 547637950
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 6bee2d4cec76a24f93ed6dcfa5646c60
+    Hash: c3d8ad773f778df30f8b379e92b1ac29
   TypeTreeHash:
     serializedVersion: 2
     Hash: 89bb13bbf69cbc0a77fb992d5c5e20b0
@@ -94,7 +94,7 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Prefabs/Disc.prefab
-- Assets/Prefabs/Dome.prefab
 - Assets/Prefabs/GravitySwitch.prefab
 - Assets/Prefabs/GravityVolume.prefab
+- Assets/Prefabs/Dome.prefab
 Dependencies: []
