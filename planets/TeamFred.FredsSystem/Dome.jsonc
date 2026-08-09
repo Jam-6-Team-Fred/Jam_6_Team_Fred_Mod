@@ -18,7 +18,7 @@
     // Basic descriptors of the planet
     "Base": {
         "surfaceSize": 300,
-        "surfaceGravity": 1,
+        "surfaceGravity": 0,
         // Xen told us to turn this off, since we will be doing
         //   "Planet within a Planet". For Reference:
         //   https://discord.com/channels/929708786027999262/1055610226394537994/1534027298867515523
@@ -81,13 +81,6 @@
                     "x": 0,
                     "y": 0,
                     "z": -1500
-                },
-                // Rotate 180, because we were starting
-                //   upside down relative to the opening
-                "rotation": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 180
                 }
             }
         ]

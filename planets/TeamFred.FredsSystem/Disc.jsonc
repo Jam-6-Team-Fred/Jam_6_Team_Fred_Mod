@@ -18,7 +18,7 @@
     // Basic descriptors of the planet
     "Base": {
         "surfaceSize": 300,
-        "surfaceGravity": 1,
+        "surfaceGravity": 0,
         // Xen told us to turn this off, since we will be doing
         //   "Planet within a Planet". For Reference:
         //   https://discord.com/channels/929708786027999262/1055610226394537994/1534027298867515523
@@ -62,6 +62,82 @@
                     "z": 0
                 },
                 "keepLoaded": true
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Coinworld Bundle Test 6/coinworld",
+                "path": "Assets/Prefabs/GravitySwitch.prefab",
+                "position": {
+                    "x": 50,
+                    "y": 25,
+                    "z": 0
+                }
+            }
+        ],
+        "translatorText": [
+            // Wall of text in Some House of the Pomai City
+            {
+                "position": {
+                    "x": 45,
+                    "y": 24.6,
+                    "z": 0
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 1,
+                    "z": 0
+                },
+                "rename": "SomeHouse",
+                "type": "wall",
+                "seed": 99,
+                "xmlFile": "nomai/SomeHouseWall.xml"
+            },
+            {
+                "position": {
+                    "x": 55,
+                    "y": 25.4,
+                    "z": 0
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 1,
+                    "z": 0
+                },
+                "rename": "SomeHouse",
+                "type": "wall",
+                "seed": 100,
+                "xmlFile": "nomai/SomeHouseWall.xml"
+            },
+            {
+                "position": {
+                    "x": 60,
+                    "y": 25.8,
+                    "z": 0
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 1,
+                    "z": 0
+                },
+                "rename": "SomeHouse",
+                "type": "wall",
+                "seed": 101,
+                "xmlFile": "nomai/SomeHouseWall.xml"
+            },
+            {
+                "position": {
+                    "x": 65,
+                    "y": 26,
+                    "z": 0
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 1,
+                    "z": 0
+                },
+                "rename": "SomeHouse",
+                "type": "wall",
+                "seed": 102,
+                "xmlFile": "nomai/SomeHouseWall.xml"
             }
         ]
     },
