@@ -52,8 +52,10 @@ namespace Jam6
             {
                 _powerOn = true;
 
-                gravity1.SetActive(false);
-                gravity2.SetActive(false);
+                //gravity1.SetActive(false);
+                //gravity2.SetActive(false);
+                gravity1.GetComponent<DirectionalForceVolume>().SetFieldMagnitude(0);
+                gravity2.GetComponent<DirectionalForceVolume>().SetFieldMagnitude(0);
                 Jam6.Instance.ModHelper.Console.WriteLine($"Gravities: 1-{gravity1.active}, 2-{gravity2.active}", OWML.Common.MessageType.Success);
 
                 if (_audioSource != null)
@@ -69,8 +71,10 @@ namespace Jam6
             {
                 _powerOn = false;
 
-                gravity1.SetActive(true);
-                gravity2.SetActive(true);
+                //gravity1.SetActive(true);
+                //gravity2.SetActive(true);
+                gravity1.GetComponent<DirectionalForceVolume>().SetFieldMagnitude(12);
+                gravity2.GetComponent<DirectionalForceVolume>().SetFieldMagnitude(12);
                 Jam6.Instance.ModHelper.Console.WriteLine($"Gravities: 1-{gravity1.active}, 2-{gravity2.active}", OWML.Common.MessageType.Success);
 
                 if (_audioSource != null)
