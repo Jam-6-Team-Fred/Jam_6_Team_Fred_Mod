@@ -1,0 +1,148 @@
+{
+    //////////// NOTES ////////////
+    // In some places within this document, "planet" & "station" will be used interchangeable. These all refer to the same components.
+    // COIN will refer to specifically the rotating cyclinder
+    //   with points of interest
+    // DOUBLE DOME will refer to specifically the outer shell of the station
+    // (Currently since there is a single object for the combined coin &
+    //   double dome, there is not a distinction within this file)
+    //////////// END OF NOTES ////////////
+    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    // Name of the planet in game
+    "name": "Disc",
+    // System the planet belongs to (our Mod Jam system)
+    "starSystem": "TeamFred.FredsSystem",
+    // This is a performance optimization,
+    //   since we aren't expecting others to be trying to create this planet
+    "checkForExisting": false,
+    // Basic descriptors of the planet
+    "Base": {
+        "surfaceSize": 300,
+        "surfaceGravity": 0,
+        // Xen told us to turn this off, since we will be doing
+        //   "Planet within a Planet". For Reference:
+        //   https://discord.com/channels/929708786027999262/1055610226394537994/1534027298867515523
+        "hasFluidDetector": false,
+        "showMinimap": false
+    },
+    // Atmosphere settings
+    "Atmosphere": {
+        "hasOxygen": true,
+        "size": 600
+    },
+    // Definiting "Orbit" - Currently set as a static object to represent a
+    //   station. Might switch this to the Sun spot in the future
+    //   (& not have a sun)
+    "Orbit": {
+        "primaryBody": "Pistachio Pulsar",
+        "isStatic": true,
+        // these values are for a 45* diagonal offset of 6000 units
+        "staticPosition": {
+            "x": 4242.64069,
+            "y": 4242.64069,
+            "z": 0
+        }
+    },
+    // "Props" or objects placed at the location marked by NH in prior config
+    //   This includes the station itself
+    "Props": {
+        "details": [
+            // Just the Disc
+            {
+                "assetBundle": "planets/Assets/Bundles/Coinworld Bundle Test 6/coinworld",
+                "path": "Assets/Prefabs/Disc.prefab",
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "keepLoaded": true
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Coinworld Bundle Test 6/coinworld",
+                "path": "Assets/Prefabs/GravitySwitch.prefab",
+                "position": {
+                    "x": 50,
+                    "y": 25,
+                    "z": 0
+                }
+            }
+        ],
+        "translatorText": [
+            // Wall of text in Some House of the Pomai City
+            {
+                "position": {
+                    "x": 45,
+                    "y": 24.6,
+                    "z": 0
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 1,
+                    "z": 0
+                },
+                "rename": "SomeHouse",
+                "type": "wall",
+                "seed": 99,
+                "xmlFile": "nomai/SomeHouseWall.xml"
+            },
+            {
+                "position": {
+                    "x": 55,
+                    "y": 25.4,
+                    "z": 0
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 1,
+                    "z": 0
+                },
+                "rename": "SomeHouse",
+                "type": "wall",
+                "seed": 100,
+                "xmlFile": "nomai/SomeHouseWall.xml"
+            },
+            {
+                "position": {
+                    "x": 60,
+                    "y": 25.8,
+                    "z": 0
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 1,
+                    "z": 0
+                },
+                "rename": "SomeHouse",
+                "type": "wall",
+                "seed": 101,
+                "xmlFile": "nomai/SomeHouseWall.xml"
+            },
+            {
+                "position": {
+                    "x": 65,
+                    "y": 26,
+                    "z": 0
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 1,
+                    "z": 0
+                },
+                "rename": "SomeHouse",
+                "type": "wall",
+                "seed": 102,
+                "xmlFile": "nomai/SomeHouseWall.xml"
+            }
+        ]
+    },
+    // Will only want one of these between the Double Dome & the Coin, otherwise 2 different autopilot points will be set up
+    "MapMarker": {
+        "enabled": false
+    }
+}
