@@ -1,0 +1,64 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <!--
+    Text tree format
+    11 - 12 - 13
+    |
+    1 - 2 - 3 - 4
+    |       |
+    6 - 7   5
+    |   |
+    9   8
+    |
+    10
+  -->
+  <TextBlock>
+    <ID>1</ID>
+    <Text>$Garden01</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>$Garden02</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>$Garden03</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>4</ID>
+    <ParentID>3</ParentID>
+    <Text>$Garden04</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>5</ID>
+    <ParentID>3</ParentID>
+    <Text>$Garden05</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>6</ID>
+    <ParentID>1</ParentID>
+    <Text>$Garden06</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>7</ID>
+    <ParentID>6</ParentID>
+    <Text>$Garden07</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>8</ID>
+    <ParentID>7</ParentID>
+    <Text>$Garden08</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>9</ID>
+    <ParentID>6</ParentID>
+    <Text>$Garden09</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>10</ID>
+    <ParentID>9</ParentID>
+    <Text>$Garden10</Text>
+  </TextBlock>
+</NomaiObject>
