@@ -1,0 +1,38 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <!--
+    Text tree format
+    1 - 2 - 3 - 4 - 5
+        |
+        6
+  -->
+  <TextBlock>
+    <ID>1</ID>
+    <Text>$BlueLakeLookout01</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>$BlueLakeLookout02</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>$BlueLakeLookout03</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>4</ID>
+    <ParentID>3</ParentID>
+    <Text>$BlueLakeLookout04</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>5</ID>
+    <ParentID>4</ParentID>
+    <Text>$BlueLakeLookout05</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>6</ID>
+    <ParentID>2</ParentID>
+    <Text>$BlueLakeLookout06</Text>
+  </TextBlock>
+</NomaiObject>
