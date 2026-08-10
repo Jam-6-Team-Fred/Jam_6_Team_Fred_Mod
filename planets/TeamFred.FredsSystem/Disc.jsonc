@@ -19,16 +19,12 @@
     "Base": {
         "surfaceSize": 300,
         "surfaceGravity": 0,
+        "gravityAlignmentRadiusOverride": 0,
         // Xen told us to turn this off, since we will be doing
         //   "Planet within a Planet". For Reference:
         //   https://discord.com/channels/929708786027999262/1055610226394537994/1534027298867515523
         "hasFluidDetector": false,
         "showMinimap": false
-    },
-    // Atmosphere settings
-    "Atmosphere": {
-        "hasOxygen": true,
-        "size": 600
     },
     // Definiting "Orbit" - Currently set as a static object to represent a
     //   station. Might switch this to the Sun spot in the future
@@ -41,7 +37,8 @@
             "x": 4242.64069,
             "y": 4242.64069,
             "z": 0
-        }
+        },
+        "siderealPeriod": 44
     },
     // "Props" or objects placed at the location marked by NH in prior config
     //   This includes the station itself
@@ -57,7 +54,7 @@
                     "z": 0
                 },
                 "rotation": {
-                    "x": 0,
+                    "x": 90,
                     "y": 0,
                     "z": 0
                 },
