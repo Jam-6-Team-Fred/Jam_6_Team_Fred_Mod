@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 547637950
+CRC: 3681891373
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: c3d8ad773f778df30f8b379e92b1ac29
+    Hash: 69a0d8fb6b79648de8e7a17fd8358299
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 89bb13bbf69cbc0a77fb992d5c5e20b0
+    Hash: d766f2579d8ffc384e53b87d13ee8c7a
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -82,6 +82,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 7731bc3d30c8b009ac33fba6df6e72ae, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 5418269dfd62f50b1141b92b39b0843a, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 1effb1bd669ff10873e29e11509c3d77, type: 3}
 - Class: 115
   Script: {instanceID: 0}
@@ -93,8 +95,8 @@ ClassTypes:
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
-- Assets/Prefabs/Disc.prefab
 - Assets/Prefabs/GravitySwitch.prefab
-- Assets/Prefabs/GravityVolume.prefab
+- Assets/Prefabs/Disc.prefab
 - Assets/Prefabs/Dome.prefab
+- Assets/Prefabs/GravityVolume.prefab
 Dependencies: []
