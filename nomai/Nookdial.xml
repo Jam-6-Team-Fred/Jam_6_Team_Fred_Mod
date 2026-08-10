@@ -1,73 +1,56 @@
-﻿<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <!--
     Text tree format
-    1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10 - 11
-                        |
-                        12 - 13
+    1 - 2 - 3- 4 - 5 - 6 - 7 - 8 - 9 - 10
   -->
   <TextBlock>
     <ID>1</ID>
-    <Text>$SomeHouseWall01</Text>
+    <Text>$Sundial01</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>$SomeHouseWall02</Text>
+    <Text>$Sundial02</Text>
   </TextBlock>
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
-    <Text>$SomeHouseWall03</Text>
+    <Text>$Sundial03</Text>
   </TextBlock>
   <TextBlock>
     <ID>4</ID>
     <ParentID>3</ParentID>
-    <Text>$SomeHouseWall04</Text>
+    <Text>$Sundial04</Text>
   </TextBlock>
   <TextBlock>
     <ID>5</ID>
     <ParentID>4</ParentID>
-    <Text>$SomeHouseWall05</Text>
+    <Text>$Sundial05</Text>
   </TextBlock>
   <TextBlock>
     <ID>6</ID>
     <ParentID>5</ParentID>
-    <Text>$SomeHouseWall06</Text>
+    <Text>$Sundial06</Text>
   </TextBlock>
   <TextBlock>
     <ID>7</ID>
     <ParentID>6</ParentID>
-    <Text>$SomeHouseWall07</Text>
+    <Text>$Sundial07</Text>
   </TextBlock>
   <TextBlock>
     <ID>8</ID>
     <ParentID>7</ParentID>
-    <Text>$SomeHouseWall08</Text>
+    <Text>$Sundial08</Text>
   </TextBlock>
   <TextBlock>
     <ID>9</ID>
     <ParentID>8</ParentID>
-    <Text>$SomeHouseWall09</Text>
+    <Text>$Sundial09</Text>
   </TextBlock>
   <TextBlock>
     <ID>10</ID>
     <ParentID>9</ParentID>
-    <Text>$SomeHouseWall10</Text>
-  </TextBlock>
-  <TextBlock>
-    <ID>11</ID>
-    <ParentID>10</ParentID>
-    <Text>$SomeHouseWall11</Text>
-  </TextBlock>
-  <TextBlock>
-    <ID>12</ID>
-    <ParentID>6</ParentID>
-    <Text>$SomeHouseWall12</Text>
-  </TextBlock>
-  <TextBlock>
-    <ID>13</ID>
-    <ParentID>12</ParentID>
-    <Text>$SomeHouseWall13</Text>
+    <Text>$Sundial10</Text>
   </TextBlock>
 </NomaiObject>

@@ -1,0 +1,43 @@
+<NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
+  <!--
+    Text tree format
+    1 - 2 - 3 - 4 - 5 - 6
+    |
+    7
+  -->
+  <TextBlock>
+    <ID>1</ID>
+    <Text>$WelcomeMountainHidingSpot01</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>$WelcomeMountainHidingSpot02</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>$WelcomeMountainHidingSpot03</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>4</ID>
+    <ParentID>3</ParentID>
+    <Text>$WelcomeMountainHidingSpot04</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>5</ID>
+    <ParentID>4</ParentID>
+    <Text>$WelcomeMountainHidingSpot05</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>6</ID>
+    <ParentID>5</ParentID>
+    <Text>$WelcomeMountainHidingSpot06</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>7</ID>
+    <ParentID>1</ParentID>
+    <Text>$WelcomeMountainHidingSpot07</Text>
+  </TextBlock>
+</NomaiObject>
