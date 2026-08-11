@@ -2,55 +2,49 @@
                   xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <!--
     Text tree format
-    1 - 2 - 3- 4 - 5 - 6 - 7 - 8 - 9 - 10
+    1 - 2 - 3 - 4
+    |
+    5 - 6 - 7
+    |
+    8
   -->
   <TextBlock>
     <ID>1</ID>
-    <Text>$Nookdial01</Text>
+    <Text>$FomaiWallA01</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>$Nookdial02</Text>
+    <Text>$FomaiWallA02</Text>
   </TextBlock>
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
-    <Text>$Nookdial03</Text>
+    <Text>$FomaiWallA03</Text>
   </TextBlock>
   <TextBlock>
     <ID>4</ID>
     <ParentID>3</ParentID>
-    <Text>$Nookdial04</Text>
+    <Text>$FomaiWallA04</Text>
   </TextBlock>
   <TextBlock>
     <ID>5</ID>
-    <ParentID>4</ParentID>
-    <Text>$Nookdial05</Text>
+    <ParentID>1</ParentID>
+    <Text>$FomaiWallA05</Text>
   </TextBlock>
   <TextBlock>
     <ID>6</ID>
     <ParentID>5</ParentID>
-    <Text>$Nookdial06</Text>
+    <Text>$FomaiWallA06</Text>
   </TextBlock>
   <TextBlock>
     <ID>7</ID>
     <ParentID>6</ParentID>
-    <Text>$Nookdial07</Text>
+    <Text>$FomaiWallA07</Text>
   </TextBlock>
   <TextBlock>
     <ID>8</ID>
-    <ParentID>7</ParentID>
-    <Text>$Nookdial08</Text>
-  </TextBlock>
-  <TextBlock>
-    <ID>9</ID>
-    <ParentID>8</ParentID>
-    <Text>$Nookdial09</Text>
-  </TextBlock>
-  <TextBlock>
-    <ID>10</ID>
-    <ParentID>9</ParentID>
-    <Text>$Nookdial10</Text>
+    <ParentID>5</ParentID>
+    <Text>$FomaiWallA08</Text>
   </TextBlock>
 </NomaiObject>

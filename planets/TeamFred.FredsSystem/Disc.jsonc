@@ -71,6 +71,375 @@
             }
         ],
         "translatorText": [
+            // BlueLakeLookout - commenting on the lake color
+            /*{
+                "rename": "BlueLakeLookout",
+                "xmlFile": "nomai/BlueLakeLookout.xml",
+                "position": {
+                    "x": 120.8001,
+                    "y": 55.70441,
+                    "z": 27.69281
+                },
+                "rotation": {
+                    "x": 270,
+                    "y": 90,
+                    "z": 90
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "type": "wall",
+                "seed": 245840159
+                //All adult text, so no ArcInfo needed
+            },*/
+            // BlueLakeScroll
+            /*{
+                "rename": "BlueLakeScroll",
+                "xmlFile": "nomai/BlueLakeScroll.xml",
+                "position": {
+                    "x": 120.8001,
+                    "y": 55.70441,
+                    "z": 27.69281
+                },
+                "rotation": {
+                    "x": 270,
+                    "y": 90,
+                    "z": 90
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "type": "scroll",
+                "seed": 840285992
+                //All adult text, so no ArcInfo needed
+            },*/
+            // Fomai Wall A
+            /*{
+                "rename": "FomaiWallA",
+                "xmlFile": "nomai/FomaiWallA.xml",
+                "position": {
+                    "x": 120.8001,
+                    "y": 55.70441,
+                    "z": 27.69281
+                },
+                "rotation": {
+                    "x": 270,
+                    "y": 90,
+                    "z": 90
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "type": "wall",
+                "seed": 851217981
+                //All adult text, so no ArcInfo needed
+            },*/
+            // Garden
+            /*{
+                "rename": "Garden",
+                "xmlFile": "nomai/Garden.xml",
+                "position": {
+                    "x": 120.8001,
+                    "y": 55.70441,
+                    "z": 27.69281
+                },
+                "rotation": {
+                    "x": 270,
+                    "y": 90,
+                    "z": 90
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "type": "whiteboard",
+                "seed": 1046998503,
+                "arcInfo": [
+                    //1
+                    {
+                        "type": "adult"
+                    },
+                    //2 - Branch 1
+                    {
+                        "type": "adult"
+                    },
+                    //3
+                    {
+                        "type": "adult"
+                    },
+                    //4 - Branch 1.1
+                    {
+                        "type": "adult"
+                    },
+                    //5 - Branch 1.2
+                    {
+                        "type": "adult"
+                    },
+                    //6 - Branch 2
+                    {
+                        "type": "adult"
+                    },
+                    //7
+                    {
+                        "type": "adult"
+                    },
+                    //8
+                    {
+                        "type": "adult",
+                        "position": {
+                            "x": 1.1,
+                            "y": 2.3
+                        },
+                        "zRotation": 320
+                    },
+                    //9
+                    {
+                        "type": "adult"
+                    },
+                    //10
+                    {
+                        "type": "adult"
+                    },
+                    //11 -Branch 3
+                    {
+                        "type": "adult"
+                    },
+                    //12 - Branch 2
+                    {
+                        "type": "adult",
+                        "mirror": true,
+                        "position": {
+                            "x": 0.5,
+                            "y": -0.45
+                        },
+                        "zRotation": 200
+                        
+                    },
+                    //13
+                    {
+                        "type": "adult",
+                        "mirror": true,
+                        "position": {
+                            "x": 1.65,
+                            "y": -0.9
+                        },
+                        "zRotation": 267
+                    }
+                ]
+            },*/
+            // GravityRoom
+            /*{
+                "rename": "GravityRoom",
+                "xmlFile": "nomai/GravityRoom.xml",
+                "position": {
+                    "x": 120.8001,
+                    "y": 55.70441,
+                    "z": 27.69281
+                },
+                "rotation": {
+                    "x": 270,
+                    "y": 90,
+                    "z": 90
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "type": "wall",
+                "seed": 560755312,
+                "arcInfo": [
+                    //1
+                    {
+                        "type": "teenager"
+                    },
+                    //2
+                    {
+                        "type": "teenager"
+                    },
+                    //3
+                    {
+                        "type": "teenager"
+                    },
+                    //4
+                    {
+                        "type": "teenager"
+                    }
+                ]
+            },*/
+            // Nookdial
+            /*{
+                "rename": "Nookdial",
+                "xmlFile": "nomai/Nookdial.xml",
+                "position": {
+                    "x": 120.8001,
+                    "y": 55.70441,
+                    "z": 27.69281
+                },
+                "rotation": {
+                    "x": 270,
+                    "y": 90,
+                    "z": 90
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "type": "wall",
+                "seed": 1470383893,
+                "arcInfo": [
+                    //1
+                    {
+                        "type": "teenager"
+                    },
+                    //2
+                    {
+                        "type": "teenager"
+                    },
+                    //3
+                    {
+                        "type": "teenager"
+                    },
+                    //4
+                    {
+                        "type": "teenager"
+                    },
+                    //5
+                    {
+                        "type": "teenager"
+                    },
+                    //6
+                    {
+                        "type": "teenager"
+                    },
+                    //7
+                    {
+                        "type": "teenager"
+                    },
+                    //8
+                    {
+                        "type": "teenager"
+                    },
+                    //9
+                    {
+                        "type": "teenager",
+                        "position": {
+                            "x": 2.05,
+                            "y": -0.76
+                        },
+                        "zRotation": 135
+                    },
+                    //10
+                    {
+                        "type": "teenager",
+                        "position": {
+                            "x": 0.85,
+                            "y": -0.7
+                        },
+                        "zRotation": 130
+                    }
+                ]
+            },*/
+            // PomaiHouseA
+            /*{
+                "rename": "PomaiHouseA",
+                "xmlFile": "nomai/PomaiHouseA.xml",
+                "position": {
+                    "x": 120.8001,
+                    "y": 55.70441,
+                    "z": 27.69281
+                },
+                "rotation": {
+                    "x": 270,
+                    "y": 90,
+                    "z": 90
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "type": "wall",
+                "seed": 300346983
+                //All adult text, so no ArcInfo needed
+            },*/
+            // PomaiHouseB
+            /*{
+                "rename": "PomaiHouseB",
+                "xmlFile": "nomai/PomaiHouseB.xml",
+                "position": {
+                    "x": 120.8001,
+                    "y": 55.70441,
+                    "z": 27.69281
+                },
+                "rotation": {
+                    "x": 270,
+                    "y": 90,
+                    "z": 90
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "type": "wall",
+                "seed": 177970421
+                //All adult text, so no ArcInfo needed
+            },*/
+            // PomaiHouseC
+            /*{
+                "rename": "PomaiHouseC",
+                "xmlFile": "nomai/PomaiHouseC.xml",
+                "position": {
+                    "x": 120.8001,
+                    "y": 55.70441,
+                    "z": 27.69281
+                },
+                "rotation": {
+                    "x": 270,
+                    "y": 90,
+                    "z": 90
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "type": "wall",
+                "seed": 479475223
+                //All adult text, so no ArcInfo needed
+            },*/
+            // PomaiHouseD
+            /*{
+                "rename": "PomaiHouseD",
+                "xmlFile": "nomai/PomaiHouseD.xml",
+                "position": {
+                    "x": 120.8001,
+                    "y": 55.70441,
+                    "z": 27.69281
+                },
+                "rotation": {
+                    "x": 270,
+                    "y": 90,
+                    "z": 90
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "type": "wall",
+                "seed": 244777025
+                //All adult text, so no ArcInfo needed
+            },*/
             // Record near wall of text in Some House of the Pomai City
             /*{
                 "rename": "SomeHouseRecorder",
@@ -237,6 +606,135 @@
                         "zRotation": 225
                     }
                 ]
+            }*/
+            // Sundial
+            /*{
+                "rename": "Sundial",
+                "xmlFile": "nomai/Sundial.xml",
+                "position": {
+                    "x": 120.8001,
+                    "y": 55.70441,
+                    "z": 27.69281
+                },
+                "rotation": {
+                    "x": 270,
+                    "y": 90,
+                    "z": 90
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "type": "wall",
+                "seed": 1028565930
+                //All adult text, so no ArcInfo needed
+            },*/
+            // WelcomeMountainFloor
+            /*{
+                "rename": "WelcomeMountainFloor",
+                "xmlFile": "nomai/WelcomeMountainFloor.xml",
+                "position": {
+                    "x": 120.8001,
+                    "y": 55.70441,
+                    "z": 27.69281
+                },
+                "rotation": {
+                    "x": 270,
+                    "y": 90,
+                    "z": 90
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "type": "wall",
+                "seed": 219460023
+                //All adult text, so no ArcInfo needed
+            },*/
+            // WelcomeMountainHidingSpot
+            /*{
+                "rename": "WelcomeMountainHidingSpot",
+                "xmlFile": "nomai/WelcomeMountainHidingSpot.xml",
+                "position": {
+                    "x": 120.8001,
+                    "y": 55.70441,
+                    "z": 27.69281
+                },
+                "rotation": {
+                    "x": 270,
+                    "y": 90,
+                    "z": 90
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "type": "wall",
+                "seed": 1323343560,
+                "arcInfo": [
+                    //1
+                    {
+                        "type": "teenager"
+                    },
+                    //2
+                    {
+                        "type": "teenager"
+                    },
+                    //3
+                    {
+                        "type": "teenager"
+                    },
+                    //4
+                    {
+                        "type": "teenager"
+                    },
+                    //5
+                    {
+                        "type": "teenager"
+                    },
+                    //6
+                    {
+                        "type": "teenager"
+                    },
+                    //7
+                    {
+                        "type": "teenager"
+                    }
+                ]
+            },*/
+            // WelcomeMountainScroll
+            /*{
+                "rename": "WelcomeMountainScroll",
+                "xmlFile": "nomai/WelcomeMountainScroll.xml",
+                "position": {
+                    "x": 120.8001,
+                    "y": 55.70441,
+                    "z": 27.69281
+                },
+                "rotation": {
+                    "x": 270,
+                    "y": 90,
+                    "z": 90
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "type": "whiteboard",
+                "seed": 534703137
+                //All adult text, so no ArcInfo needed
+            },*/
+            // Empty Whiteboard (for testing)
+            /*{
+                "rename": "Whiteboard_Empty",
+                "position": {"x": 127.3876, "y": 52.80297, "z": 27.69283},
+                "rotation": {"x": 305.5887, "y": 270, "z": 270},
+                "normal": {"x": 2.086163E-07, "y": 2.30968E-07, "z": 1},
+                "type": "whiteboard"
             }*/
         ]
     },
