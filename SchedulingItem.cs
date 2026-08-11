@@ -1,13 +1,16 @@
-﻿using NewHorizons;
-using NewHorizons.Components.Props;
-using NewHorizons.External.Modules.Props;
-using NewHorizons.Utility;
+﻿using NewHorizons.Components.Props;
 using OWML.ModHelper;
+using System;
+using UnityEngine;
 
 namespace Jam6
 {
     public class SchedulingItem : NHItem
     {
+        [SerializeField]
+        public string itemID;
+
+        [NonSerialized]
         public ModBehaviour mod;
 
         public void OnValidate()
