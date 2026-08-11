@@ -6,51 +6,51 @@
   -->
   <TextBlock>
     <ID>1</ID>
-    <Text>$Sundial01</Text>
+    <Text>$Nookdial01</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>$Sundial02</Text>
+    <Text>$Nookdial02</Text>
   </TextBlock>
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
-    <Text>$Sundial03</Text>
+    <Text>$Nookdial03</Text>
   </TextBlock>
   <TextBlock>
     <ID>4</ID>
     <ParentID>3</ParentID>
-    <Text>$Sundial04</Text>
+    <Text>$Nookdial04</Text>
   </TextBlock>
   <TextBlock>
     <ID>5</ID>
     <ParentID>4</ParentID>
-    <Text>$Sundial05</Text>
+    <Text>$Nookdial05</Text>
   </TextBlock>
   <TextBlock>
     <ID>6</ID>
     <ParentID>5</ParentID>
-    <Text>$Sundial06</Text>
+    <Text>$Nookdial06</Text>
   </TextBlock>
   <TextBlock>
     <ID>7</ID>
     <ParentID>6</ParentID>
-    <Text>$Sundial07</Text>
+    <Text>$Nookdial07</Text>
   </TextBlock>
   <TextBlock>
     <ID>8</ID>
     <ParentID>7</ParentID>
-    <Text>$Sundial08</Text>
+    <Text>$Nookdial08</Text>
   </TextBlock>
   <TextBlock>
     <ID>9</ID>
     <ParentID>8</ParentID>
-    <Text>$Sundial09</Text>
+    <Text>$Nookdial09</Text>
   </TextBlock>
   <TextBlock>
     <ID>10</ID>
     <ParentID>9</ParentID>
-    <Text>$Sundial10</Text>
+    <Text>$Nookdial10</Text>
   </TextBlock>
 </NomaiObject>
