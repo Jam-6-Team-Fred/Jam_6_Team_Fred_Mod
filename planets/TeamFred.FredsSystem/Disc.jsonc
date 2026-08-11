@@ -70,6 +70,22 @@
                 }
             }
         ],
+        "signals": [
+			{ 
+				"frequency" : "Nomai Technology",
+				"name" : "TeamFred.Telescope",
+				"audio" : "planets/Assets/Audio/Jam_6_EndTimes.ogg", 
+				"sourceRadius" : 10, 
+				"position" : {
+                    "x": 146.4507,
+                    "y": 77.19663,
+                    "z": -81.42654
+                },
+				"identificationRadius" : 240,
+				"detectionRadius" : 270,
+                "onlyAudibleToScope": true
+			}
+        ],
         "translatorText": [
             // BlueLakeLookout - commenting on the lake color
             /*{

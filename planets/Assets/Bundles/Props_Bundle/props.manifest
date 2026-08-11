@@ -1,0 +1,46 @@
+ManifestFileVersion: 0
+CRC: 431602201
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 64e630322d01e75432a34c4a65d27a69
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: aa0aa023eab27fe615a4363c07d502a9
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: b446aa63b809cb3da1921800cd416866, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_C.prefab
+- Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_B.prefab
+- Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_D.prefab
+- Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab
+- Assets/Prefabs_Art/Foliage/Foliage_Past.mat
+- Assets/Prefabs_Art/Foliage/Savannah_Bush_Past_1.png
+- Assets/Prefabs_Art/Foliage/Foliage_Future.mat
+- Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_B.prefab
+- Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_A.prefab
+- Assets/Prefabs_Art/Foliage/Foliage_Future.png
+- Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_D.prefab
+- Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_C.prefab
+Dependencies: []
