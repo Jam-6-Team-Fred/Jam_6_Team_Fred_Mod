@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2251802568
+CRC: 1869583454
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: eb9c5c06e37eed1fc5e0da8850fa0682
+    Hash: b12d4812d2da1bf8fa477c8716d8b926
   TypeTreeHash:
     serializedVersion: 2
-    Hash: d766f2579d8ffc384e53b87d13ee8c7a
+    Hash: a832a035c0c62a45ff628a8cdc3c384f
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -44,25 +44,23 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 1285245761, guid: ef85f6c0026bed8429e867fee64d56a5, type: 3}
 - Class: 114
+  Script: {fileID: -581112533, guid: ef85f6c0026bed8429e867fee64d56a5, type: 3}
+- Class: 114
+  Script: {fileID: -168246484, guid: ef85f6c0026bed8429e867fee64d56a5, type: 3}
+- Class: 114
+  Script: {fileID: -943336336, guid: ef85f6c0026bed8429e867fee64d56a5, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: fbb2498122f7e23a2e87544333cb528f, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: dab2fbc1d63988697a57c20e75208116, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 24c689d1c23d8dd911fe21e37d86315c, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 80818142ed7b755f9ecef4a391e63964, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 5949ee929a0f4342e2cff9fa5a0f9127, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: d4f7acb28de892d6c474b09ae2fa223e, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: d3e77ae3309b6f323de07b456da83fb0, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: a223d69493f03f4a8e6bda998c52d250, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 6c6ee9e4d5184455a9b6e8cef8a94cb6, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 8aa7b556a5fd542f0d4d803660cdf028, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 97799c07190331b5ea4838ff8ff2a8e0, type: 3}
 - Class: 114
@@ -91,12 +89,10 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 135
   Script: {instanceID: 0}
-- Class: 136
-  Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Prefabs/GravitySwitch.prefab
-- Assets/Prefabs/Disc.prefab
+- Assets/Prefabs/Disc Old 3.prefab
 - Assets/Prefabs/Dome.prefab
 - Assets/Prefabs/GravityVolume.prefab
 Dependencies: []
