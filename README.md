@@ -16,3 +16,5 @@ Credits:
 - **The Phantom Driver**: Nomai Ruin Architect, Some Programming
 - **Solec**: New Horizons advisor, Logo Designer
 - **T3rtu**: Lead Modeller
+
+Made with Love, by Humans <3
