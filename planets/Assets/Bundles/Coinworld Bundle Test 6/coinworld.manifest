@@ -1,4 +1,5 @@
 ManifestFileVersion: 0
+<<<<<<< Updated upstream
 CRC: 2251802568
 Hashes:
   AssetFileHash:
@@ -7,6 +8,16 @@ Hashes:
   TypeTreeHash:
     serializedVersion: 2
     Hash: d766f2579d8ffc384e53b87d13ee8c7a
+=======
+CRC: 3489621681
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b12d4812d2da1bf8fa477c8716d8b926
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 55c2fe518903b63c969e21d1b500feee
+>>>>>>> Stashed changes
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -44,6 +55,15 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 1285245761, guid: ef85f6c0026bed8429e867fee64d56a5, type: 3}
 - Class: 114
+<<<<<<< Updated upstream
+=======
+  Script: {fileID: -581112533, guid: ef85f6c0026bed8429e867fee64d56a5, type: 3}
+- Class: 114
+  Script: {fileID: -168246484, guid: ef85f6c0026bed8429e867fee64d56a5, type: 3}
+- Class: 114
+  Script: {fileID: -943336336, guid: ef85f6c0026bed8429e867fee64d56a5, type: 3}
+- Class: 114
+>>>>>>> Stashed changes
   Script: {fileID: 11500000, guid: fbb2498122f7e23a2e87544333cb528f, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: dab2fbc1d63988697a57c20e75208116, type: 3}
@@ -96,7 +116,7 @@ ClassTypes:
 SerializeReferenceClassIdentifiers: []
 Assets:
 - Assets/Prefabs/GravitySwitch.prefab
-- Assets/Prefabs/Disc.prefab
+- Assets/Prefabs/Disc Old 3.prefab
 - Assets/Prefabs/Dome.prefab
 - Assets/Prefabs/GravityVolume.prefab
 Dependencies: []

@@ -1,5 +1,9 @@
 ManifestFileVersion: 0
+<<<<<<< Updated upstream
 CRC: 4215289588
+=======
+CRC: 228189351
+>>>>>>> Stashed changes
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:

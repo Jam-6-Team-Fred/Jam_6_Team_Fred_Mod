@@ -70,6 +70,7 @@
                 }
             }
         ],
+<<<<<<< Updated upstream
         "signals": [
 			{ 
 				"frequency" : "Nomai Technology",
@@ -458,6 +459,11 @@
             },*/
             // Record near wall of text in Some House of the Pomai City
             /*{
+=======
+      "translatorText": [
+        // Record near wall of text in Some House of the Pomai City
+        /*{
+>>>>>>> Stashed changes
                 "rename": "SomeHouseRecorder",
                 "xmlFile": "nomai/SomeHouseRecorder.xml",
                 "position": {
@@ -477,8 +483,8 @@
                 },
                 "type": "preCrashRecorder"
             },*/
-            // Wall of text in Some House of the Pomai City
-            /*{
+        // Wall of text in Some House of the Pomai City
+        /*{
                 "rename": "SomeHouseWall",
                 "xmlFile": "nomai/SomeHouseWall.xml",
                 "position": {
@@ -623,6 +629,7 @@
                     }
                 ]
             }*/
+<<<<<<< Updated upstream
             // Sundial
             /*{
                 "rename": "Sundial",
@@ -753,9 +760,26 @@
                 "type": "whiteboard"
             }*/
         ]
+=======
+      ],
+      "signals": [
+        {
+          "position": {
+            "x": 146.4507,
+            "y": 77.19663,
+            "z": -81.42654
+          },
+          "frequency": "Radio",
+          "name": "Arecibo",
+          "sourceRadius": 3,
+          "detectionRadius": 500,
+          "identificationRadius": 100
+        }
+      ]
+>>>>>>> Stashed changes
     },
     // Will only want one of these between the Double Dome & the Coin, otherwise 2 different autopilot points will be set up
-    "MapMarker": {
-        "enabled": false
-    }
+  "MapMarker": {
+    "enabled": false
+  }
 }
