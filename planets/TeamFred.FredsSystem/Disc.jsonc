@@ -71,20 +71,20 @@
             }
         ],
         "signals": [
-			{ 
-				"frequency" : "Nomai Technology",
-				"name" : "TeamFred.Telescope",
-				"audio" : "planets/Assets/Audio/Jam_6_EndTimes.ogg", 
-				"sourceRadius" : 10, 
-				"position" : {
+            {
+                "frequency": "Nomai Technology",
+                "name": "TeamFred.Telescope",
+                "audio": "planets/Assets/Audio/Jam_6_EndTimes.ogg",
+                "sourceRadius": 10,
+                "position": {
                     "x": 146.4507,
                     "y": 77.19663,
                     "z": -81.42654
                 },
-				"identificationRadius" : 240,
-				"detectionRadius" : 270,
+                "identificationRadius": 240,
+                "detectionRadius": 270,
                 "onlyAudibleToScope": true
-			}
+            }
         ],
         "translatorText": [
             // BlueLakeLookout - commenting on the lake color
@@ -744,6 +744,29 @@
                 "seed": 534703137
                 //All adult text, so no ArcInfo needed
             },*/
+            // Scheduling Room Computer
+            /*{
+                "rename": "SchedulingRoomComputer",
+                "xmlFile": "nomai/SchedulingRoomComputer.xml",
+                "position": {
+                    "x": 120.8001,
+                    "y": 55.70441,
+                    "z": 27.69281
+                },
+                "rotation": {
+                    "x": 270,
+                    "y": 90,
+                    "z": 90
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "type": "computer",
+                "seed": 534703137
+                //All adult text, so no ArcInfo needed
+            }*/
             // Empty Whiteboard (for testing)
             /*{
                 "rename": "Whiteboard_Empty",
