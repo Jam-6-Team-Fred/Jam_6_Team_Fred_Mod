@@ -780,7 +780,9 @@
     "Volumes": {
     "audioVolumes": [
         {
+            //Volume for past area
             "audio": "planets/Assets/Audio/Jam_6_PastGlory.ogg",
+            //Cylinder shape
             "shape": {
                 "useShape": true,
                 "type": "cylinder",
@@ -799,7 +801,9 @@
             "volume": 1.5
         },
         {
+            //Volume for future area
             "audio": "planets/Assets/Audio/Jam_6_BrightFuture.ogg",
+            //Cylinder shape
             "shape": {
                 "useShape": true,
                 "type": "cylinder",
@@ -818,7 +822,9 @@
             "volume": 1.5
         },        
         {
+            //Volume for maintenance tunnels, has lower priority than past and future so defaults to this
             "audio": "planets/Assets/Audio/Jam_6_Corridors.ogg",
+            //Cylinder shape
             "shape": {
                 "useShape": true,
                 "type": "cylinder",
@@ -836,40 +842,6 @@
             "priority": 1,
             "volume": 1.5
         }
-        /*,
-        {
-            "audio": "assets/Audio/HomeAmbience.ogg",
-            "track": "environment",
-            "rename": "HomeAmbience",
-            "loop": true,
-            "priority": 0,
-            "radius": 500,
-            "volume": 0.5
-        },
-        {
-            "audio": "assets/Audio/terraformhome3.ogg",
-            "pauseOnFadeOut": false,
-            "loop": false,
-            "volume": 0.2,
-            "priority": 1,
-            "parentPath": "Sector/EntryAndPartyHouse/DreamFireHouse_2/Interactibles/HOME_IntroMusic",
-            "isRelativeToParent": true,
-            "track": "environmentUnfiltered",
-            "radius": 400
-        },
-        {
-            "audio": "OW Finally Set Free 072021_2 AP",
-            "parentPath": "Sector/HOME_RAFT",
-            "isRelativeToParent": true,
-            "track": "music",
-            "loop": true,
-            "priority": 1,
-            "radius": 3,
-            "position": {
-                "y": 2
-            },
-            "volume": 0.4
-        }*/
     ]
 },
     // Will only want one of these between the Double Dome & the Coin, otherwise 2 different autopilot points will be set up
