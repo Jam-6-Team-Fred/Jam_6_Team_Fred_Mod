@@ -1,4 +1,5 @@
-﻿using OWML.ModHelper;
+﻿using NewHorizons.Utility;
+using OWML.ModHelper;
 using OWML.Utils;
 using System;
 using System.Reflection;
@@ -15,6 +16,10 @@ namespace Jam6
         public MeshRenderer meshRenderer;
         [NonSerialized]
         public MeshCollider meshCollider;
+        [NonSerialized]
+        public GameObject signalSource;
+        [NonSerialized]
+        public float time;
 
         public void Awake()
         {
@@ -22,6 +27,7 @@ namespace Jam6
             meshRenderer = GetComponent<MeshRenderer>();
             meshCollider = GetComponent<MeshCollider>();
             SchedulingSocket.ActivateScheduledEvent += FireSignal;
+            Jam6.Instance.NewHorizons.GetBodyLoadedEvent().AddListener(FindSignal);
         }
 
         public void OnDestroy()
@@ -29,9 +35,27 @@ namespace Jam6
             SchedulingSocket.ActivateScheduledEvent -= FireSignal;
         }
 
+        public void FindSignal(string planetName)
+        {
+            if (planetName == "Disc_Body")
+            {
+                signalSource = SearchUtilities.Find("Disc_Body/Sector/AudioSource");
+                signalSource.SetActive(false);
+            }
+        }
+
         public void FireSignal(SchedulingItem item)
         {
-            return; 
+            signalSource.SetActive(true);
+            time = TimeLoop.GetSecondsElapsed();
+        }
+
+        public void Update()
+        {
+            if (TimeLoop.GetSecondsElapsed() - time>=20f)
+            {
+                signalSource?.SetActive(false);
+            }
         }
     }
 }
