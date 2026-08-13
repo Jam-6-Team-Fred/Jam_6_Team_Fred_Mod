@@ -7,9 +7,9 @@
     "canEnterViaWarpDrive": true,
     "canExitViaWarpDrive": true,
     // If Mod is installed, start here from title screen
-    "startHere": true,
+    //"startHere": true,
     // Respawn here if you die in the system
-    "respawnHere": true,
+    //"respawnHere": true,
     // Location within the Star Chart / Warp Drive menu
     "StarChart": {
         "position": {
