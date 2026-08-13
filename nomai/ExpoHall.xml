@@ -2,78 +2,62 @@
                   xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <!--
     Text tree format
-    11 - 12 - 13
-    |
-    1 - 2 - 3 - 4
-    |       |
-    6 - 7   5
-    |   |
-    9   8
-    |
-    10
+    1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9
+                |               |
+                10              11
   -->
   <TextBlock>
     <ID>1</ID>
-    <Text>$Garden01</Text>
+    <Text>$ExpoHall01</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>$Garden02</Text>
+    <Text>$ExpoHall02</Text>
   </TextBlock>
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
-    <Text>$Garden03</Text>
+    <Text>$ExpoHall03</Text>
   </TextBlock>
   <TextBlock>
     <ID>4</ID>
     <ParentID>3</ParentID>
-    <Text>$Garden04</Text>
+    <Text>$ExpoHall04</Text>
   </TextBlock>
   <TextBlock>
     <ID>5</ID>
-    <ParentID>3</ParentID>
-    <Text>$Garden05</Text>
+    <ParentID>4</ParentID>
+    <Text>$ExpoHall05</Text>
   </TextBlock>
   <TextBlock>
     <ID>6</ID>
-    <ParentID>1</ParentID>
-    <Text>$Garden06</Text>
+    <ParentID>5</ParentID>
+    <Text>$ExpoHall06</Text>
   </TextBlock>
   <TextBlock>
     <ID>7</ID>
     <ParentID>6</ParentID>
-    <Text>$Garden07</Text>
+    <Text>$ExpoHall07</Text>
   </TextBlock>
   <TextBlock>
     <ID>8</ID>
     <ParentID>7</ParentID>
-    <Text>$Garden08</Text>
+    <Text>$ExpoHall08</Text>
   </TextBlock>
   <TextBlock>
     <ID>9</ID>
-    <ParentID>6</ParentID>
-    <Text>$Garden09</Text>
+    <ParentID>8</ParentID>
+    <Text>$ExpoHall09</Text>
   </TextBlock>
   <TextBlock>
     <ID>10</ID>
-    <ParentID>9</ParentID>
-    <Text>$Garden10</Text>
+    <ParentID>4</ParentID>
+    <Text>$ExpoHall10</Text>
   </TextBlock>
   <TextBlock>
     <ID>11</ID>
-    <ParentID>1</ParentID>
-    <Text>$Garden11</Text>
-  </TextBlock>
-  <TextBlock>
-    <ID>12</ID>
-    <ParentID>11</ParentID>
-    <Text>$Garden12</Text>
-  </TextBlock>
-  <TextBlock>
-    <ID>13</ID>
-    <ParentID>12</ParentID>
-    <Text>$Garden13</Text>
+    <ParentID>8</ParentID>
+    <Text>$ExpoHall11</Text>
   </TextBlock>
 </NomaiObject>
