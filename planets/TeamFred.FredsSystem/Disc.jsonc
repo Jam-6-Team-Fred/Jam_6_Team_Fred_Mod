@@ -85,7 +85,12 @@
                 "position": {
                     "x": 140,
                     "y": 0,
-                    "z": 70
+                    "z": -70
+                },
+                "rotation": {
+                    "x": 180,
+                    "y": 0,
+                    "z": -0
                 },
                 "relativeToParent": true
             }
