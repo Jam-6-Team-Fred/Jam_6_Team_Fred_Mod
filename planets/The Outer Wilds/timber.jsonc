@@ -1,0 +1,31 @@
+{
+    "name": "Timber Hearth",
+    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    "Props": {
+        "dialogue": [
+            {
+                "rename": "NomaiObjectDialogue",
+                "radius": 0,
+                "parentPath": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Slate_FocalPoint",
+                "isRelativeToParent": true,
+                "blockAfterPersistentCondition": "NomaiObjectDialogueTold",
+                "pathToAnimController": "Sector_TH/Sector_Village/Sector_StartingCamp/Characters_StartingCamp/Villager_HEA_Slate/Villager_HEA_Slate_ANIM_LogSit",
+                "xmlFile": "dialogue/NomaiObjectDialogue.xml",
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "remoteTrigger": {
+                    "rename": "NomaiObjectTrigger",
+                    "position": {
+                        "x": 15.79771,
+                        "y": -43.66083,
+                        "z": 185.1358
+                    },
+                    "radius": 2.5
+                }
+            }
+        ]
+    }
+}
