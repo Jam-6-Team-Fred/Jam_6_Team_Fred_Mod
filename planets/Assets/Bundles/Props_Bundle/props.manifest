@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2166320421
+CRC: 2995358418
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: ba52e22957621f8665223412bd833f61
+    Hash: 1a9d5805faca2414a746541e25d9b9c2
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 03498f138464566ac6196908d9af3fd6
+    Hash: d94da34372a9b4cd68fe3da6b9ba0a4f
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -27,28 +27,12 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 64
   Script: {instanceID: 0}
-- Class: 82
-  Script: {instanceID: 0}
-- Class: 89
-  Script: {instanceID: 0}
-- Class: 108
-  Script: {instanceID: 0}
-- Class: 114
-  Script: {fileID: 11500000, guid: 8ac553c0e07150826ad7b28545ba47ab, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 7b2cdfd021d6efff82736e3885af343b, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 2c9c75f078198de5a456e88f2a23164c, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 3c40262156d82f34a77fd77af5176011, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: fbb2498122f7e23a2e87544333cb528f, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 2610d722ee30ea0c1ac7ba130d812afa, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: b510d252798b94e5d72fb33fbb25a1ad, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 03b113e281b56b5b15b501054b934b6f, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: b446aa63b809cb3da1921800cd416866, type: 3}
 - Class: 114
@@ -56,45 +40,9 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: a223d69493f03f4a8e6bda998c52d250, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: e902b335eaa009893931bdf385227090, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 228a84d6d8ef45fc53f14e8bfe431430, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 2ca598178f775e7dc1b937bc0b32aae7, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 37aeb9a742f98df8b486a716a5b568a6, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: ef4a7208df34bcc45029964389471a68, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: c1e03d384261f6f301ef6513a478c3a8, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: b8880e8825af4fcbf1dab71021f8c869, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 7a54be8810d01e9ae854ddb2580bb460, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 25b7e56961bf1df33ed31b8c786ab1c3, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 5f031b2a1450f8281d8cd055b417bf4b, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 2145ed3a866d4bd5a94d98ee05d0fa4f, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 7b80504a0aa9946ddb29be5e95e7256c, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 2bb071ca735618077788ddbf0d10dc71, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 6b881cca0a4f51aa22e82eb3e1338126, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: c6fe64bb7e8c4450add4843fe5d1ac65, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 6631540c285035b776896aea493b6afa, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: fc68a83cc3a06cf2982dc49f137097bc, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 3cb5a34c0b2b4edb1b44fafe70d79e7b, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 4d37ab8d4d1e425918e8172c84cb8288, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: e7c9eadf563d98c54398c8bdb7203fde, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 136
@@ -117,10 +65,11 @@ Assets:
 - Assets/Prefabs_Art/Foliage/Savannah_Bush_Past_1.png
 - Assets/Prefabs_Art/Foliage/Foliage_Future.mat
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_B.prefab
-- Assets/Prefabs_Art/Atmosphere/Atmosphere.prefab
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_A.prefab
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Foliage_TH_AlpineLeaves_Roots_mat.mat
+- Assets/Prefabs_Art/Atmosphere/Atmosphere_Rain.prefab
 - Assets/Prefabs_Art/Foliage/Foliage_Future.png
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_D.prefab
+- Assets/Prefabs_Art/Atmosphere/Atmosphere_Snow.prefab
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_C.prefab
 Dependencies: []

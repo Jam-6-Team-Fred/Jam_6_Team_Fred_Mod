@@ -96,7 +96,7 @@
             },
             {
                 "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-                "path": "Assets/Prefabs_Art/Atmosphere/Atmosphere.prefab",
+                "path": "Assets/Prefabs_Art/Atmosphere/Atmosphere_Rain.prefab",
                 "position": {
                     "x": 0,
                     "y": 0,
@@ -104,6 +104,20 @@
                 },
                 "rotation": {
                     "x": 90,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Atmosphere/Atmosphere_Snow.prefab",
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -50
+                },
+                "rotation": {
+                    "x": -90,
                     "y": 0,
                     "z": 0
                 }
