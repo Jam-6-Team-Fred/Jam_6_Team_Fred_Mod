@@ -1,6 +1,7 @@
 ﻿using HarmonyLib;
 using OWML.Common;
 using OWML.ModHelper;
+using OWML.Utils;
 using System.Reflection;
 
 namespace Jam6;
@@ -11,6 +12,8 @@ public class Jam6 : ModBehaviour
     public INewHorizons NewHorizons;
 
     public bool AllowSpawnOverride { get; private set; }
+
+    public static readonly ItemType SchedulingItemType = EnumUtils.Create<ItemType>("SchedulingItem");
 
     public void Awake()
     {
