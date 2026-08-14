@@ -32,18 +32,18 @@
     "Orbit": {
         "primaryBody": "Sun",
         // units away from sun for orbit
-        "semiMajorAxis": 35000,
-        // 0 = circle, 1 = very very oval
-        "eccentricity": 0.6,
+        "semiMajorAxis": 13750,
+        // 0 = circle, 1 = elipse
+        "eccentricity": 0.25,
         // orients upright compared to solar system
-        "inclination": 90,
+        "inclination": 200,
         // Alined with path of Giant's Deep initially
         "longitudeOfAscendingNode": 75,
         // Angles the ellipse to point "down"
         //   (short side is above the plane of planets)
-        "argumentOfPeriapsis": 270,
+        "argumentOfPeriapsis": 90,
         // sets start position
-        "trueAnomaly": 260,
+        "trueAnomaly": 100,
         // disc rotates halfway over the course of the loop
         "siderealPeriod": 44,
         "showOrbitLine": false
@@ -855,6 +855,15 @@
     // Will only want one of these between the Double Dome & the Coin, otherwise 2 different autopilot points will be set up
     "MapMarker": {
         "enabled": false,
-        "maxDisplayDistanceOverride": 0
+        "maxDisplayDistanceOverride": 1
+    },
+    "ReferenceFrame": {
+        "enabled": false,
+        "hideInMap": true
+    },
+    "ShipLog": {
+        "mapMode": {
+            "remove": true
+        }
     }
 }

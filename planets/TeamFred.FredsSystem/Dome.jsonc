@@ -36,20 +36,20 @@
     "Orbit": {
         "primaryBody": "Sun",
         // units away from sun for orbit
-        "semiMajorAxis": 35000,
-        // 0 = circle, 1 = very very oval
-        "eccentricity": 0.6,
+        "semiMajorAxis": 13750,
+        // 0 = circle, 1 = elipse
+        "eccentricity": 0.25,
         // orients upright compared to solar system
-        "inclination": 90,
+        "inclination": 200,
         // Alined with path of Giant's Deep initially
         "longitudeOfAscendingNode": 75,
         // Angles the ellipse to point "down"
         //   (short side is above the plane of planets)
-        "argumentOfPeriapsis": 270,
+        "argumentOfPeriapsis": 90,
         // sets start position
-        "trueAnomaly": 260,
+        "trueAnomaly": 100,
         "dottedOrbitLine": true,
-        //"trackingOrbitLine": true
+        "trackingOrbitLine": true
     },
     // If we want the planet to glow.
     //   Currently just playing around with this - Crystal
