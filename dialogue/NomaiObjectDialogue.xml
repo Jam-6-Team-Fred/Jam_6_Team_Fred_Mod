@@ -1,0 +1,27 @@
+<DialogueTree xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/xen-42/outer-wilds-new-horizons/main/NewHorizons/Schemas/dialogue_schema.xsd">
+    <NameField>Ernesto</NameField>
+
+    <DialogueNode>
+        <Name>INITIAL1</Name>
+        <EntryCondition>DEFAULT</EntryCondition>
+        <Dialogue>
+            <Page>$NOMAI_OBJECT_SLATE01</Page>
+        </Dialogue>
+        <DialogueOptionsList>
+            <DialogueOption>
+                <Text>$NOMAI_OBJECT_HATCHLING01</Text>
+                <DialogueTarget>INITIAL2</DialogueTarget>
+            </DialogueOption>
+        </DialogueOptionsList>
+    </DialogueNode>
+
+    <DialogueNode>
+        <Name>INITIAL2</Name>
+        <Dialogue>
+            <Page>$NOMAI_OBJECT_SLATE02</Page>
+            <Page>$NOMAI_OBJECT_SLATE03</Page>
+        </Dialogue>
+        <SetPersistentCondition>NomaiObjectDialogueTold</SetPersistentCondition>
+    </DialogueNode>
+</DialogueTree>
