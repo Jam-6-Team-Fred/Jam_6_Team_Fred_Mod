@@ -40,21 +40,25 @@ namespace Jam6
             if (planetName == "Disc_Body")
             {
                 signalSource = SearchUtilities.Find("Disc_Body/Sector/AudioSource");
-                signalSource.SetActive(false);
+                signalSource?.SetActive(false);
             }
         }
 
         public void FireSignal(SchedulingItem item)
         {
-            signalSource.SetActive(true);
+            signalSource?.SetActive(true);
+            meshRenderer?.enabled = false;
+            meshCollider?.enabled = false;
             time = TimeLoop.GetSecondsElapsed();
         }
 
         public void Update()
         {
-            if (TimeLoop.GetSecondsElapsed() - time>=20f)
+            if (TimeLoop.GetSecondsElapsed() - time>=20f && signalSource.activeSelf)
             {
                 signalSource?.SetActive(false);
+                meshRenderer?.enabled = true;
+                meshCollider?.enabled = true;
             }
         }
     }
