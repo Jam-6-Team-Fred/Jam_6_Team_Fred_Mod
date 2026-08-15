@@ -11,9 +11,7 @@ namespace Jam6
     {
         [NonSerialized]
         public ModBehaviour mod;
-        [NonSerialized]
         public MeshRenderer meshRenderer;
-        [NonSerialized]
         public MeshCollider meshCollider;
 
         public void Awake()
