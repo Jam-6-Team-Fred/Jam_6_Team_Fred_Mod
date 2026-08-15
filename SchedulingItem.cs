@@ -10,11 +10,8 @@ namespace Jam6
         [SerializeField]
         public string itemID;
 
-<<<<<<< Updated upstream
-=======
         [NonSerialized]
         public GameObject hologram;
->>>>>>> Stashed changes
         [NonSerialized]
         public ModBehaviour mod;
 
