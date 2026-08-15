@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 431602201
+CRC: 2995358418
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 64e630322d01e75432a34c4a65d27a69
+    Hash: 1a9d5805faca2414a746541e25d9b9c2
   TypeTreeHash:
     serializedVersion: 2
-    Hash: aa0aa023eab27fe615a4363c07d502a9
+    Hash: d94da34372a9b4cd68fe3da6b9ba0a4f
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -25,22 +25,51 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7b2cdfd021d6efff82736e3885af343b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3c40262156d82f34a77fd77af5176011, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fbb2498122f7e23a2e87544333cb528f, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: b446aa63b809cb3da1921800cd416866, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: c3922f933e798f7e3649f1ecc35d5217, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: a223d69493f03f4a8e6bda998c52d250, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b8880e8825af4fcbf1dab71021f8c869, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 25b7e56961bf1df33ed31b8c786ab1c3, type: 3}
 - Class: 115
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers: []
 Assets:
+- Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_C.prefab
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_B.prefab
+- Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Renderer_TH_AlpineTrees_13.asset
+- Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/LOD_Foliage_TH_Alpine_RootCards_t.png
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_D.prefab
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab
 - Assets/Prefabs_Art/Foliage/Foliage_Past.mat
+- Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Alpine_Trees_Tex.png
 - Assets/Prefabs_Art/Foliage/Savannah_Bush_Past_1.png
 - Assets/Prefabs_Art/Foliage/Foliage_Future.mat
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_B.prefab
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_A.prefab
+- Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Foliage_TH_AlpineLeaves_Roots_mat.mat
+- Assets/Prefabs_Art/Atmosphere/Atmosphere_Rain.prefab
 - Assets/Prefabs_Art/Foliage/Foliage_Future.png
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_D.prefab
+- Assets/Prefabs_Art/Atmosphere/Atmosphere_Snow.prefab
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_C.prefab
 Dependencies: []
