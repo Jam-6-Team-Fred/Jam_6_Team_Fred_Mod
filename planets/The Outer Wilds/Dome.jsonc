@@ -9,12 +9,7 @@
     //////////// END OF NOTES ////////////
     "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
     // Name of the planet in game
-    "name": "The Grand Exhibit",
-    // System the planet belongs to (our Mod Jam system)
-    //"starSystem": "TeamFred.FredsSystem",
-    // This is a performance optimization,
-    //   since we aren't expecting others to be trying to create this planet
-    "checkForExisting": false,
+    "name": "Grand Exhibit",
     // Basic descriptors of the planet
     "Base": {
         "surfaceSize": 300,
@@ -34,22 +29,21 @@
     //   station. Might switch this to the Sun spot in the future
     //   (& not have a sun)
     "Orbit": {
-        "primaryBody": "Sun",
+        "primaryBody": "GE Centerpoint",
         // units away from sun for orbit
-        "semiMajorAxis": 35000,
-        // 0 = circle, 1 = very very oval
-        "eccentricity": 0.6,
+        "semiMajorAxis": 55000,
+        // 0 = circle, 1 = elipse
+        "eccentricity": 0.75,
         // orients upright compared to solar system
         "inclination": 90,
         // Alined with path of Giant's Deep initially
-        "longitudeOfAscendingNode": 75,
+        "longitudeOfAscendingNode": 85,
         // Angles the ellipse to point "down"
         //   (short side is above the plane of planets)
-        "argumentOfPeriapsis": 270,
-        // sets start position
-        "trueAnomaly": 260,
+        "argumentOfPeriapsis": 355,
+        "trueAnomaly": 76,
         "dottedOrbitLine": true,
-        //"trackingOrbitLine": true
+        "trackingOrbitLine": true
     },
     // If we want the planet to glow.
     //   Currently just playing around with this - Crystal

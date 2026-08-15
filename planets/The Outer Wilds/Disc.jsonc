@@ -10,11 +10,8 @@
     "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
     // Name of the planet in game
     "name": "Disc",
-    // System the planet belongs to (our Mod Jam system)
-    //"starSystem": "TeamFred.FredsSystem",
-    // This is a performance optimization,
-    //   since we aren't expecting others to be trying to create this planet
-    "checkForExisting": false,
+    // Testing Spawn Location: Uncomment below line
+    //"Spawn":{"playerSpawnPoints":[{"isDefault":true,"startWithSuit":true,"position": {"x": -26.33678, "y": -151.7446, "z": 95.56383},"rotation": {"x": 270.5071, "y": 270.0033, "z": 269.9967}}]},
     // Basic descriptors of the planet
     "Base": {
         "surfaceSize": 300,
@@ -30,22 +27,19 @@
     //   station. Might switch this to the Sun spot in the future
     //   (& not have a sun)
     "Orbit": {
-        "primaryBody": "Sun",
+        "primaryBody": "GE Centerpoint",
         // units away from sun for orbit
-        "semiMajorAxis": 35000,
-        // 0 = circle, 1 = very very oval
-        "eccentricity": 0.6,
+        "semiMajorAxis": 55000,
+        // 0 = circle, 1 = elipse
+        "eccentricity": 0.75,
         // orients upright compared to solar system
         "inclination": 90,
         // Alined with path of Giant's Deep initially
-        "longitudeOfAscendingNode": 75,
+        "longitudeOfAscendingNode": 85,
         // Angles the ellipse to point "down"
         //   (short side is above the plane of planets)
-        "argumentOfPeriapsis": 270,
-        // sets start position
-        "trueAnomaly": 260,
-        // disc rotates halfway over the course of the loop
-        "siderealPeriod": 44,
+        "argumentOfPeriapsis": 355,
+        "trueAnomaly": 76,
         "showOrbitLine": false
     },
     // "Props" or objects placed at the location marked by NH in prior config
@@ -133,9 +127,9 @@
         ],
         "signals": [
             {
-                "frequency": "Nomai Technology",
-                "name": "TeamFred.Telescope",
-                "audio": "planets/Assets/Audio/Jam_6_EndTimes.ogg",
+                "frequency": "$TeamFred.Nomai_Technology",
+                "name": "$TeamFred.Telescope",
+                "audio": "planets/Assets/Audio/Jam_6_Telescope.ogg",
                 "sourceRadius": 10,
                 "position": {
                     "x": 146.4507,
@@ -908,6 +902,15 @@
     // Will only want one of these between the Double Dome & the Coin, otherwise 2 different autopilot points will be set up
     "MapMarker": {
         "enabled": false,
-        "maxDisplayDistanceOverride": 0
+        "maxDisplayDistanceOverride": 1
+    },
+    "ReferenceFrame": {
+        "enabled": false,
+        "hideInMap": true
+    },
+    "ShipLog": {
+        "mapMode": {
+            "remove": true
+        }
     }
 }
