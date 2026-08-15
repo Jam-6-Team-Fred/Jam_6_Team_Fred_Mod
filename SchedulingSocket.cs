@@ -24,6 +24,10 @@ namespace Jam6
         public void OnValidate()
         {
             _acceptableType = Jam6.SchedulingItemType;
+            if (transform.GetChild(0) != null )
+            {
+                heldItem = transform.GetChild(0).gameObject.GetComponent<SchedulingItem>();
+            }
         }
 
         public override void Awake()
