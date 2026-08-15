@@ -1,0 +1,43 @@
+// Centerpoint of orbit for The Grand Exhibit (TGE)
+{
+    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    // Name of the planet in game
+    "name": "GE Centerpoint",
+    // Basic descriptors of the planet
+    "Base": {
+        "surfaceSize": 100,
+        "soiOverride": 0,
+        "surfaceGravity": 100,
+        "gravityFallOff": "inverseSquared",
+        // Would be destroyed in the sun. Using this to prevent destruction
+        "hasFluidDetector": false,
+        "showMinimap": false
+    },
+    // Definiting "Orbit" - Currently set as a static object to represent a
+    //   station. Might switch this to the Sun spot in the future
+    //   (& not have a sun)
+    "Orbit": {
+        "primaryBody": "Sun",
+        "isStatic": true,
+        // these values are for a 45* diagonal offset of 6000 units
+        "staticPosition": {
+            "x": 4375,
+            "y": -20000,
+            "z": -10000
+        }
+    },
+    // Will only want one of these between the Double Dome & the Coin, otherwise 2 different autopilot points will be set up
+    "MapMarker": {
+        "enabled": false,
+        "maxDisplayDistanceOverride": 1
+    },
+    "ReferenceFrame": {
+        "enabled": false,
+        "hideInMap": true
+    },
+    "ShipLog": {
+        "mapMode": {
+            "remove": true
+        }
+    }
+}
