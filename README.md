@@ -16,7 +16,7 @@ TimeSaver - Turn off "Start with Suit" for best play experience
 - **CrystalENVT**: Programming, Text (& Nomai Writing) Formatting, GitHub Repo Admin / Maintainer
 - **Gay Coffee**: Lead Writer
 - **Hamstry**: Lead Unity developer, Programming, Constellation Art
-- **The Phantom Driver**: Nomai Ruin Architect, Some Programming
+- **The Phantom Driver**: Nomai Ruin Architect, Modeller, Some Programming
 - **Solec**: New Horizons advisor, Logo Designer
 - **T3rtu**: Lead Modeller
 

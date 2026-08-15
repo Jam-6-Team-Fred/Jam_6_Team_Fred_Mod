@@ -92,7 +92,7 @@
         "$MemorialForestRecorder04": "...",
         "$MemorialForestRecorder05": "NEEM: I like that hypothesis.",
         "$NOMAI_OBJECT_HATCHLING01": "Yeah?",
-        "$NOMAI_OBJECT_SLATE01": "Slate: Oh, before you go, did you notice that thing <![CDATA[<color=orange>past</color>]]> Giant's Deep?",
+        "$NOMAI_OBJECT_SLATE01": "Slate: Oh, before you go, did you notice that thing <![CDATA[<color=orange>past</color>]]> the elevator?",
         "$NOMAI_OBJECT_SLATE02": "Hornfels said it drifted into our solar system recently, <![CDATA[<color=orange>and</color>]]> doesn't seem to be a rogue planet.",
         "$NOMAI_OBJECT_SLATE03": "They would appreciate it if you'd check it out in the near <![CDATA[<color=orange>future</color>]]>",
         "$Nookdial01": "LEERSI: I think this is the spot, but I don't see Stem's clue...",
@@ -169,5 +169,9 @@
         "$WelcomeMountainScroll04": "ACANTHA: Of note: remember to periodically visit the <![CDATA[<color=orange>Exposition Hall</color>]]> for presentations and lectures.",
         "$WelcomeMountainScroll05": "GEUM: The <![CDATA[<color=orange>Exposition Hall</color>]]> is where also where our greatest find is exhibited!",
         "$WelcomeMountainScroll06": "PHYSALIS: Including what (we believe) might have been the homeworld of our species, many millennia ago."
+    },
+    "UIDictionary": {
+        "$TeamFred.Nomai_Technology": "Nomai Technology",
+        "$TeamFred.Telescope": "Telescope"
     }
 }
