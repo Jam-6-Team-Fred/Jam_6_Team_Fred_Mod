@@ -48,7 +48,7 @@
         "details": [
             // Just the Disc
             {
-                "assetBundle": "planets/Assets/Bundles/Coinworld Bundle Test 6/coinworld",
+                "assetBundle": "planets/Assets/Bundles/Coinworld Bundle/coinworld",
                 "path": "Assets/Prefabs/Disc.prefab",
                 "position": {
                     "x": 0,
@@ -63,7 +63,7 @@
                 "keepLoaded": true
             },
             {
-                "assetBundle": "planets/Assets/Bundles/Coinworld Bundle Test 6/coinworld",
+                "assetBundle": "planets/Assets/Bundles/Coinworld Bundle/coinworld",
                 "path": "Assets/Prefabs/GravitySwitch.prefab",
                 "position": {
                     "x": 50,
