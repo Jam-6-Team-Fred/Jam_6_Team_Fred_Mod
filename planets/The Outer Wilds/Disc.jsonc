@@ -11,7 +11,7 @@
     // Name of the planet in game
     "name": "Disc",
     // Testing Spawn Location: Uncomment below line
-    //"Spawn":{"playerSpawnPoints":[{"isDefault":true,"startWithSuit":true,"position": {"x": -26.33678, "y": -151.7446, "z": 95.56383},"rotation": {"x": 270.5071, "y": 270.0033, "z": 269.9967}}]},
+    "Spawn":{"playerSpawnPoints":[{"isDefault":true,"startWithSuit":true,"position": {"x": -26.33678, "y": -151.7446, "z": 95.56383},"rotation": {"x": 270.5071, "y": 270.0033, "z": 269.9967}}]},
     // Basic descriptors of the planet
     "Base": {
         "surfaceSize": 300,
