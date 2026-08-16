@@ -19,7 +19,6 @@ namespace Jam6
         {
             _type = Jam6.SchedulingItemType;
             Droppable = true;
-            hologram = transform.GetChild(1).gameObject;
         }
 
         public override void Awake()
@@ -28,6 +27,11 @@ namespace Jam6
             base.Awake();
             mod = Jam6.Instance;
             mod.ModHelper.Console.WriteLine("A scheduling item is created", OWML.Common.MessageType.Success);
+        }
+
+        public void Start()
+        {
+            hologram = transform.GetChild(1).gameObject;
         }
 
         public override void PickUpItem(Transform holdTranform)
