@@ -95,8 +95,8 @@ namespace Jam6
             if (planetName == "Disc")
             {
                 Jam6.Instance.ModHelper.Console.WriteLine("Found Disc", OWML.Common.MessageType.Success);
-                gravity1 = SearchUtilities.Find("Disc_Body/Disc/Past/GravityVolume");
-                gravity2 = SearchUtilities.Find("Disc_Body/Disc/Future/GravityVolume");
+                gravity1 = SearchUtilities.Find("Disc_Body/Sector/Disc/Past/GravityVolume");
+                gravity2 = SearchUtilities.Find("Disc_Body/Sector/Disc/Future/GravityVolume");
             }
         }
     }
