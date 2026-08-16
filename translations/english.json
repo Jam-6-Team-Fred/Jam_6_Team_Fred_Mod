@@ -172,8 +172,11 @@
         "$WelcomeMountainScroll05": "GEUM: The <![CDATA[<color=orange>Exposition Hall</color>]]> is also where our greatest find is exhibited!",
         "$WelcomeMountainScroll06": "PHYSALIS: Including what (we believe) might have been the homeworld of our species, many millennia ago."
     },
-    "UIDictionary": {
-        "$TeamFred.Nomai_Technology": "Nomai Technology",
-        "$TeamFred.Telescope": "Telescope"
-    }
+  "UIDictionary": {
+    "$TeamFred.Nomai_Technology": "Nomai Technology",
+    "$TeamFred.Telescope": "Telescope",
+    "$TeamFred.ExpoHall": "ExpoHall !!!!",
+    "$TeamFred.Rain": "Rain !!!!",
+    "$TeamFred.Lights" : "Lights !!!!"
+  }
 }
