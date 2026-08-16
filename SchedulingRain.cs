@@ -1,4 +1,5 @@
-﻿using OWML.ModHelper;
+﻿using NewHorizons.Utility;
+using OWML.ModHelper;
 using OWML.Utils;
 using System;
 using System.Reflection;
@@ -11,12 +12,18 @@ namespace Jam6
     {
         [NonSerialized]
         public ModBehaviour mod;
+        [NonSerialized]
+        public GameObject rain;
+        [NonSerialized]
+        public float timeStamp;
 
         public void Awake()
         {
             mod = Jam6.Instance;
             SchedulingSocket.ActivateScheduledEvent += Activate;
             SchedulingSocket.DeactivateScheduledEvent += Deactivate;
+            rain = SearchUtilities.Find("Disc_Body/Sector/Atmosphere_Rain");
+            rain?.SetActive(false);
         }
 
         public void OnDestroy()
@@ -27,19 +34,28 @@ namespace Jam6
 
         public void Activate(SchedulingItem item)
         {
-            mod.ModHelper.Console.WriteLine("Got Activate Event", OWML.Common.MessageType.Success);
             if (item.itemID == "Rain")
             {
-
+                mod.ModHelper.Console.WriteLine("Got Activate Rain", OWML.Common.MessageType.Success);
+                rain?.SetActive(true);
+                timeStamp = TimeLoop.GetSecondsElapsed();
             }
         }
 
         public void Deactivate(SchedulingItem item)
         {
-            mod.ModHelper.Console.WriteLine("Got Deactivate Event", OWML.Common.MessageType.Success);
             if (item.itemID == "Rain")
             {
+                mod.ModHelper.Console.WriteLine("Got Deactivate Rain", OWML.Common.MessageType.Success);
+                rain?.SetActive(false);
+            }
+        }
 
+        public void Update()
+        {
+            if (rain.activeSelf && TimeLoop.GetSecondsElapsed() - timeStamp >= 360f)
+            {
+                rain?.SetActive(false);
             }
         }
     }
