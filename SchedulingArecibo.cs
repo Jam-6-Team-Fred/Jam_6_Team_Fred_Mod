@@ -17,7 +17,7 @@ namespace Jam6
         [NonSerialized]
         public GameObject signalSource;
         [NonSerialized]
-        public float time;
+        public float timeStamp;
 
         public void Awake()
         {
@@ -47,16 +47,19 @@ namespace Jam6
             signalSource?.SetActive(true);
             meshRenderer?.enabled = false;
             meshCollider?.enabled = false;
-            time = TimeLoop.GetSecondsElapsed();
+            timeStamp = TimeLoop.GetSecondsElapsed();
         }
 
         public void Update()
         {
-            if (TimeLoop.GetSecondsElapsed() - time>=20f && signalSource.activeSelf)
+            if (signalSource != null)
             {
-                signalSource?.SetActive(false);
-                meshRenderer?.enabled = true;
-                meshCollider?.enabled = true;
+                if (signalSource.activeSelf && TimeLoop.GetSecondsElapsed() - timeStamp >= 20f)
+                {
+                    signalSource?.SetActive(false);
+                    meshRenderer?.enabled = true;
+                    meshCollider?.enabled = true;
+                }
             }
         }
     }

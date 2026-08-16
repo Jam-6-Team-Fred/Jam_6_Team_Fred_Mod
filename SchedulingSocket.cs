@@ -24,10 +24,6 @@ namespace Jam6
         public void OnValidate()
         {
             _acceptableType = Jam6.SchedulingItemType;
-            if (transform.GetChild(0) != null )
-            {
-                heldItem = transform.GetChild(0).gameObject.GetComponent<SchedulingItem>();
-            }
         }
 
         public override void Awake()
@@ -40,6 +36,15 @@ namespace Jam6
             OnSocketablePlaced += AddSchedulingItem;
             OnSocketableRemoved += RemoveSchedulingItem;
             OnSocketableDoneRemoving += RemoveSchedulingItem;
+        }
+
+        public override void Start()
+        {
+            base.Start();
+            if (transform.GetChildCount() > 0)
+            {
+                heldItem = transform.GetChild(0).gameObject.GetComponent<SchedulingItem>();
+            }
         }
 
         public void OnDestroy()
@@ -56,7 +61,7 @@ namespace Jam6
             {
                 heldItem = item;
             }
-            mod.ModHelper.Console.WriteLine($"I hold {heldItem.name}", OWML.Common.MessageType.Success);
+            mod.ModHelper.Console.WriteLine($"I now hold {heldItem.name}", OWML.Common.MessageType.Success);
             if (didScheduledEventHappen)
             {
                 ActivateScheduledEvent((SchedulingItem)heldItem);
