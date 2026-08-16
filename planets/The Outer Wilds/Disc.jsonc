@@ -138,11 +138,10 @@
                     "x": 14.3114,
                     "y": 273.8549,
                     "z": 271.5309
-                },  
+                },
                 "scale": 2,
-                "relativeToParent": true,
                 "rename": "Foliage_Past_A_1"
-            },            
+            },
             {
                 "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
                 "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
@@ -157,9 +156,8 @@
                     "z": 0
                 },
                 "scale": 2,
-                "relativeToParent": true,
                 "rename": "Foliage_Past_A_2"
-            },            
+            },
             {
                 "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
                 "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
@@ -174,9 +172,8 @@
                     "z": 259.6807
                 },
                 "scale": 2,
-                "relativeToParent": true,
                 "rename": "Foliage_Past_A_3"
-            },           
+            },
             {
                 "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
                 "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
@@ -191,9 +188,8 @@
                     "z": 262.8784
                 },
                 "scale": 2,
-                "relativeToParent": true,
                 "rename": "Foliage_Past_A_4"
-            },      
+            },
             {
                 "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
                 "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_B.prefab",
@@ -208,9 +204,8 @@
                     "z": 267.5072
                 },
                 "scale": 2,
-                "relativeToParent": true,
                 "rename": "Foliage_Past_B_1"
-            },            
+            },
             //----------------------------------------------------------
             //FOLIAGE OF FUTURE AREA
             //----------------------------------------------------------
@@ -228,9 +223,8 @@
                     "z": 267.9157
                 },
                 "scale": 1.5,
-                "relativeToParent": true,
                 "rename": "Foliage_Future_A_1"
-            },       
+            },
             {
                 "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
                 "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_A.prefab",
@@ -245,9 +239,8 @@
                     "z": 98.1576
                 },
                 "scale": 1.5,
-                "relativeToParent": true,
                 "rename": "Foliage_Future_A_2"
-            },      
+            },
             //----------------------------------------------------------
             //TREES OF FUTURE AREA
             //----------------------------------------------------------
@@ -290,7 +283,7 @@
                     "x": 12.4334,
                     "y": -72.4635,
                     "z": -23.4823
-                },    
+                },
                 "rotation": {
                     "x": 61.2876,
                     "y": 98.8911,
@@ -298,7 +291,7 @@
                 },
                 "scale": 3,
                 "rename": "Future_Alpine_Trees_A_3"
-            },  
+            },
             {
                 "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
                 "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
@@ -306,7 +299,7 @@
                     "x": -8.4211,
                     "y": -78.7734,
                     "z": -23.3221
-                },      
+                },
                 "rotation": {
                     "x": 29.0794,
                     "y": 90.017,
@@ -314,7 +307,7 @@
                 },
                 "scale": 3,
                 "rename": "Future_Alpine_Trees_A_4"
-            },  
+            },
             {
                 "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
                 "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
@@ -322,15 +315,15 @@
                     "x": -104.5092,
                     "y": -30.6123,
                     "z": -22.2831
-                },        
+                },
                 "rotation": {
                     "x": 332.3639,
                     "y": 88.8588,
                     "z": 269.7947
-                },  
+                },
                 "scale": 3,
                 "rename": "Future_Alpine_Trees_A_5"
-            },  
+            },
             {
                 "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
                 "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
@@ -338,15 +331,15 @@
                     "x": -90.6287,
                     "y": -114.7182,
                     "z": -23.4864
-                },          
+                },
                 "rotation": {
                     "x": 84.2511,
                     "y": 89.6857,
                     "z": 271.091
-                },    
+                },
                 "scale": 3,
                 "rename": "Future_Alpine_Trees_A_6"
-            },  
+            },
             {
                 "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
                 "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
@@ -354,7 +347,7 @@
                     "x": -65.2808,
                     "y": -170.9133,
                     "z": -23.7473
-                },            
+                },
                 "rotation": {
                     "x": 36.6779,
                     "y": 272.1281,
@@ -362,23 +355,23 @@
                 },
                 "scale": 3,
                 "rename": "Future_Alpine_Trees_A_7"
-            },  
+            },
             {
                 "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
                 "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
                 "position": {
                     "x": -176.0349,
                     "y": -64.0081,
-                    "z":-24.8237
-                },              
+                    "z": -24.8237
+                },
                 "rotation": {
                     "x": 295.4303,
                     "y": 280.0894,
                     "z": 77.1221
-                },  
+                },
                 "scale": 3,
                 "rename": "Future_Alpine_Trees_A_8"
-            },  
+            },
             {
                 "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
                 "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
@@ -386,7 +379,7 @@
                     "x": 4.402,
                     "y": -177.3097,
                     "z": -23.3014
-                },  
+                },
                 "rotation": {
                     "x": 305.2562,
                     "y": 268.7474,
@@ -412,9 +405,128 @@
                 "rename": "Future_Alpine_Trees_A_10"
             }
         ],
-
-        //TELESCOPE
+        "campfires": [
+            {
+                "rename": "WelcomeMountainCampfire",
+                "position": {
+                    "x": -22.526,
+                    "y": -140.6618,
+                    "z": 24.91541
+                },
+                "rotation": {
+                    "x": 287.7584,
+                    "y": 86.16642,
+                    "z": 90.41293
+                },
+                "initialState": "unlit",
+                "canSleepHere": true
+            },
+            {
+                "rename": "PomaiBlueLakeCampfire",
+                "position": {
+                    "x": -140.4471,
+                    "y": 78.9747,
+                    "z": 30.82258
+                },
+                "rotation": {
+                    "x": 81.74718,
+                    "y": 134.1558,
+                    "z": 135.884
+                },
+                "initialState": "unlit",
+                "canSleepHere": true
+            },
+            {
+                "rename": "PomaiCityCampfire",
+                "position": {
+                    "x": -5.901211,
+                    "y": 33.70358,
+                    "z": 31.7487
+                },
+                "rotation": {
+                    "x": 16.84968,
+                    "y": 270,
+                    "z": 269.9999
+                },
+                "initialState": "unlit",
+                "canSleepHere": true
+            },
+            {
+                "rename": "SundialCampfire",
+                "position": {
+                    "x": 159.3898,
+                    "y": 98.55278,
+                    "z": 25.32608
+                },
+                "rotation": {
+                    "x": 345.1023,
+                    "y": 90.52534,
+                    "z": 88.82111
+                },
+                "initialState": "unlit",
+                "canSleepHere": true
+            }
+        ],
+        "fuelTanks": [
+            {
+                "rename": "WelcomeMountainFuelTank",
+                "position": {
+                    "x": -21.39832,
+                    "y": -141.2996,
+                    "z": 24.9818
+                },
+                "rotation": {
+                    "x": 20.14903,
+                    "y": 86.60587,
+                    "z": 90.13416
+                },
+                "type": "nomaiTank"
+            },
+            {
+                "rename": "PomaiBlueLakeFuelTank",
+                "position": {
+                    "x": -142.5468,
+                    "y": 77.14165,
+                    "z": 30.55191
+                },
+                "rotation": {
+                    "x": 79.92484,
+                    "y": 41.65238,
+                    "z": 39.96154
+                },
+                "type": "nomaiTank"
+            },
+            {
+                "rename": "PomaiCityFuelTank",
+                "position": {
+                    "x": -11.79963,
+                    "y": 34.83296,
+                    "z": 31.74869
+                },
+                "rotation": {
+                    "x": 356.1694,
+                    "y": 89.99997,
+                    "z": 90.00002
+                },
+                "type": "nomaiTank"
+            },
+            {
+                "rename": "SundialFuelTank",
+                "position": {
+                    "x": 167.8078,
+                    "y": 90.2089,
+                    "z": 25.8927
+                },
+                "rotation": {
+                    "x": 341.715,
+                    "y": 87.95209,
+                    "z": 87.342
+                },
+                "type": "nomaiTank"
+            }
+        ],
         "signals": [
+            // TELESCOPE
             {
                 "frequency": "$TeamFred.Nomai_Technology",
                 "name": "$TeamFred.Telescope",
@@ -1202,7 +1314,7 @@
                     "x": 0,
                     "y": 0,
                     "z": 130
-                },      
+                },
                 "rotation": {
                     "x": 0,
                     "y": 90,
@@ -1230,7 +1342,7 @@
                     "x": 0,
                     "y": 0,
                     "z": -130
-                },      
+                },
                 "rotation": {
                     "x": 0,
                     "y": 90,
