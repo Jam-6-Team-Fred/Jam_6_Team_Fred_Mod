@@ -90,60 +90,330 @@
                     "z": 0
                 }
             },
+            //rain and snow effects
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Atmosphere/Atmosphere_Holder.prefab",
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
+            //FOR TESTING PURPOSE ONLY - ART
+            /*
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Test/Volume.prefab",
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -130
+                },      
+                "rotation": {
+                    "x": 0,
+                    "y": 90,
+                    "z": 90
+                },
+                "scale": 0.43
+            },
+            */
+            //----------------------------------------------------------
+            //FOLIAGE OF PAST AREA
+            //----------------------------------------------------------
             {
                 "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
                 "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
                 "position": {
-                    "x": 140,
-                    "y": 0,
-                    "z": 70
+                    "x": 68.8964,
+                    "y": -79.6785,
+                    "z": 26.1436
                 },
-                "relativeToParent": true
+                "rotation": {
+                    "x": 14.3114,
+                    "y": 273.8549,
+                    "z": 271.5309
+                },  
+                "scale": 2,
+                "relativeToParent": true,
+                "rename": "Foliage_Past_A_1"
+            },            
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
+                "position": {
+                    "x": 66.2662,
+                    "y": -63.4421,
+                    "z": 26.6835
+                },
+                "rotation": {
+                    "x": 270.074,
+                    "y": 184.2764,
+                    "z": 0
+                },
+                "scale": 2,
+                "relativeToParent": true,
+                "rename": "Foliage_Past_A_2"
+            },            
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
+                "position": {
+                    "x": 37.2569,
+                    "y": -50.4697,
+                    "z": 29.8604
+                },
+                "rotation": {
+                    "x": 287.1154,
+                    "y": 287.3245,
+                    "z": 259.6807
+                },
+                "scale": 2,
+                "relativeToParent": true,
+                "rename": "Foliage_Past_A_3"
+            },           
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
+                "position": {
+                    "x": -11.5693,
+                    "y": -66.0403,
+                    "z": 29.3713
+                },
+                "rotation": {
+                    "x": 310.7948,
+                    "y": 271.7016,
+                    "z": 262.8784
+                },
+                "scale": 2,
+                "relativeToParent": true,
+                "rename": "Foliage_Past_A_4"
+            },      
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_B.prefab",
+                "position": {
+                    "x": 20.9263,
+                    "y": -78.0113,
+                    "z": 26.7175
+                },
+                "rotation": {
+                    "x": 316.5653,
+                    "y": 279.8943,
+                    "z": 267.5072
+                },
+                "scale": 2,
+                "relativeToParent": true,
+                "rename": "Foliage_Past_B_1"
+            },            
+            //----------------------------------------------------------
+            //FOLIAGE OF FUTURE AREA
+            //----------------------------------------------------------
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_A.prefab",
+                "position": {
+                    "x": -24.7098,
+                    "y": 55.9494,
+                    "z": -25.6091
+                },
+                "rotation": {
+                    "x": 319.2232,
+                    "y": 94.6278,
+                    "z": 267.9157
+                },
+                "scale": 1.5,
+                "relativeToParent": true,
+                "rename": "Foliage_Future_A_1"
+            },       
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_A.prefab",
+                "position": {
+                    "x": -36.7136,
+                    "y": 70.3801,
+                    "z": -26.2955
+                },
+                "rotation": {
+                    "x": 81.8481,
+                    "y": 278.1619,
+                    "z": 98.1576
+                },
+                "scale": 1.5,
+                "relativeToParent": true,
+                "rename": "Foliage_Future_A_2"
+            },      
+            //----------------------------------------------------------
+            //TREES OF FUTURE AREA
+            //----------------------------------------------------------
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": 92.0247,
+                    "y": -72.4747,
+                    "z": -18.6229
+                },
+                "rotation": {
+                    "x": 33.917,
+                    "y": 274.6425,
+                    "z": 105.367
+                },
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_1"
             },
             {
                 "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
                 "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
                 "position": {
-                    "x": 140,
-                    "y": 0,
-                    "z": -70
+                    "x": -17.7871,
+                    "y": -43.4094,
+                    "z": -21.821
                 },
                 "rotation": {
-                    "x": 180,
-                    "y": 0,
-                    "z": -0
+                    "x": 75.635,
+                    "y": 269.5826,
+                    "z": 93.8807
                 },
-                "relativeToParent": true
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_2"
             },
             {
                 "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-                "path": "Assets/Prefabs_Art/Atmosphere/Atmosphere_Rain.prefab",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
                 "position": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 50
-                },
+                    "x": 12.4334,
+                    "y": -72.4635,
+                    "z": -23.4823
+                },    
                 "rotation": {
-                    "x": 90,
-                    "y": 0,
-                    "z": 0
-                }
+                    "x": 61.2876,
+                    "y": 98.8911,
+                    "z": 277.5599
+                },
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_3"
+            },  
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": -8.4211,
+                    "y": -78.7734,
+                    "z": -23.3221
+                },      
+                "rotation": {
+                    "x": 29.0794,
+                    "y": 90.017,
+                    "z": 270.6734
+                },
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_4"
+            },  
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": -104.5092,
+                    "y": -30.6123,
+                    "z": -22.2831
+                },        
+                "rotation": {
+                    "x": 332.3639,
+                    "y": 88.8588,
+                    "z": 269.7947
+                },  
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_5"
+            },  
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": -90.6287,
+                    "y": -114.7182,
+                    "z": -23.4864
+                },          
+                "rotation": {
+                    "x": 84.2511,
+                    "y": 89.6857,
+                    "z": 271.091
+                },    
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_6"
+            },  
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": -65.2808,
+                    "y": -170.9133,
+                    "z": -23.7473
+                },            
+                "rotation": {
+                    "x": 36.6779,
+                    "y": 272.1281,
+                    "z": 96.9909
+                },
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_7"
+            },  
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": -176.0349,
+                    "y": -64.0081,
+                    "z":-24.8237
+                },              
+                "rotation": {
+                    "x": 295.4303,
+                    "y": 280.0894,
+                    "z": 77.1221
+                },  
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_8"
+            },  
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": 4.402,
+                    "y": -177.3097,
+                    "z": -23.3014
+                },  
+                "rotation": {
+                    "x": 305.2562,
+                    "y": 268.7474,
+                    "z": 88.7322
+                },
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_9"
             },
             {
                 "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-                "path": "Assets/Prefabs_Art/Atmosphere/Atmosphere_Snow.prefab",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
                 "position": {
-                    "x": 0,
-                    "y": 0,
-                    "z": -50
+                    "x": -24.81,
+                    "y": -146.0004,
+                    "z": -25.2254
                 },
                 "rotation": {
-                    "x": -90,
-                    "y": 0,
-                    "z": 0
-                }
+                    "x": 345.3465,
+                    "y": 88.7802,
+                    "z": 268.1887
+                },
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_10"
             }
         ],
+
+        //TELESCOPE
         "signals": [
             {
                 "frequency": "$TeamFred.Nomai_Technology",
@@ -151,11 +421,11 @@
                 "audio": "planets/Assets/Audio/Jam_6_Telescope.ogg",
                 "sourceRadius": 10,
                 "position": {
-                    "x": 146.4507,
-                    "y": 77.19663,
-                    "z": -81.42654
+                    "x": 124.4507,
+                    "y": 91.19663,
+                    "z": -72.42654
                 },
-                "identificationRadius": 240,
+                "identificationRadius": 85,
                 "detectionRadius": 270,
                 "onlyAudibleToScope": true
             }
@@ -919,57 +1189,75 @@
             {
                 //Volume for past area
                 "audio": "planets/Assets/Audio/Jam_6_PastGlory.ogg",
+                "parentPath": "Disc_Body/Sector/Disc",
                 //Cylinder shape
                 "shape": {
                     "useShape": true,
                     "type": "cylinder",
-                    "height": 500,
-                    "radius": 530,
+                    "height": 215,
+                    "radius": 224,
                     "direction": "z"
                 },
                 "position": {
                     "x": 0,
                     "y": 0,
-                    "z": 550
+                    "z": 130
+                },      
+                "rotation": {
+                    "x": 0,
+                    "y": 90,
+                    "z": 90
                 },
                 "track": "music",
                 "loop": true,
                 "priority": 2,
-                "volume": 1.5
+                "volume": 1,
+                "pauseOnFadeOut": true
             },
             {
                 //Volume for future area
                 "audio": "planets/Assets/Audio/Jam_6_BrightFuture.ogg",
+                "parentPath": "Disc_Body/Sector/Disc",
                 //Cylinder shape
                 "shape": {
                     "useShape": true,
                     "type": "cylinder",
-                    "height": 500,
-                    "radius": 530,
+                    "height": 215,
+                    "radius": 224,
                     "direction": "z"
                 },
                 "position": {
                     "x": 0,
                     "y": 0,
-                    "z": -550
+                    "z": -130
+                },      
+                "rotation": {
+                    "x": 0,
+                    "y": 90,
+                    "z": 90
                 },
                 "track": "music",
                 "loop": true,
                 "priority": 2,
-                "volume": 1.5
+                "volume": 1,
+                "pauseOnFadeOut": true
             },
             {
                 //Volume for maintenance tunnels, has lower priority than past and future so defaults to this
                 "audio": "planets/Assets/Audio/Jam_6_Corridors.ogg",
+                "parentPath": "Disc_Body/Sector/Disc",
                 //Cylinder shape
                 "shape": {
                     "useShape": true,
-                    "type": "cylinder",
-                    "height": 300,
-                    "radius": 530,
-                    "direction": "z"
+                    "type": "sphere",
+                    "radius": 224
                 },
                 "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "rotation": {
                     "x": 0,
                     "y": 0,
                     "z": 0
@@ -977,7 +1265,8 @@
                 "track": "music",
                 "loop": true,
                 "priority": 1,
-                "volume": 1.5
+                "volume": 1,
+                "pauseOnFadeOut": true
             }
         ]
     },
