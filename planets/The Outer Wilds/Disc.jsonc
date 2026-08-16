@@ -489,7 +489,6 @@
                     }
                 ]
             },*/
-            
             /*{
                 "rename": "MemorialForestSignpost",
                 "xmlFile": "nomai/MemorialForestSignpost.xml",
@@ -515,7 +514,7 @@
                 "rename": "PomaiHouseA",
                 "xmlFile": "nomai/PomaiHouseA.xml",
                 "position": {
-                    "x": -25.84071,
+                    "x": -26.1407,
                     "y": 23.79746,
                     "z": 33.0493
                 },
@@ -539,7 +538,7 @@
                 "xmlFile": "nomai/PomaiHouseB.xml",
                 "position": {
                     "x": -25.22123,
-                    "y": -2.000015,
+                    "y": -2.2,
                     "z": 41.29122
                 },
                 "rotation": {
@@ -561,19 +560,19 @@
                 "rename": "PomaiHouseC",
                 "xmlFile": "nomai/PomaiHouseC.xml",
                 "position": {
-                    "x": -6.00001,
-                    "y": -29.41015,
-                    "z": 37.20434
+                    "x": 30.45195,
+                    "y": -3.844787,
+                    "z": 31.73215
                 },
                 "rotation": {
-                    "x": 357.9565,
-                    "y": -3.7056E-05,
-                    "z": 270.0002
+                    "x": 285.9944,
+                    "y": 270,
+                    "z": 270
                 },
                 "normal": {
-                    "x": 1,
-                    "y": 2.741814E-06,
-                    "z": 5.364418E-07
+                    "x": -1.490116E-08,
+                    "y": 1.78814E-07,
+                    "z": 1
                 },
                 "type": "wall",
                 "seed": 479475223
@@ -586,7 +585,7 @@
                 "position": {
                     "x": 26.46816,
                     "y": 17,
-                    "z": 32.91775
+                    "z": 33.5177
                 },
                 "rotation": {
                     "x": 8.682055,
@@ -607,9 +606,9 @@
                 "rename": "SomeHouseRecorder",
                 "xmlFile": "nomai/SomeHouseRecorder.xml",
                 "position": {
-                    "x": 2.783483,
-                    "y": -27.51214,
-                    "z": 31.80869
+                    "x": 4.0835,
+                    "y": -27.6121,
+                    "z": 31.8087
                 },
                 "rotation": {
                     "x": 50.43446,
@@ -628,9 +627,9 @@
                 "rename": "SomeHouseWall",
                 "xmlFile": "nomai/SomeHouseWall.xml",
                 "position": {
-                    "x": -0.2447939,
-                    "y": -29.14415,
-                    "z": 31.80868
+                    "x": -1.3448,
+                    "y": -28.2442,
+                    "z": 31.9
                 },
                 "rotation": {
                     "x": 270.0396,
@@ -771,17 +770,17 @@
             },
             // Sundial
             {
-                "rename": "Sundial",
+                "rename": "SundialWhiteboard",
                 "xmlFile": "nomai/Sundial.xml",
                 "position": {
                     "x": 144.7338,
-                    "y": 88.68348,
-                    "z": 31.8525
+                    "y": 88.6835,
+                    "z": 30.5525
                 },
                 "rotation": {
-                    "x": 78.27783,
-                    "y": 270.0001,
-                    "z": 270.0001
+                    "x": 79.3782,
+                    "y": 270,
+                    "z": 270
                 },
                 "normal": {
                     "x": -1.490116E-07,
@@ -792,26 +791,26 @@
                 "seed": 1028565930
                 //All adult text, so no ArcInfo needed
             },
-            // WelcomeMountainFloor
+            // WelcomeMountainRecorder
             {
-                "rename": "WelcomeMountainFloor",
-                "xmlFile": "nomai/WelcomeMountainFloor.xml",
+                "rename": "WelcomeMountainRecorder",
+                "xmlFile": "nomai/WelcomeMountainRecorder.xml",
                 "position": {
-                    "x": -20.00441,
-                    "y": -165.488,
-                    "z": 99.6375
+                    "x": -30.65461,
+                    "y": -149.8381,
+                    "z": 95.56367
                 },
                 "rotation": {
-                    "x": 25.05724,
-                    "y": 90,
-                    "z": 90
+                    "x": 24.3175,
+                    "y": 90.00003,
+                    "z": 90.00005
                 },
                 "normal": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 1
+                    "x": 2.980232E-08,
+                    "y": -5.406326E-07,
+                    "z": 0.9999999
                 },
-                "type": "wall",
+                "type": "preCrashRecorder",
                 "seed": 219460023
                 //All adult text, so no ArcInfo needed
             },
@@ -910,7 +909,7 @@
                     "z": 1
                 },
                 "type": "computer",
-                "seed": 534703137
+                "seed": 318603642
                 //All adult text, so no ArcInfo needed
             }
         ]
