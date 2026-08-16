@@ -6,31 +6,31 @@
   -->
   <TextBlock>
     <ID>1</ID>
-    <Text>$WelcomeMountainFloor01</Text>
+    <Text>$WelcomeMountainRecorder01</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>$WelcomeMountainFloor02</Text>
+    <Text>$WelcomeMountainRecorder02</Text>
   </TextBlock>
   <TextBlock>
     <ID>3</ID>
     <ParentID>2</ParentID>
-    <Text>$WelcomeMountainFloor03</Text>
+    <Text>$WelcomeMountainRecorder03</Text>
   </TextBlock>
   <TextBlock>
     <ID>4</ID>
     <ParentID>3</ParentID>
-    <Text>$WelcomeMountainFloor04</Text>
+    <Text>$WelcomeMountainRecorder04</Text>
   </TextBlock>
   <TextBlock>
     <ID>5</ID>
     <ParentID>4</ParentID>
-    <Text>$WelcomeMountainFloor05</Text>
+    <Text>$WelcomeMountainRecorder05</Text>
   </TextBlock>
   <TextBlock>
     <ID>6</ID>
     <ParentID>5</ParentID>
-    <Text>$WelcomeMountainFloor06</Text>
+    <Text>$WelcomeMountainRecorder06</Text>
   </TextBlock>
 </NomaiObject>

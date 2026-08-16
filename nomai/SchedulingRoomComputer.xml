@@ -1,10 +1,20 @@
 <NomaiObject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <!--
-    Computer with single text entry
+    Computer with 3 text entries
   -->
   <TextBlock>
     <ID>1</ID>
-    <Text>$SchedulingRoomComputer</Text>
+    <Text>$SchedulingRoomComputer01</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>2</ID>
+    <ParentID>1</ParentID>
+    <Text>$SchedulingRoomComputer02</Text>
+  </TextBlock>
+  <TextBlock>
+    <ID>3</ID>
+    <ParentID>2</ParentID>
+    <Text>$SchedulingRoomComputer03</Text>
   </TextBlock>
 </NomaiObject>
