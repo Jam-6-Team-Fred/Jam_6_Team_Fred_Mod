@@ -52,8 +52,8 @@ namespace Jam6
             {
                 _powerOn = true;
 
-                gravity1.GetComponent<DirectionalForceVolume>().SetFieldMagnitude(0);
-                gravity2.GetComponent<DirectionalForceVolume>().SetFieldMagnitude(0);
+                gravity1.GetComponent<DirectionalForceVolume>().SetFieldMagnitude(3.6f);
+                gravity2.GetComponent<DirectionalForceVolume>().SetFieldMagnitude(3.6f);
 
                 if (_audioSource != null)
                 {
