@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 2579814118
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: coinworld
+      Dependencies: {}
