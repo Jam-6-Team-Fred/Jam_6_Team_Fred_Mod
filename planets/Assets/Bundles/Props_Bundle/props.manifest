@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3413256850
+CRC: 1023776023
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 90258ffafc39436663842f181229ed24
+    Hash: 56e51edddbc1745b39f62e8698bd58ad
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 42b7622a02a86bfbaa48a52085e9bdfd
+    Hash: 7ebe86aaf2d7988f76e5411becb458b9
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -25,6 +25,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
 - Class: 114
   Script: {fileID: 11500000, guid: 7b2cdfd021d6efff82736e3885af343b, type: 3}
 - Class: 114
@@ -37,6 +39,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: c3922f933e798f7e3649f1ecc35d5217, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: a223d69493f03f4a8e6bda998c52d250, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f913c288c393f80a7e923fc1c775f4fb, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: b8880e8825af4fcbf1dab71021f8c869, type: 3}
 - Class: 114
@@ -72,9 +76,11 @@ Assets:
 - Assets/Prefabs_Art/Atmosphere/Effects_CO_Snowflakes_mat.mat
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_A.prefab
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_C.prefab
+- Assets/Prefabs_Art/Audio/Sector_ExpoHall.prefab
 - Assets/Prefabs_Art/Atmosphere/Effects_GD_Rain_0g_mat.mat
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Foliage_TH_AlpineLeaves_Roots_mat.mat
 - Assets/Prefabs_Art/Atmosphere/Atmosphere_Rain_0g.prefab
+- Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Past_Tree_A.prefab
 - Assets/Prefabs_Art/Atmosphere/Atmosphere_Rain.prefab
 - Assets/Prefabs_Art/Foliage/Foliage_Future.png
 - Assets/Prefabs_Art/Test/Volume.prefab
