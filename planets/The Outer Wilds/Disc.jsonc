@@ -124,6 +124,21 @@
                     "z": 0
                 }
             },
+            //Sector for Expo Hall
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Audio/Sector_ExpoHall.prefab",
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -149.5
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                }
+            },
             //FOR TESTING PURPOSE ONLY - ART
             /*
             {
@@ -623,6 +638,70 @@
                 },
                 "scale": 3,
                 "rename": "Future_Alpine_Trees_A_11"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": 58.6282,
+                    "y": -169.0348,
+                    "z": -22.4756
+                },
+                "rotation": {
+                    "x": 329.0515,
+                    "y": 274.1447,
+                    "z": 86.5331
+                },
+                "scale": 2.5,
+                "rename": "Future_Alpine_Trees_A_12"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": 121.1582,
+                    "y": -133.7774,
+                    "z": -23.4404
+                },
+                "rotation": {
+                    "x": 293.7043,
+                    "y": 284.8896,
+                    "z": 77.5376
+                },
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_13"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": -36.0753,
+                    "y": -201.1369,
+                    "z": -23.0671
+                },
+                "rotation": {
+                    "x": 45.454,
+                    "y": 269.4387,
+                    "z": 89.9118
+                },
+                "scale": 2,
+                "rename": "Future_Alpine_Trees_A_14"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_B.prefab",
+                "position": {
+                    "x": 4.3093,
+                    "y": -142.9464,
+                    "z": -25.4419
+                },
+                "rotation": {
+                    "x": 338.7161,
+                    "y": 348.0934,
+                    "z": 348.608
+                },
+                "scale": 2,
+                "rename": "Future_Alpine_Trees_B_1"
             }
         ],
         "campfires": [
@@ -1983,6 +2062,37 @@
                 "priority": 1,
                 "volume": 1,
                 "pauseOnFadeOut": true
+            },
+            {
+                //Volume for maintenance tunnels, has lower priority than past and future so defaults to this
+                "audio": "planets/Assets/Audio/Jam_6_ExpoHall.ogg",
+                "parentPath": "Sector/Sector_ExpoHall",
+                //Cylinder shape
+                "shape": {
+                    "useShape": true,
+                    "type": "box",
+                    "size": {
+                        "x": 40,
+                        "y": 40,
+                        "z": 40
+                    }
+                },
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 17.56
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "track": "music",
+                "loop": true,
+                "priority": 3,
+                "volume": 1,
+                "pauseOnFadeOut": true,
+                "isRelativeToParent": true
             }
         ]
     },
