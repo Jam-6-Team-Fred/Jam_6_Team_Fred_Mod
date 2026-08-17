@@ -22,14 +22,14 @@ namespace Jam6
         public Material lampMaterial;
         [NonSerialized]
         public Color emissiveColor;
+        [NonSerialized]
+        public bool isOnAnAlwaysActivePedestal;
 
         public void Awake()
         {
             mod = Jam6.Instance;
             SchedulingSocket.ActivateScheduledEvent += LightsOn;
             SchedulingSocket.DeactivateScheduledEvent += LightsOff;
-            lightController = GetComponent<OWLightController>();
-            lightController.SetIntensity(0f);
         }
 
         public void OnDestroy()
@@ -38,20 +38,35 @@ namespace Jam6
             SchedulingSocket.DeactivateScheduledEvent -= LightsOff;
         }
 
-        public void LightsOn(SchedulingItem item)
+        public void Start()
+        {
+            if (lightController == null)
+            {
+                lightController = GetComponent<OWLightController>();
+            }
+            mod.ModHelper.Console.WriteLine($"Light Controller: {lightController}");
+            lightController.SetIntensity(0f);
+        }
+
+        public void LightsOn(SchedulingItem item, bool isAlwaysActive)
         {
             if (item.itemID == "Lights")
             {
+                isOnAnAlwaysActivePedestal = isAlwaysActive;
                 mod.ModHelper.Console.WriteLine("Got Activate Lights", OWML.Common.MessageType.Success);
                 lightController.FadeTo(1f, 3f);
-                timeStamp = TimeLoop.GetSecondsElapsed();
+                if (!isOnAnAlwaysActivePedestal)
+                {
+                    timeStamp = TimeLoop.GetSecondsElapsed();
+                }
             }
         }
 
-        public void LightsOff(SchedulingItem item)
+        public void LightsOff(SchedulingItem item, bool isAlwaysActive)
         {
             if (item.itemID == "Lights")
             {
+                isOnAnAlwaysActivePedestal = false;
                 mod.ModHelper.Console.WriteLine("Got Deactivate Lights", OWML.Common.MessageType.Success);
                 lightController.FadeTo(0f, 3f);
             }
@@ -59,7 +74,7 @@ namespace Jam6
 
         public void Update()
         {
-            if (lightController.GetIntensity() == 1f && TimeLoop.GetSecondsElapsed() - timeStamp>=960f)
+            if (!isOnAnAlwaysActivePedestal && lightController.GetIntensity() == 1f && TimeLoop.GetSecondsElapsed() - timeStamp>=960f)
             {
                 mod.ModHelper.Console.WriteLine("8 hours have passed, deactivating lights...", OWML.Common.MessageType.Info);
                 lightController.FadeTo(0f, 3f);

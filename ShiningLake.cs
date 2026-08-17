@@ -48,6 +48,9 @@ namespace Jam6
         [NonSerialized]
         public Color currentColor;
 
+
+        public float hourAmount = 1;
+
         //float num = Mathf.InverseLerp(_fadeStartTime, _fadeStartTime + _fadeDuration, Time.time);
         //_intensity = Mathf.Lerp(_fadeStartIntensity, _fadeTargetIntensity, Mathf.SmoothStep(0f, 1f, num));
 
@@ -68,43 +71,40 @@ namespace Jam6
         public void Update()
         {
             currentTime = TimeLoop.GetSecondsElapsed();
-            if (!didItBlue && currentTime >= 660f)
+            if (!didItBlue && currentTime >= hourAmount * 120f)
             {
                 didItBlue = true;
                 startTime = currentTime;
-                mod.ModHelper.Console.WriteLine($"Am i blue {didItBlue}", OWML.Common.MessageType.Success);
             }
-            if (didItBlue && currentTime <= 660f + durationToBlue)
+            if (didItBlue && currentTime <= hourAmount * 120f + durationToBlue)
             {
+                //mod.ModHelper.Console.WriteLine("Trying to change color", OWML.Common.MessageType.Info);
                 UpdateColor(normalColor, shiningColor);
             }
-            if (!didItShine && currentTime >= 720f)
+            if (!didItShine && currentTime >= (hourAmount+1)*120f)
             {
                 didItShine = true;
                 startTime = currentTime;
-                mod.ModHelper.Console.WriteLine($"Am i shining {didItShine}", OWML.Common.MessageType.Success);
             }
-            if (didItShine && currentTime <= 720f + durationToShine)
+            if (didItShine && currentTime <= (hourAmount + 1) * 120f + durationToShine)
             {
                 UpdateSpotLightIntensity(0, endSpotLightIntensity);
             }
-            if (didItShine && currentTime >= 780f)
+            if (didItShine && currentTime >= (hourAmount + 2) * 120f)
             {
                 didItUnShine = true;
                 startTime = currentTime;
-                mod.ModHelper.Console.WriteLine($"Am i blue {didItBlue}", OWML.Common.MessageType.Success);
             }
-            if (didItUnShine && currentTime <= 780f+durationToShine)
+            if (didItUnShine && currentTime <= (hourAmount + 2) * 120f + durationToShine)
             {
                 UpdateSpotLightIntensity(endSpotLightIntensity, 0);
             }
-            if (didItBlue && currentTime >= 840f)
+            if (didItBlue && currentTime >= (hourAmount + 3) * 120f)
             {
                 didItUnBlue = true;
                 startTime = currentTime;
-                mod.ModHelper.Console.WriteLine($"Am i shining {didItShine}", OWML.Common.MessageType.Success);
             }
-            if (didItUnBlue && currentTime <= 840f + durationToBlue)
+            if (didItUnBlue && currentTime <= (hourAmount + 3) * 120f + durationToBlue)
             {
                 UpdateColor(shiningColor, normalColor);
 
@@ -114,16 +114,23 @@ namespace Jam6
         public void UpdateColor(Color fromColor, Color toColor)
         {
             //Funny smooooth curve thing
-            float num = Mathf.InverseLerp(startTime, startTime + durationToBlue, Time.time);
+            //float num = Mathf.InverseLerp(startTime, startTime + durationToBlue, TimeLoop.GetSecondsElapsed());
+            float num = startTime / (startTime + durationToBlue);
 
             //R
             currentColor.r = Mathf.Lerp(fromColor.r, toColor.r, Mathf.SmoothStep(0f, 1f, num));
 
+            //mod.ModHelper.Console.WriteLine($"Red: {currentColor.r}", OWML.Common.MessageType.Info);
+
             //G
             currentColor.g = Mathf.Lerp(fromColor.g, toColor.g, Mathf.SmoothStep(0f, 1f, num));
 
+            //mod.ModHelper.Console.WriteLine($"Green: {currentColor.g}", OWML.Common.MessageType.Info);
+
             //B
             currentColor.b = Mathf.Lerp(fromColor.b, toColor.b, Mathf.SmoothStep(0f, 1f, num));
+
+            //mod.ModHelper.Console.WriteLine($"Blue: {currentColor.b}", OWML.Common.MessageType.Info);
 
             //Applying the whole color
             lakeMaterial.SetColor("_FogColor", currentColor);
@@ -131,7 +138,8 @@ namespace Jam6
 
         public void UpdateSpotLightIntensity(float fromIntensity, float toIntensity)
         {
-            float num2 = Mathf.InverseLerp(startTime, startTime + durationToShine, Time.time);
+            //float num2 = Mathf.InverseLerp(startTime, startTime + durationToShine, TimeLoop.GetSecondsElapsed());
+            float num2 = startTime / (startTime + durationToBlue);
             spotLightLight.intensity = Mathf.Lerp(fromIntensity, toIntensity, Mathf.SmoothStep(0f, 1f, num2));
         }
     }

@@ -9,18 +9,31 @@ namespace Jam6
 {
     public class SchedulingExpoHall : MonoBehaviour
     {
+        [SerializeField]
+        public MeshRenderer meshRenderer;
+        [SerializeField]
+        public MeshCollider meshCollider;
+
         [NonSerialized]
         public ModBehaviour mod;
-        public MeshRenderer meshRenderer;
-        public MeshCollider meshCollider;
 
         public void Awake()
         {
             mod = Jam6.Instance;
-            meshRenderer = GetComponent<MeshRenderer>();
-            meshCollider = GetComponent<MeshCollider>();
             SchedulingSocket.ActivateScheduledEvent += Disappear;
             SchedulingSocket.DeactivateScheduledEvent += Appear;
+        }
+
+        public void Start()
+        {
+            if (meshCollider == null)
+            {
+                meshCollider = GetComponent<MeshCollider>();
+            }
+            if (meshRenderer == null)
+            {
+                meshRenderer = GetComponent<MeshRenderer>();
+            }
         }
 
         public void OnDestroy()
@@ -29,23 +42,23 @@ namespace Jam6
             SchedulingSocket.DeactivateScheduledEvent -= Appear;
         }
 
-        public void Disappear(SchedulingItem item)
+        public void Disappear(SchedulingItem item, bool doesntMatter)
         {
             if (item.itemID == "ExpoHall")
             {
                 mod.ModHelper.Console.WriteLine("Got Activate ExpoHall", OWML.Common.MessageType.Success);
                 meshRenderer.enabled = false;
-                mod.ModHelper.Console.WriteLine($"Its ExpoHall, mesh: {meshRenderer.enabled}", OWML.Common.MessageType.Success);
+                meshCollider.enabled = false;
             }
         }
 
-        public void Appear(SchedulingItem item)
+        public void Appear(SchedulingItem item, bool doesntMatter)
         {
             if (item.itemID == "ExpoHall")
             {
                 mod.ModHelper.Console.WriteLine("Got Deactivate ExpoHall", OWML.Common.MessageType.Success);
                 meshRenderer.enabled = true;
-                mod.ModHelper.Console.WriteLine($"Its ExpoHall, mesh: {meshRenderer.enabled}", OWML.Common.MessageType.Success);
+                meshCollider.enabled = true;
             }
         }
     }
