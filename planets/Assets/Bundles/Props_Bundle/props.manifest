@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1301139996
+CRC: 1023776023
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5dbc36e14b9130a6943ab942077bf0ed
+    Hash: 56e51edddbc1745b39f62e8698bd58ad
   TypeTreeHash:
     serializedVersion: 2
     Hash: 7ebe86aaf2d7988f76e5411becb458b9
@@ -76,6 +76,7 @@ Assets:
 - Assets/Prefabs_Art/Atmosphere/Effects_CO_Snowflakes_mat.mat
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_A.prefab
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_C.prefab
+- Assets/Prefabs_Art/Audio/Sector_ExpoHall.prefab
 - Assets/Prefabs_Art/Atmosphere/Effects_GD_Rain_0g_mat.mat
 - Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Foliage_TH_AlpineLeaves_Roots_mat.mat
 - Assets/Prefabs_Art/Atmosphere/Atmosphere_Rain_0g.prefab
