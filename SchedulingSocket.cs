@@ -8,13 +8,16 @@ namespace Jam6
 {
     public class SchedulingSocket : OWItemSocket
     {
+        [SerializeField]
+        public bool isAlwaysActive;
+
         [NonSerialized]
         public ModBehaviour mod;
         [NonSerialized]
         public OWItem heldItem;
         [NonSerialized]
         public bool didScheduledEventHappen;
-        public delegate void ScheduledEvent(SchedulingItem item);
+        public delegate void ScheduledEvent(SchedulingItem item, bool isAlwaysActive);
         public static event ScheduledEvent ActivateScheduledEvent;
         public static event ScheduledEvent DeactivateScheduledEvent;
 
@@ -45,6 +48,11 @@ namespace Jam6
             {
                 heldItem = transform.GetChild(0).gameObject.GetComponent<SchedulingItem>();
             }
+
+            if (isAlwaysActive)
+            {
+                activationHour = 0;
+            }
         }
 
         public void OnDestroy()
@@ -64,14 +72,14 @@ namespace Jam6
             mod.ModHelper.Console.WriteLine($"I now hold {heldItem.name}", OWML.Common.MessageType.Success);
             if (didScheduledEventHappen)
             {
-                ActivateScheduledEvent((SchedulingItem)heldItem);
+                ActivateScheduledEvent((SchedulingItem)heldItem, isAlwaysActive);
             }
         }
 
         public void RemoveSchedulingItem(OWItem item)
         {
             mod.ModHelper.Console.WriteLine($"I shouldnt be holding {heldItem.name} anymore", OWML.Common.MessageType.Success);
-            DeactivateScheduledEvent((SchedulingItem)heldItem);
+            DeactivateScheduledEvent((SchedulingItem)heldItem, isAlwaysActive);
             heldItem = null;
         }
 
@@ -83,7 +91,7 @@ namespace Jam6
                 mod.ModHelper.Console.WriteLine($"It is {activationHour}:00, Im activating...", OWML.Common.MessageType.Success);
                 if (heldItem != null)
                 {
-                    ActivateScheduledEvent((SchedulingItem)heldItem);
+                    ActivateScheduledEvent((SchedulingItem)heldItem, isAlwaysActive);
                 }
             }
         }
