@@ -29,6 +29,18 @@
             }
         ]
     },
+    "Atmosphere": {
+        "size": 230,
+        "fogTint": {
+            "r": 135,
+            "g": 206,
+            "b": 250,
+            "a": 255
+        },
+        "fogSize": 230,
+        "fogDensity": 0.2,
+        "hasRain": false
+    },
     // Basic descriptors of the planet
     "Base": {
         "surfaceSize": 300,
@@ -67,7 +79,7 @@
         "details": [
             // Just the Disc
             {
-                "assetBundle": "planets/Assets/Bundles/Coinworld Bundle/coinworld",
+                "assetBundle": "planets/Assets/Bundles/Bundle/coinworld",
                 "path": "Assets/Prefabs/Disc.prefab",
                 "position": {
                     "x": 0,
@@ -82,7 +94,7 @@
                 "keepLoaded": true
             },
             {
-                "assetBundle": "planets/Assets/Bundles/Coinworld Bundle/coinworld",
+                "assetBundle": "planets/Assets/Bundles/Bundle/coinworld",
                 "path": "Assets/Prefabs/GravitySwitch.prefab",
                 "position": {
                     "x": 50,
@@ -480,7 +492,7 @@
                     "y": 86.60587,
                     "z": 90.13416
                 },
-                "type": "nomaiTank"
+                "type": "preCrashNomaiTank"
             },
             {
                 "rename": "PomaiBlueLakeFuelTank",
@@ -494,7 +506,7 @@
                     "y": 41.65238,
                     "z": 39.96154
                 },
-                "type": "nomaiTank"
+                "type": "preCrashNomaiTank"
             },
             {
                 "rename": "PomaiCityFuelTank",
@@ -508,7 +520,7 @@
                     "y": 89.99997,
                     "z": 90.00002
                 },
-                "type": "nomaiTank"
+                "type": "preCrashNomaiTank"
             },
             {
                 "rename": "SundialFuelTank",
@@ -522,12 +534,13 @@
                     "y": 87.95209,
                     "z": 87.342
                 },
-                "type": "nomaiTank"
+                "type": "preCrashNomaiTank"
             }
         ],
         "signals": [
             // TELESCOPE
             {
+                "rename": "TelescopeSignal",
                 "frequency": "$TeamFred.Nomai_Technology",
                 "name": "$TeamFred.Telescope",
                 "audio": "planets/Assets/Audio/Jam_6_Telescope.ogg",
@@ -664,25 +677,25 @@
                 //All adult text, so no ArcInfo needed
             },*/
             // Garden
-            /*{
+            {
                 "rename": "Garden",
                 "xmlFile": "nomai/Garden.xml",
                 "position": {
-                    "x": 120.8001,
-                    "y": 55.70441,
-                    "z": 27.69281
+                    "x": 31.49366,
+                    "y": -23.42227,
+                    "z": 32.17842
                 },
                 "rotation": {
-                    "x": 270,
-                    "y": 90,
-                    "z": 90
+                    "x": 358.8462,
+                    "y": 0.6663197,
+                    "z": 59.99344
                 },
                 "normal": {
-                    "x": 0,
-                    "y": 0,
-                    "z": 1
+                    "x": -0.8660267,
+                    "y": 0.4999977,
+                    "z": 7.450581E-07
                 },
-                "type": "whiteboard",
+                "type": "wall",
                 "seed": 1046998503,
                 "arcInfo": [
                     //1
@@ -743,7 +756,6 @@
                             "y": -0.45
                         },
                         "zRotation": 200
-                        
                     },
                     //13
                     {
@@ -756,7 +768,7 @@
                         "zRotation": 267
                     }
                 ]
-            },*/
+            },
             // GravityRoom
             /*{
                 "rename": "GravityRoom",
@@ -871,26 +883,188 @@
                     }
                 ]
             },*/
-            /*{
+            // Very Memey text
+            {
+                "rename": "MemeText",
+                "xmlFile": "nomai/MemeText.xml",
+                "position": {
+                    "x": 6.477556,
+                    "y": 26.48339,
+                    "z": 33.38583
+                },
+                "rotation": {
+                    "x": 339.232,
+                    "y": 318.9407,
+                    "z": 157.8511
+                },
+                "normal": {
+                    "x": -0.4999992,
+                    "y": -0.866026,
+                    "z": -4.712492E-07
+                },
+                "seed": 7,
+                "arcInfo": [
+                    //1
+                    {
+                        "type": "child"
+                    }
+                ]
+            },
+            {
+                "rename": "MemorialForestCairnA",
+                "xmlFile": "nomai/MemorialForestCairnA.xml",
+                "position": {
+                    "x": -2.340934,
+                    "y": -115.4418,
+                    "z": -24.81992
+                },
+                "rotation": {
+                    "x": 27.36347,
+                    "y": 94.00957,
+                    "z": 274.4762
+                },
+                "normal": {
+                    "x": -0.03392571,
+                    "y": 0.06931197,
+                    "z": -0.997018
+                },
+                "type": "cairnBH"
+            },
+            {
+                "rename": "MemorialForestCairnB",
+                "xmlFile": "nomai/MemorialForestCairnB.xml",
+                "position": {
+                    "x": 11.20282,
+                    "y": -110.545,
+                    "z": -24.96196
+                },
+                "rotation": {
+                    "x": 69.01901,
+                    "y": 263.3949,
+                    "z": 80.21722
+                },
+                "normal": {
+                    "x": -0.04424268,
+                    "y": 0.06083895,
+                    "z": -0.9971666
+                },
+                "type": "cairnBH"
+            },
+            {
+                "rename": "MemorialForestCairnC",
+                "xmlFile": "nomai/MemorialForestCairnC.xml",
+                "position": {
+                    "x": 3.169703,
+                    "y": -128.1232,
+                    "z": -25.49176
+                },
+                "rotation": {
+                    "x": 295.7748,
+                    "y": 89.39825,
+                    "z": 270.1636
+                },
+                "normal": {
+                    "x": 0.007930487,
+                    "y": 0.001241903,
+                    "z": -0.9999678
+                },
+                "type": "cairnBH"
+            },
+            {
+                "rename": "MemorialForestCairnD",
+                "xmlFile": "nomai/MemorialForestCairnD.xml",
+                "position": {
+                    "x": 13.89637,
+                    "y": -125.421,
+                    "z": -25.39917
+                },
+                "rotation": {
+                    "x": 328.7552,
+                    "y": 269.6089,
+                    "z": 89.85175
+                },
+                "normal": {
+                    "x": 0.00816837,
+                    "y": 0.002212189,
+                    "z": -0.9999642
+                },
+                "type": "cairnBH"
+            },
+            {
+                "rename": "MemorialForestCairnE",
+                "xmlFile": "nomai/MemorialForestCairnE.xml",
+                "position": {
+                    "x": 7.214657,
+                    "y": -131.0384,
+                    "z": -25.43987
+                },
+                "rotation": {
+                    "x": 281.2126,
+                    "y": 254.979,
+                    "z": 104.0516
+                },
+                "normal": {
+                    "x": 0.02139297,
+                    "y": -0.04721142,
+                    "z": -0.9986558
+                },
+                "type": "cairnBH"
+            },
+            {
+                "rename": "MemorialForestFloorNearCairnE",
+                "xmlFile": "nomai/MemorialForestFloorNearCairnE.xml",
+                "position": {
+                    "x": 8.717218,
+                    "y": -130.3971,
+                    "z": -25.43799
+                },
+                "rotation": {
+                    "x": 68.02952,
+                    "y": 82.0448,
+                    "z": 262.7505
+                },
+                "normal": {
+                    "x": 0.02139288,
+                    "y": -0.04721142,
+                    "z": -0.9986557
+                },
+                "type": "wall",
+                "seed": 1614678795,
+                "arcInfo": [
+                    //1
+                    {
+                        "type": "adult"
+                    },
+                    //2
+                    {
+                        "type": "adult"
+                    },
+                    //3 - crying so teenager
+                    {
+                        "type": "teenager"
+                    }
+                ]
+            },
+            {
                 "rename": "MemorialForestSignpost",
                 "xmlFile": "nomai/MemorialForestSignpost.xml",
                 "position": {
-                    "x": -45.46608,
-                    "y": -77.07527,
-                    "z": 25.18328
+                    "x": 3.097643,
+                    "y": -110.2462,
+                    "z": -24.57655
                 },
                 "rotation": {
-                    "x": 62.98771,
-                    "y": 96.11566,
-                    "z": 98.59471
+                    "x": 72.04655,
+                    "y": 120.9174,
+                    "z": 300.9068
                 },
                 "normal": {
-                    "x": -0.02704387,
-                    "y": -0.06787492,
-                    "z": 0.9973273
+                    "x": -0.02164274,
+                    "y": 0.1583274,
+                    "z": -0.9871495
                 },
                 "type": "trailmarker"
-            },*/
+            },
             // PomaiHouseA
             {
                 "rename": "PomaiHouseA",
