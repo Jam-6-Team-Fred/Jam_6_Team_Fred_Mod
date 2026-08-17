@@ -65,7 +65,7 @@
         "details": [
             // Just the Dome
             {
-                "assetBundle": "planets/Assets/Bundles/Coinworld Bundle/coinworld",
+                "assetBundle": "planets/Assets/Bundles/Bundle/coinworld",
                 "path": "Assets/Prefabs/Dome.prefab",
                 "position": {
                     "x": 0,

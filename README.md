@@ -6,7 +6,7 @@
 
 ---
 
-Through the Ages is a story mod built in 2 weeks by "Team Fred" during the [2026 Outer Wilds Summer Jam](https://outerwildsmods.com/jam/aug-2026/) (aka Jam 6)
+Through the Ages is a story mod built in 17 days by "Team Fred" during the [2026 Outer Wilds Summer Jam](https://outerwildsmods.com/jam/aug-2026/) (aka Jam 6)
 
 ## Mod Incompatibility List
 TimeSaver - Turn off "Start with Suit" for best play experience
