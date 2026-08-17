@@ -2073,7 +2073,7 @@
             },
             {
                 //Volume for maintenance tunnels, has lower priority than past and future so defaults to this
-                "audio": "planets/Assets/Audio/Jam_6_ExpoHall.ogg",
+                "audio": "planets/Assets/Audio/Jam_6_Future_Is_Now.ogg",
                 "parentPath": "Sector/Sector_ExpoHall",
                 //Cylinder shape
                 "shape": {
@@ -2091,6 +2091,28 @@
                     "z": 17.56
                 },
                 "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "track": "music",
+                "loop": true,
+                "priority": 4,
+                "volume": 1,
+                "pauseOnFadeOut": true,
+                "isRelativeToParent": true
+            },
+            {
+                //Volume for future area
+                "audio": "planets/Assets/Audio/Jam_6_ExpoHall.ogg",
+                "parentPath": "Sector/Sector_ExpoHall",
+                //Cylinder shape
+                "shape": {
+                    "useShape": true,
+                    "type": "sphere",
+                    "radius": 17.5
+                },
+                "position": {
                     "x": 0,
                     "y": 0,
                     "z": 0
