@@ -13,12 +13,6 @@ namespace Jam6
         [SerializeField]
         public NomaiInterfaceSlot _slot;
 
-        [SerializeField]
-        public GameObject gravity1;
-
-        [SerializeField]
-        public GameObject gravity2;
-
         [Space]
         [SerializeField]
         public OWAudioSource _audioSource;
@@ -31,19 +25,21 @@ namespace Jam6
 
         private bool _powerOn;
 
+        public delegate void ZeroGEvent();
+        public static event ZeroGEvent ZeroG;
+        public static event ZeroGEvent NormalG;
+
         public void Awake()
         {
             _powerOn = _startOn;
             _slot.OnSlotActivated += OnSlotActivated;
             _slot.OnSlotDeactivated += OnSlotDeactivated;
-            Jam6.Instance.NewHorizons.GetBodyLoadedEvent().AddListener(FindVolumes);
         }
 
         public void OnDestroy()
         {
             _slot.OnSlotActivated -= OnSlotActivated;
             _slot.OnSlotDeactivated -= OnSlotDeactivated;
-            Jam6.Instance.NewHorizons.GetBodyLoadedEvent().RemoveListener(FindVolumes);
         }
 
         public void PowerOn()
@@ -52,8 +48,7 @@ namespace Jam6
             {
                 _powerOn = true;
 
-                gravity1.GetComponent<DirectionalForceVolume>().SetFieldMagnitude(0);
-                gravity2.GetComponent<DirectionalForceVolume>().SetFieldMagnitude(0);
+                ZeroG();
 
                 if (_audioSource != null)
                 {
@@ -68,8 +63,7 @@ namespace Jam6
             {
                 _powerOn = false;
 
-                gravity1.GetComponent<DirectionalForceVolume>().SetFieldMagnitude(12);
-                gravity2.GetComponent<DirectionalForceVolume>().SetFieldMagnitude(12);
+                NormalG();
 
                 if (_audioSource != null)
                 {
@@ -88,16 +82,6 @@ namespace Jam6
         {
             PowerOff();
             Jam6.Instance.ModHelper.Console.WriteLine("Turning Off...", OWML.Common.MessageType.Success);
-        }
-
-        public void FindVolumes(string planetName)
-        {
-            if (planetName == "Disc")
-            {
-                Jam6.Instance.ModHelper.Console.WriteLine("Found Disc", OWML.Common.MessageType.Success);
-                gravity1 = SearchUtilities.Find("Disc_Body/Sector/Disc/Past/GravityVolume");
-                gravity2 = SearchUtilities.Find("Disc_Body/Sector/Disc/Future/GravityVolume");
-            }
         }
     }
 }

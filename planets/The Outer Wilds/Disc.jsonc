@@ -530,6 +530,7 @@
             {
                 "frequency": "$TeamFred.Nomai_Technology",
                 "name": "$TeamFred.Telescope",
+                "rename": "TelescopeSignal",
                 "audio": "planets/Assets/Audio/Jam_6_Telescope.ogg",
                 "sourceRadius": 10,
                 "position": {
