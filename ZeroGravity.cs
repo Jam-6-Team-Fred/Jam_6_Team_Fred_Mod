@@ -40,20 +40,12 @@ namespace Jam6
 
         public void TurnOffGravity()
         {
-            gravity.SetFieldMagnitude(0);
-            if (disableAligment)
-            {
-                gravity._affectsAlignment = false;
-            }
+            gravity.SetFieldMagnitude(3.6f);
         }
 
         public void TurnOnGravity()
         {
             gravity.SetFieldMagnitude(12);
-            if (disableAligment)
-            {
-                gravity._affectsAlignment = true;
-            }
         }
     }
 }
