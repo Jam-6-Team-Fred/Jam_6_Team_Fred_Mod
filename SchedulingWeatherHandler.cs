@@ -34,22 +34,28 @@ namespace Jam6
             SchedulingSocket.DeactivateScheduledEvent += Deactivate;
             OrbSwitch.ZeroG += ZeroGWeatherHandler;
             OrbSwitch.NormalG += NormalGWeatherHandler;
+            Jam6.Instance.NewHorizons.GetBodyLoadedEvent().AddListener(FindWeather);
         }
 
         public void OnDestroy()
         {
             SchedulingSocket.ActivateScheduledEvent -= Activate;
             SchedulingSocket.DeactivateScheduledEvent -= Deactivate;
+            Jam6.Instance.NewHorizons.GetBodyLoadedEvent().RemoveListener(FindWeather);
         }
 
-        public void Start()
+        public void FindWeather(string planetName)
         {
-            weatherHandler = SearchUtilities.Find("Disc_Body/Sector/Atmosphere_Holder");
-            weatherHandler?.SetActive(false);
-            rainZeroG = weatherHandler.transform.Find("Atmosphere_Rain_0g").gameObject;
-            rainNormalG = weatherHandler.transform.Find("Atmosphere_Rain").gameObject;
-            snowZeroG = weatherHandler.transform.Find("Atmosphere_Snow_0g").gameObject;
-            snowNormalG = weatherHandler.transform.Find("Atmosphere_Snow").gameObject;
+            if (planetName == "Disc")
+            {
+                weatherHandler = SearchUtilities.Find("Disc_Body/Sector/Atmosphere_Holder");
+                weatherHandler?.SetActive(false);
+
+                rainZeroG = weatherHandler.transform.Find("Atmosphere_Rain_0g").gameObject;
+                rainNormalG = weatherHandler.transform.Find("Atmosphere_Rain").gameObject;
+                snowZeroG = weatherHandler.transform.Find("Atmosphere_Snow_0g").gameObject;
+                snowNormalG = weatherHandler.transform.Find("Atmosphere_Snow").gameObject;
+            }
         }
 
         public void Activate(SchedulingItem item, bool isAlwaysActive)
@@ -94,7 +100,7 @@ namespace Jam6
 
         public void Update()
         {
-            if (!isOnAnAlwaysActivePedestal && weatherHandler.activeSelf && TimeLoop.GetSecondsElapsed() - timeStamp >= 360f)
+            if (weatherHandler != null && weatherHandler.activeSelf && !isOnAnAlwaysActivePedestal && TimeLoop.GetSecondsElapsed() - timeStamp >= 360f)
             {
                 weatherHandler?.SetActive(false);
             }
