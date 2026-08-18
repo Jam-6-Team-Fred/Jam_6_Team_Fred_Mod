@@ -6,11 +6,11 @@
   -->
   <TextBlock>
     <ID>1</ID>
-    <Text>$ExpoOldestNomai01</Text>
+    <Text>$ExpoHallOldestNomaiText01</Text>
   </TextBlock>
   <TextBlock>
     <ID>2</ID>
     <ParentID>1</ParentID>
-    <Text>$ExpoOldestNomai02</Text>
+    <Text>$ExpoHallOldestNomaiText02</Text>
   </TextBlock>
 </NomaiObject>
