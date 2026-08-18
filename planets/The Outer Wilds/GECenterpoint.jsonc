@@ -21,9 +21,9 @@
         "isStatic": true,
         // these values are for a 45* diagonal offset of 6000 units
         "staticPosition": {
-            "x": 4375,
-            "y": -20000,
-            "z": -10000
+            "x": 3000,
+            "y": -12500,
+            "z": -1000
         }
     },
     // Will only want one of these between the Double Dome & the Coin, otherwise 2 different autopilot points will be set up
