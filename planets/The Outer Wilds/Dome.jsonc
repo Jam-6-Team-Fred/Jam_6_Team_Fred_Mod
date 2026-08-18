@@ -40,8 +40,8 @@
         "longitudeOfAscendingNode": 85,
         // Angles the ellipse to point "down"
         //   (short side is above the plane of planets)
-        "argumentOfPeriapsis": 355,
-        "trueAnomaly": 76,
+        "argumentOfPeriapsis": 25,
+        "trueAnomaly": 65,
         "dottedOrbitLine": true,
         "trackingOrbitLine": true
     },

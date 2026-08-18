@@ -83,8 +83,8 @@
         "longitudeOfAscendingNode": 85,
         // Angles the ellipse to point "down"
         //   (short side is above the plane of planets)
-        "argumentOfPeriapsis": 355,
-        "trueAnomaly": 76,
+        "argumentOfPeriapsis": 25,
+        "trueAnomaly": 65,
         // Disc rotate 180 over the course of the cycle
         "siderealPeriod": 44,
         "showOrbitLine": false
@@ -723,14 +723,14 @@
             {
                 "rename": "PomaiBlueLakeCampfire",
                 "position": {
-                    "x": -140.4471,
-                    "y": 78.9747,
-                    "z": 30.82258
+                    "x": -145.7449,
+                    "y": 75.894,
+                    "z": 30.67036
                 },
                 "rotation": {
-                    "x": 81.74718,
-                    "y": 134.1558,
-                    "z": 135.884
+                    "x": 48.94999,
+                    "y": 81.78637,
+                    "z": 83.80332
                 },
                 "initialState": "unlit",
                 "canSleepHere": true
@@ -872,6 +872,29 @@
             }
         ],
         "translatorText": [
+            // Blue Lake Camp Recorder
+            {
+                "rename": "BlueLakeCampRecorder",
+                "xmlFile": "nomai/BlueLakeCampRecorder.xml",
+                "position": {
+                    "x": -140.391,
+                    "y": 76.16172,
+                    "z": 30.79156
+                },
+                "rotation": {
+                    "x": 34.64666,
+                    "y": 272.7168,
+                    "z": 280.3542
+                },
+                "normal": {
+                    "x": -0.05543816,
+                    "y": 0.1478612,
+                    "z": 0.9874531
+                },
+                "type": "preCrashRecorder",
+                "seed": 245840159
+                //All adult text, so no ArcInfo needed
+            },
             // BlueLakeLookout - commenting on the lake color
             {
                 "rename": "BlueLakeLookout",
@@ -1092,7 +1115,7 @@
                 "position": {
                     "x": 31.49366,
                     "y": -23.42227,
-                    "z": 32.17842
+                    "z": 33.17842
                 },
                 "rotation": {
                     "x": 358.8462,
@@ -1391,18 +1414,18 @@
                 "rename": "MemorialForestNook",
                 "xmlFile": "nomai/MemorialForestNook.xml",
                 "position": {
-                    "x": -3.960885,
-                    "y": -175.6002,
-                    "z": -23.71397
+                    "x": -7.480652,
+                    "y": -177.3649,
+                    "z": -23.91762
                 },
                 "rotation": {
-                    "x": 335.4857,
-                    "y": 86.70274,
-                    "z": 270.3476
+                    "x": 86.74442,
+                    "y": 261.278,
+                    "z": 84.42207
                 },
                 "normal": {
-                    "x": 0.05500231,
-                    "y": 0.005519605,
+                    "x": 0.05500224,
+                    "y": 0.005520287,
                     "z": -0.998471
                 },
                 "type": "wall",
@@ -1447,19 +1470,19 @@
                 "rename": "MemorialForestRecorder",
                 "xmlFile": "nomai/MemorialForestRecorder.xml",
                 "position": {
-                    "x": -8.608826,
-                    "y": -172.3346,
-                    "z": -24.16151
+                    "x": -15.25446,
+                    "y": -174.9933,
+                    "z": -24.54163
                 },
                 "rotation": {
-                    "x": 283.3709,
-                    "y": 252.8327,
-                    "z": 102.3742
+                    "x": 84.14961,
+                    "y": 340.2345,
+                    "z": 162.6389
                 },
                 "normal": {
-                    "x": 0.08910814,
-                    "y": -0.04955676,
-                    "z": -0.9947883
+                    "x": 0.04027084,
+                    "y": -0.09728721,
+                    "z": -0.9944412
                 },
                 "type": "preCrashRecorder",
                 "seed": 618407928
@@ -1892,21 +1915,21 @@
                 "rename": "WelcomeMountainHidingSpot",
                 "xmlFile": "nomai/WelcomeMountainHidingSpot.xml",
                 "position": {
-                    "x": 80.42038,
-                    "y": -170.2253,
-                    "z": 89.0389
+                    "x": 84.22577,
+                    "y": -172.8609,
+                    "z": 87.86769
                 },
                 "rotation": {
-                    "x": 29.9391,
-                    "y": 121.7593,
-                    "z": 100.8196
+                    "x": 278.2973,
+                    "y": 256.1116,
+                    "z": 284.3184
                 },
                 "normal": {
-                    "x": 0.4373367,
-                    "y": -0.1626682,
-                    "z": 0.8844634
+                    "x": 0.004992604,
+                    "y": 0.03568935,
+                    "z": 0.9993503
                 },
-                "type": "wall",
+                "type": "whiteboard",
                 "seed": 1323343560,
                 "arcInfo": [
                     //1
