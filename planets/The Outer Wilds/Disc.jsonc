@@ -11,10 +11,10 @@
     // Name of the planet in game
     "name": "Disc",
     // Testing Spawn Location: Uncomment below line
-    "Spawn": {
+    /*"Spawn": {
         "playerSpawnPoints": [
             //Welcome Center Spawn
-            /*{
+            {
                 "isDefault": true,
                 "startWithSuit": true,
                 "position": {
@@ -27,9 +27,9 @@
                     "y": 270.0033,
                     "z": 269.9967
                 }
-            }*/
+            }
             // Fomai Path
-            /*{
+            {
                 "isDefault": true,
                 "startWithSuit": true,
                 "position": {
@@ -42,7 +42,7 @@
                     "y": 89.60559,
                     "z": 270.3755
                 }
-            }*/
+            }
             // Expo Hall
             {
                 "isDefault": true,
@@ -59,7 +59,7 @@
                 }
             }
         ]
-    },
+    },*/
     "Atmosphere": {
         "size": 230,
         "fogTint": {
@@ -1425,19 +1425,19 @@
                 "rename": "MemorialForestCairnA",
                 "xmlFile": "nomai/MemorialForestCairnA.xml",
                 "position": {
-                    "x": -2.340934,
-                    "y": -115.4418,
-                    "z": -24.81992
+                    "x": -1.917935,
+                    "y": -112.0205,
+                    "z": -24.59647
                 },
                 "rotation": {
-                    "x": 27.36347,
-                    "y": 94.00957,
-                    "z": 274.4762
+                    "x": 48.29325,
+                    "y": 96.42036,
+                    "z": 275.9799
                 },
                 "normal": {
-                    "x": -0.03392571,
-                    "y": 0.06931197,
-                    "z": -0.997018
+                    "x": -0.0339258,
+                    "y": 0.06931194,
+                    "z": -0.9970179
                 },
                 "type": "cairnBH"
             },
@@ -1488,19 +1488,19 @@
                 "rename": "MemorialForestCairnD",
                 "xmlFile": "nomai/MemorialForestCairnD.xml",
                 "position": {
-                    "x": 13.89637,
-                    "y": -125.421,
-                    "z": -25.39917
+                    "x": 13.48874,
+                    "y": -128.0935,
+                    "z": -25.43302
                 },
                 "rotation": {
-                    "x": 328.7552,
-                    "y": 269.6089,
-                    "z": 89.85175
+                    "x": 328.7647,
+                    "y": 273.4806,
+                    "z": 87.31131
                 },
                 "normal": {
-                    "x": 0.00816837,
-                    "y": 0.002212189,
-                    "z": -0.9999642
+                    "x": -0.03636387,
+                    "y": 0.04010945,
+                    "z": -0.9985334
                 },
                 "type": "cairnBH"
             },
@@ -1665,12 +1665,12 @@
                 "rename": "Nookdial",
                 "xmlFile": "nomai/Nookdial.xml",
                 "position": {
-                    "x": 34.34785,
+                    "x": 34.74785,
                     "y": 15.70154,
                     "z": 33.58207
                 },
                 "rotation": {
-                    "x": 342.2183,
+                    "x": 336,
                     "y": 90.00001,
                     "z": 90
                 },
