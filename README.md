@@ -6,7 +6,7 @@
 
 ---
 
-Through the Ages is a story mod built in 17 days by "Team Fred" during the [2026 Outer Wilds Summer Jam](https://outerwildsmods.com/jam/aug-2026/) (aka Jam 6)
+Through the Ages is a story mod built in 18 days by "Team Fred" during the [2026 Outer Wilds Summer Jam](https://outerwildsmods.com/jam/aug-2026/) (aka Jam 6)
 
 ## Mod Incompatibility List
 TimeSaver - Turn off "Start with Suit" for best play experience
@@ -17,7 +17,7 @@ TimeSaver - Turn off "Start with Suit" for best play experience
 - **Gay Coffee**: Lead Writer
 - **Hamstry**: Lead Unity developer, Programming, Constellation Art
 - **The Phantom Driver**: Nomai Ruin Architect, Modeller, Some Programming
-- **Solec**: New Horizons advisor, Logo Designer
+- **Solec**: Logo Designer, Ancient Text creator, Initial Shiplog layout
 - **T3rtu**: Lead Modeller
 
 Made with Love, by Humans <3

@@ -1,17 +1,17 @@
 {
-  //////////// NOTES ////////////
-  // In some places within this document, "planet" & "station" will be used interchangeable. These all refer to the same components.
-  // COIN will refer to specifically the rotating cyclinder
-  //   with points of interest
-  // DOUBLE DOME will refer to specifically the outer shell of the station
-  // (Currently since there is a single object for the combined coin &
-  //   double dome, there is not a distinction within this file)
-  //////////// END OF NOTES ////////////
-  "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
-  // Name of the planet in game
-  "name": "Disc",
-  // Testing Spawn Location: Uncomment below line
-  /*"Spawn": {
+    //////////// NOTES ////////////
+    // In some places within this document, "planet" & "station" will be used interchangeable. These all refer to the same components.
+    // COIN will refer to specifically the rotating cyclinder
+    //   with points of interest
+    // DOUBLE DOME will refer to specifically the outer shell of the station
+    // (Currently since there is a single object for the combined coin &
+    //   double dome, there is not a distinction within this file)
+    //////////// END OF NOTES ////////////
+    "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
+    // Name of the planet in game
+    "name": "Disc",
+    // Testing Spawn Location: Uncomment below line
+    /*"Spawn": {
         "playerSpawnPoints": [
             //Welcome Center Spawn
             {
@@ -83,8 +83,8 @@
         "longitudeOfAscendingNode": 85,
         // Angles the ellipse to point "down"
         //   (short side is above the plane of planets)
-        "argumentOfPeriapsis": 355,
-        "trueAnomaly": 76,
+        "argumentOfPeriapsis": 25,
+        "trueAnomaly": 65,
         // Disc rotate 180 over the course of the cycle
         "siderealPeriod": 44,
         "showOrbitLine": false
@@ -157,1028 +157,1052 @@
                 "scale": 0.43
             },
             */
-  //----------------------------------------------------------
-  //FOLIAGE OF PAST AREA
-  //----------------------------------------------------------
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
-    "position": {
-      "x": 68.8964,
-      "y": -79.6785,
-      "z": 26.1436
-    },
-    "rotation": {
-      "x": 14.3114,
-      "y": 273.8549,
-      "z": 271.5309
-    },
-    "scale": 2,
-    "rename": "Foliage_Past_A_1"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
-    "position": {
-      "x": 66.2662,
-      "y": -63.4421,
-      "z": 26.6835
-    },
-    "rotation": {
-      "x": 270.074,
-      "y": 184.2764,
-      "z": 0
-    },
-    "scale": 2,
-    "rename": "Foliage_Past_A_2"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
-    "position": {
-      "x": 37.2569,
-      "y": -50.4697,
-      "z": 29.8604
-    },
-    "rotation": {
-      "x": 287.1154,
-      "y": 287.3245,
-      "z": 259.6807
-    },
-    "scale": 2,
-    "rename": "Foliage_Past_A_3"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
-    "position": {
-      "x": -11.5693,
-      "y": -66.0403,
-      "z": 29.3713
-    },
-    "rotation": {
-      "x": 310.7948,
-      "y": 271.7016,
-      "z": 262.8784
-    },
-    "scale": 2,
-    "rename": "Foliage_Past_A_4"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
-    "position": {
-      "x": -134.2069,
-      "y": -76.3181,
-      "z": 27.0162
-    },
-    "rotation": {
-      "x": 37.0986,
-      "y": 277.034,
-      "z": 273.011
-    },
-    "scale": 2,
-    "relativeToParent": true,
-    "rename": "Foliage_Past_A_5"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
-    "position": {
-      "x": -110.1001,
-      "y": -25.3261,
-      "z": 25.7935
-    },
-    "rotation": {
-      "x": 349.5325,
-      "y": 270.0645,
-      "z": 269.9821
-    },
-    "scale": 2,
-    "relativeToParent": true,
-    "rename": "Foliage_Past_A_6"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_B.prefab",
-    "position": {
-      "x": 20.9263,
-      "y": -78.0113,
-      "z": 26.7175
-    },
-    "rotation": {
-      "x": 316.5653,
-      "y": 279.8943,
-      "z": 267.5072
-    },
-    "scale": 2,
-    "rename": "Foliage_Past_B_1"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_B.prefab",
-    "position": {
-      "x": -84.4058,
-      "y": -84.7219,
-      "z": 22.8653
-    },
-    "rotation": {
-      "x": 276.6174,
-      "y": 275.3271,
-      "z": 258.4998
-    },
-    "scale": 2,
-    "relativeToParent": true,
-    "rename": "Foliage_Past_B_2"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_B.prefab",
-    "position": {
-      "x": -152.1566,
-      "y": -47.5272,
-      "z": 24.4359
-    },
-    "rotation": {
-      "x": 358.0718,
-      "y": 88.9193,
-      "z": 85.3964
-    },
-    "scale": 2,
-    "relativeToParent": true,
-    "rename": "Foliage_Past_B_3"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_C.prefab",
-    "position": {
-      "x": -53.2154,
-      "y": 61.629,
-      "z": 25.66
-    },
-    "rotation": {
-      "x": 26.6047,
-      "y": 285.2747,
-      "z": 277.2441
-    },
-    "scale": 2,
-    "relativeToParent": true,
-    "rename": "Foliage_Past_C_1"
-  },
-  //----------------------------------------------------------
-  //TREES OF PAST AREA
-  //----------------------------------------------------------
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Past_Tree_A.prefab",
-    "position": {
-      "x": 92.0247,
-      "y": -72.4747,
-      "z": 24.3356
-    },
-    "rotation": {
-      "x": 33.917,
-      "y": 95.6425,
-      "z": 81.367
-    },
-    "scale": 1.5,
-    "rename": "Past_Tree_A_1"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Past_Tree_A.prefab",
-    "position": {
-      "x": -91.6391,
-      "y": -62.5972,
-      "z": 23.7483
-    },
-    "rotation": {
-      "x": 23.6763,
-      "y": 86.8798,
-      "z": 92.1123
-    },
-    "scale": 1.5,
-    "rename": "Past_Tree_A_2"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Past_Tree_A.prefab",
-    "position": {
-      "x": -138.127,
-      "y": 73.3497,
-      "z": 31.4721
-    },
-    "rotation": {
-      "x": 84.943,
-      "y": 343.6739,
-      "z": 347.9955
-    },
-    "scale": 1.5,
-    "rename": "Past_Tree_A_3"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Past_Tree_A.prefab",
-    "position": {
-      "x": -13.2837,
-      "y": 109.938,
-      "z": 24.5258
-    },
-    "rotation": {
-      "x": 20.4382,
-      "y": 270.1012,
-      "z": 270.0665
-    },
-    "scale": 1.5,
-    "rename": "Past_Tree_A_4"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Past_Tree_A.prefab",
-    "position": {
-      "x": 72.602,
-      "y": 123.4947,
-      "z": 29.8985
-    },
-    "rotation": {
-      "x": 46.0897,
-      "y": 271.159,
-      "z": 270.7752
-    },
-    "scale": 1.5,
-    "rename": "Past_Tree_A_5"
-  },
-  //----------------------------------------------------------
-  //FOLIAGE OF FUTURE AREA
-  //----------------------------------------------------------
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_A.prefab",
-    "position": {
-      "x": -24.7098,
-      "y": 55.9494,
-      "z": -25.6091
-    },
-    "rotation": {
-      "x": 319.2232,
-      "y": 94.6278,
-      "z": 267.9157
-    },
-    "scale": 1.5,
-    "rename": "Foliage_Future_A_1"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_A.prefab",
-    "position": {
-      "x": -36.7136,
-      "y": 70.3801,
-      "z": -26.2955
-    },
-    "rotation": {
-      "x": 81.8481,
-      "y": 278.1619,
-      "z": 98.1576
-    },
-    "scale": 1.5,
-    "rename": "Foliage_Future_A_2"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_A.prefab",
-    "position": {
-      "x": -2.1439,
-      "y": 94.2761,
-      "z": -28.0625
-    },
-    "rotation": {
-      "x": 33.6931,
-      "y": 271.8489,
-      "z": 91.7354
-    },
-    "scale": 1.5,
-    "relativeToParent": true,
-    "rename": "Foliage_Future_A_2"
-  },
-  //----------------------------------------------------------
-  //TREES OF FUTURE AREA
-  //----------------------------------------------------------
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
-    "position": {
-      "x": 92.0247,
-      "y": -72.4747,
-      "z": -18.6229
-    },
-    "rotation": {
-      "x": 33.917,
-      "y": 274.6425,
-      "z": 105.367
-    },
-    "scale": 3,
-    "rename": "Future_Alpine_Trees_A_1"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
-    "position": {
-      "x": -17.7871,
-      "y": -43.4094,
-      "z": -21.821
-    },
-    "rotation": {
-      "x": 75.635,
-      "y": 269.5826,
-      "z": 93.8807
-    },
-    "scale": 3,
-    "rename": "Future_Alpine_Trees_A_2"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
-    "position": {
-      "x": 12.4334,
-      "y": -72.4635,
-      "z": -23.4823
-    },
-    "rotation": {
-      "x": 61.2876,
-      "y": 98.8911,
-      "z": 277.5599
-    },
-    "scale": 3,
-    "rename": "Future_Alpine_Trees_A_3"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
-    "position": {
-      "x": -8.4211,
-      "y": -73.7734,
-      "z": -23.3221
-    },
-    "rotation": {
-      "x": 29.0794,
-      "y": 90.017,
-      "z": 270.6734
-    },
-    "scale": 2.5,
-    "rename": "Future_Alpine_Trees_A_4"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
-    "position": {
-      "x": -104.5092,
-      "y": -30.6123,
-      "z": -22.2831
-    },
-    "rotation": {
-      "x": 332.3639,
-      "y": 88.8588,
-      "z": 269.7947
-    },
-    "scale": 3,
-    "rename": "Future_Alpine_Trees_A_5"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
-    "position": {
-      "x": -90.6287,
-      "y": -114.7182,
-      "z": -23.4864
-    },
-    "rotation": {
-      "x": 84.2511,
-      "y": 89.6857,
-      "z": 271.091
-    },
-    "scale": 3,
-    "rename": "Future_Alpine_Trees_A_6"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
-    "position": {
-      "x": -65.2808,
-      "y": -170.9133,
-      "z": -23.7473
-    },
-    "rotation": {
-      "x": 36.6779,
-      "y": 272.1281,
-      "z": 96.9909
-    },
-    "scale": 3,
-    "rename": "Future_Alpine_Trees_A_7"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
-    "position": {
-      "x": -176.0349,
-      "y": -64.0081,
-      "z": -24.8237
-    },
-    "rotation": {
-      "x": 295.4303,
-      "y": 280.0894,
-      "z": 77.1221
-    },
-    "scale": 3,
-    "rename": "Future_Alpine_Trees_A_8"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
-    "position": {
-      "x": 4.402,
-      "y": -177.3097,
-      "z": -23.3014
-    },
-    "rotation": {
-      "x": 305.2562,
-      "y": 268.7474,
-      "z": 88.7322
-    },
-    "scale": 3,
-    "rename": "Future_Alpine_Trees_A_9"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
-    "position": {
-      "x": -24.81,
-      "y": -146.0004,
-      "z": -25.2254
-    },
-    "rotation": {
-      "x": 345.3465,
-      "y": 88.7802,
-      "z": 268.1887
-    },
-    "scale": 3,
-    "rename": "Future_Alpine_Trees_A_10"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
-    "position": {
-      "x": 67.3963,
-      "y": -125.8577,
-      "z": -22.9472
-    },
-    "rotation": {
-      "x": 50.9603,
-      "y": 272.6435,
-      "z": 97.1838
-    },
-    "scale": 3,
-    "rename": "Future_Alpine_Trees_A_11"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
-    "position": {
-      "x": 58.6282,
-      "y": -169.0348,
-      "z": -22.4756
-    },
-    "rotation": {
-      "x": 329.0515,
-      "y": 274.1447,
-      "z": 86.5331
-    },
-    "scale": 2.5,
-    "rename": "Future_Alpine_Trees_A_12"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
-    "position": {
-      "x": 121.1582,
-      "y": -133.7774,
-      "z": -23.4404
-    },
-    "rotation": {
-      "x": 293.7043,
-      "y": 284.8896,
-      "z": 77.5376
-    },
-    "scale": 3,
-    "rename": "Future_Alpine_Trees_A_13"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
-    "position": {
-      "x": -36.0753,
-      "y": -201.1369,
-      "z": -23.0671
-    },
-    "rotation": {
-      "x": 45.454,
-      "y": 269.4387,
-      "z": 89.9118
-    },
-    "scale": 2,
-    "rename": "Future_Alpine_Trees_A_14"
-  },
-  {
-    "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
-    "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_B.prefab",
-    "position": {
-      "x": 4.3093,
-      "y": -142.9464,
-      "z": -25.4419
-    },
-    "rotation": {
-      "x": 338.7161,
-      "y": 348.0934,
-      "z": 348.608
-    },
-    "scale": 2,
-    "rename": "Future_Alpine_Trees_B_1"
-  },
-  ],
-  "campfires": [
-    {
-      "rename": "WelcomeMountainCampfire",
-      "position": {
-        "x": -22.526,
-        "y": -140.6618,
-        "z": 24.91541
-      },
-      "rotation": {
-        "x": 287.7584,
-        "y": 86.16642,
-        "z": 90.41293
-      },
-      "initialState": "unlit",
-      "canSleepHere": true
-    },
-    {
-      "rename": "PomaiBlueLakeCampfire",
-      "position": {
-        "x": -140.4471,
-        "y": 78.9747,
-        "z": 30.82258
-      },
-      "rotation": {
-        "x": 81.74718,
-        "y": 134.1558,
-        "z": 135.884
-      },
-      "initialState": "unlit",
-      "canSleepHere": true
-    },
-    {
-      "rename": "PomaiCityCampfire",
-      "position": {
-        "x": -5.901211,
-        "y": 33.70358,
-        "z": 31.7487
-      },
-      "rotation": {
-        "x": 16.84968,
-        "y": 270,
-        "z": 269.9999
-      },
-      "initialState": "unlit",
-      "canSleepHere": true
-    },
-    {
-      "rename": "FomaiCityCampfire",
-      "position": {
-        "x": 15.39036,
-        "y": 24.04629,
-        "z": -22.32573
-      },
-      "rotation": {
-        "x": 301.954,
-        "y": 90.32652,
-        "z": 269.3534
-      },
-      "initialState": "unlit",
-      "canSleepHere": true
-    }
-  ],
-  "fuelTanks": [
-    {
-      "rename": "WelcomeMountainFuelTank",
-      "position": {
-        "x": -21.39832,
-        "y": -141.2996,
-        "z": 24.9818
-      },
-      "rotation": {
-        "x": 20.14903,
-        "y": 86.60587,
-        "z": 90.13416
-      },
-      "type": "preCrashNomaiTank"
-    },
-    {
-      "rename": "PomaiBlueLakeFuelTank",
-      "position": {
-        "x": -142.5468,
-        "y": 77.14165,
-        "z": 30.55191
-      },
-      "rotation": {
-        "x": 79.92484,
-        "y": 41.65238,
-        "z": 39.96154
-      },
-      "type": "preCrashNomaiTank"
-    },
-    {
-      "rename": "PomaiCityFuelTank",
-      "position": {
-        "x": -11.79963,
-        "y": 34.83296,
-        "z": 31.74869
-      },
-      "rotation": {
-        "x": 356.1694,
-        "y": 89.99997,
-        "z": 90.00002
-      },
-      "type": "preCrashNomaiTank"
-    },
-    {
-      "rename": "SundialFuelTank",
-      "position": {
-        "x": 167.8078,
-        "y": 90.2089,
-        "z": 25.8927
-      },
-      "rotation": {
-        "x": 341.715,
-        "y": 87.95209,
-        "z": 87.342
-      },
-      "type": "preCrashNomaiTank"
-    },
-    {
-      "rename": "TelescopeFuelTank",
-      "position": {
-        "x": 76.78214,
-        "y": 82.1953,
-        "z": -22.671
-      },
-      "rotation": {
-        "x": 333.4299,
-        "y": 268.3909,
-        "z": 90.3395
-      },
-      "type": "preCrashNomaiTank"
-    },
-    {
-      "rename": "FomaiTowerFuelTank",
-      "position": {
-        "x": -21.98393,
-        "y": 10.3484,
-        "z": -22.35266
-      },
-      "rotation": {
-        "x": 330.0842,
-        "y": 271.0417,
-        "z": 90.99753
-      },
-      "type": "preCrashNomaiTank"
-    }
-  ],
-  "signals": [
-    // TELESCOPE
-    {
-      "frequency": "$TeamFred.Nomai_Technology",
-      "name": "$TeamFred.Telescope",
-      "rename": "TelescopeSignal",
-      "audio": "planets/Assets/Audio/Jam_6_Telescope.ogg",
-      "sourceRadius": 10,
-      "position": {
-        "x": 124.4507,
-        "y": 91.19663,
-        "z": -72.42654
-      },
-      "identificationRadius": 85,
-      "detectionRadius": 270,
-      "onlyAudibleToScope": true
-    }
-  ],
-  "translatorText": [
-    // BlueLakeLookout - commenting on the lake color
-    {
-      "rename": "BlueLakeLookout",
-      "xmlFile": "nomai/BlueLakeLookout.xml",
-      "position": {
-        "x": -88.86682,
-        "y": 26.91541,
-        "z": 51.3
-      },
-      "rotation": {
-        "x": 289.0797,
-        "y": 270,
-        "z": 270
-      },
-      "normal": {
-        "x": 0,
-        "y": 0,
-        "z": 1
-      },
-      "type": "wall",
-      "seed": 245840159
-      //All adult text, so no ArcInfo needed
-    },
-    // BlueLakeScroll
-    {
-      "rename": "BlueLakeScroll",
-      "xmlFile": "nomai/BlueLakeScroll.xml",
-      "position": {
-        "x": -145.5299,
-        "y": 65.80897,
-        "z": 30.94978
-      },
-      "rotation": {
-        "x": 306.4604,
-        "y": 242.9661,
-        "z": 281.101
-      },
-      "normal": {
-        "x": -0.3080807,
-        "y": 0.1144194,
-        "z": 0.9444546
-      },
-      "type": "scroll",
-      "seed": 840285992,
-      "arcInfo": [
-        //1
-        {
-          "type": "adult"
-        },
-        //2
-        {
-          "type": "adult"
-        },
-        //3 - Branch 1
-        {
-          "type": "adult",
-          "mirror": true,
-          "position": {
-            "x": -0.25,
-            "y": 1.625
-          },
-          "zRotation": 50
-        },
-        //4 - Branch 2
-        {
-          "type": "adult"
-        },
-        //5
-        {
-          "type": "adult"
-        },
-        //6
-        {
-          "type": "adult"
-        }
-      ]
-    },
-    // BlueLakeLookout - Empty Whiteboard
-    {
-      "rename": "BlueLakeScrollWhiteboard",
-      "position": {
-        "x": -89.275,
-        "y": 28.7671,
-        "z": 51.68
-      },
-      "rotation": {
-        "x": 59.573,
-        "y": 270,
-        "z": 270
-      },
-      "normal": {
-        "x": 0,
-        "y": 0,
-        "z": 1
-      },
-      "type": "whiteboard"
-    },
-    // Expo Hall - TODO : MUST IMPLEMENT (NEED GROUND)
-    // Expo Hall Oldest Nomai Text
-    {
-      "rename": "ExpoHallOldestNomaiText",
-      "xmlFile": "nomai/ExpoHallOldestNomaiText.xml",
-      "position": {
-        "x": 0.5503769,
-        "y": 0.1565914,
-        "z": -155.3074
-      },
-      "rotation": {
-        "x": 5.096992E-05,
-        "y": 138.0156,
-        "z": -5.80123E-05
-      },
-      "normal": {
-        "x": 1.08474E-07,
-        "y": 1,
-        "z": -1.634161E-06
-      },
-      "type": "wall",
-      "seed": 1600275628
-    },
-    // Expo Pedestal - TODO : MUST IMPLEMENT (NEED GROUND)
-    // Fomai Base
-    {
-      "rename": "FomaiBase",
-      "xmlFile": "nomai/FomaiBase.xml",
-      "position": {
-        "x": -20.81392,
-        "y": 17.08634,
-        "z": -22.4856
-      },
-      "rotation": {
-        "x": 317.1419,
-        "y": 270.7432,
-        "z": 91.161
-      },
-      "normal": {
-        "x": -0.02674963,
-        "y": -0.01485283,
-        "z": -0.9995318
-      },
-      "type": "whiteboard",
-      "seed": 267894144
-      //All adult text, so no ArcInfo needed
-    },
-    // Fomai Wall A
-    {
-      "rename": "FomaiWallA",
-      "xmlFile": "nomai/FomaiWallA.xml",
-      "position": {
-        "x": 34.60301,
-        "y": 0.5795494,
-        "z": -91.10143
-      },
-      "rotation": {
-        "x": 355.6039,
-        "y": 270,
-        "z": 90.00001
-      },
-      "normal": {
-        "x": 7.450581E-09,
-        "y": -1.78814E-07,
-        "z": -1
-      },
-      "type": "whiteboard",
-      "seed": 851217981
-      //All adult text, so no ArcInfo needed
-    },
-    // Fomai Wall B
-    {
-      "rename": "FomaiWallB",
-      "xmlFile": "nomai/FomaiWallB.xml",
-      "position": {
-        "x": -35.03045,
-        "y": -0.1282246,
-        "z": -91.10144
-      },
-      "rotation": {
-        "x": 3.570446,
-        "y": 90,
-        "z": 270
-      },
-      "normal": {
-        "x": 0,
-        "y": -1.78814E-07,
-        "z": -1
-      },
-      "type": "whiteboard",
-      "seed": 1314754286
-      //All adult text, so no ArcInfo needed
-    },
-    // Fomai Wall (Floor text) below Expo Hall
-    {
-      "rename": "FomaiWallBelowExpo",
-      "xmlFile": "nomai/FomaiWallBelowExpo.xml",
-      "position": {
-        "x": 0,
-        "y": 0,
-        "z": -134.7422
-      },
-      "rotation": {
-        "x": 280.2318,
-        "y": 90.00003,
-        "z": 270
-      },
-      "normal": {
-        "x": 2.980232E-08,
-        "y": -1.78814E-07,
-        "z": -1
-      },
-      "type": "wall",
-      "seed": 211768403
-      //All adult text, so no ArcInfo needed
-    },
-    // Garden
-    {
-      "rename": "Garden",
-      "xmlFile": "nomai/Garden.xml",
-      "position": {
-        "x": 31.49366,
-        "y": -23.42227,
-        "z": 32.17842
-      },
-      "rotation": {
-        "x": 358.8462,
-        "y": 0.6663197,
-        "z": 59.99344
-      },
-      "normal": {
-        "x": -0.8660267,
-        "y": 0.4999977,
-        "z": 7.450581E-07
-      },
-      "type": "wall",
-      "seed": 1046998503,
-      "arcInfo": [
-        //1
-        {
-          "type": "adult"
-        },
-        //2 - Branch 1
-        {
-          "type": "adult"
-        },
-        //3
-        {
-          "type": "adult"
-        },
-        //4 - Branch 1.1
-        {
-          "type": "adult"
-        },
-        //5 - Branch 1.2
-        {
-          "type": "adult"
-        },
-        //6 - Branch 2
-        {
-          "type": "adult"
-        },
-        //7
-        {
-          "type": "adult"
-        },
-        //8
-        {
-          "type": "adult",
-          "position": {
-            "x": 1.1,
-            "y": 2.3
-          },
-          "zRotation": 320
-        },
-        //9
-        {
-          "type": "adult"
-        },
-        //10
-        {
-          "type": "adult"
-        },
-        //11 -Branch 3
-        {
-          "type": "adult"
-        },
-        //12 - Branch 2
-        {
-          "type": "adult",
-          "mirror": true,
-          "position": {
-            "x": 0.5,
-            "y": -0.45
-          },
-          "zRotation": 200
-        },
-        //13
-        {
-          "type": "adult",
-          "mirror": true,
-          "position": {
-            "x": 1.65,
-            "y": -0.9
-          },
-          "zRotation": 267
-        }
-      ]
-    },
-    // GravityRoom - deprecated (no window to gravity room)
-    /*{
+            //----------------------------------------------------------
+            //FOLIAGE OF PAST AREA
+            //----------------------------------------------------------
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
+                "position": {
+                    "x": 68.8964,
+                    "y": -79.6785,
+                    "z": 26.1436
+                },
+                "rotation": {
+                    "x": 14.3114,
+                    "y": 273.8549,
+                    "z": 271.5309
+                },
+                "scale": 2,
+                "rename": "Foliage_Past_A_1"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
+                "position": {
+                    "x": 66.2662,
+                    "y": -63.4421,
+                    "z": 26.6835
+                },
+                "rotation": {
+                    "x": 270.074,
+                    "y": 184.2764,
+                    "z": 0
+                },
+                "scale": 2,
+                "rename": "Foliage_Past_A_2"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
+                "position": {
+                    "x": 37.2569,
+                    "y": -50.4697,
+                    "z": 29.8604
+                },
+                "rotation": {
+                    "x": 287.1154,
+                    "y": 287.3245,
+                    "z": 259.6807
+                },
+                "scale": 2,
+                "rename": "Foliage_Past_A_3"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
+                "position": {
+                    "x": -11.5693,
+                    "y": -66.0403,
+                    "z": 29.3713
+                },
+                "rotation": {
+                    "x": 310.7948,
+                    "y": 271.7016,
+                    "z": 262.8784
+                },
+                "scale": 2,
+                "rename": "Foliage_Past_A_4"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
+                "position": {
+                    "x": -134.2069,
+                    "y": -76.3181,
+                    "z": 27.0162
+                },
+                "rotation": {
+                    "x": 37.0986,
+                    "y": 277.034,
+                    "z": 273.011
+                },
+                "scale": 2,
+                "relativeToParent": true,
+                "rename": "Foliage_Past_A_5"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_A.prefab",
+                "position": {
+                    "x": -110.1001,
+                    "y": -25.3261,
+                    "z": 25.7935
+                },
+                "rotation": {
+                    "x": 349.5325,
+                    "y": 270.0645,
+                    "z": 269.9821
+                },
+                "scale": 2,
+                "relativeToParent": true,
+                "rename": "Foliage_Past_A_6"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_B.prefab",
+                "position": {
+                    "x": 20.9263,
+                    "y": -78.0113,
+                    "z": 26.7175
+                },
+                "rotation": {
+                    "x": 316.5653,
+                    "y": 279.8943,
+                    "z": 267.5072
+                },
+                "scale": 2,
+                "rename": "Foliage_Past_B_1"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_B.prefab",
+                "position": {
+                    "x": -84.4058,
+                    "y": -84.7219,
+                    "z": 22.8653
+                },
+                "rotation": {
+                    "x": 276.6174,
+                    "y": 275.3271,
+                    "z": 258.4998
+                },
+                "scale": 2,
+                "relativeToParent": true,
+                "rename": "Foliage_Past_B_2"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_B.prefab",
+                "position": {
+                    "x": -152.1566,
+                    "y": -47.5272,
+                    "z": 24.4359
+                },
+                "rotation": {
+                    "x": 358.0718,
+                    "y": 88.9193,
+                    "z": 85.3964
+                },
+                "scale": 2,
+                "relativeToParent": true,
+                "rename": "Foliage_Past_B_3"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Past/Foliage_Past_C.prefab",
+                "position": {
+                    "x": -53.2154,
+                    "y": 61.629,
+                    "z": 25.66
+                },
+                "rotation": {
+                    "x": 26.6047,
+                    "y": 285.2747,
+                    "z": 277.2441
+                },
+                "scale": 2,
+                "relativeToParent": true,
+                "rename": "Foliage_Past_C_1"
+            },
+            //----------------------------------------------------------
+            //TREES OF PAST AREA
+            //----------------------------------------------------------
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Past_Tree_A.prefab",
+                "position": {
+                    "x": 92.0247,
+                    "y": -72.4747,
+                    "z": 24.3356
+                },
+                "rotation": {
+                    "x": 33.917,
+                    "y": 95.6425,
+                    "z": 81.367
+                },
+                "scale": 1.5,
+                "rename": "Past_Tree_A_1"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Past_Tree_A.prefab",
+                "position": {
+                    "x": -91.6391,
+                    "y": -62.5972,
+                    "z": 23.7483
+                },
+                "rotation": {
+                    "x": 23.6763,
+                    "y": 86.8798,
+                    "z": 92.1123
+                },
+                "scale": 1.5,
+                "rename": "Past_Tree_A_2"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Past_Tree_A.prefab",
+                "position": {
+                    "x": -138.127,
+                    "y": 73.3497,
+                    "z": 31.4721
+                },
+                "rotation": {
+                    "x": 84.943,
+                    "y": 343.6739,
+                    "z": 347.9955
+                },
+                "scale": 1.5,
+                "rename": "Past_Tree_A_3"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Past_Tree_A.prefab",
+                "position": {
+                    "x": -13.2837,
+                    "y": 109.938,
+                    "z": 24.5258
+                },
+                "rotation": {
+                    "x": 20.4382,
+                    "y": 270.1012,
+                    "z": 270.0665
+                },
+                "scale": 1.5,
+                "rename": "Past_Tree_A_4"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Past_Tree_A.prefab",
+                "position": {
+                    "x": 72.602,
+                    "y": 123.4947,
+                    "z": 29.8985
+                },
+                "rotation": {
+                    "x": 46.0897,
+                    "y": 271.159,
+                    "z": 270.7752
+                },
+                "scale": 1.5,
+                "rename": "Past_Tree_A_5"
+            },
+            //----------------------------------------------------------
+            //FOLIAGE OF FUTURE AREA
+            //----------------------------------------------------------
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_A.prefab",
+                "position": {
+                    "x": -24.7098,
+                    "y": 55.9494,
+                    "z": -25.6091
+                },
+                "rotation": {
+                    "x": 319.2232,
+                    "y": 94.6278,
+                    "z": 267.9157
+                },
+                "scale": 1.5,
+                "rename": "Foliage_Future_A_1"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_A.prefab",
+                "position": {
+                    "x": -36.7136,
+                    "y": 70.3801,
+                    "z": -26.2955
+                },
+                "rotation": {
+                    "x": 81.8481,
+                    "y": 278.1619,
+                    "z": 98.1576
+                },
+                "scale": 1.5,
+                "rename": "Foliage_Future_A_2"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Future/Foliage_Future_A.prefab",
+                "position": {
+                    "x": -2.1439,
+                    "y": 94.2761,
+                    "z": -28.0625
+                },
+                "rotation": {
+                    "x": 33.6931,
+                    "y": 271.8489,
+                    "z": 91.7354
+                },
+                "scale": 1.5,
+                "relativeToParent": true,
+                "rename": "Foliage_Future_A_2"
+            },
+            //----------------------------------------------------------
+            //TREES OF FUTURE AREA
+            //----------------------------------------------------------
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": 92.0247,
+                    "y": -72.4747,
+                    "z": -18.6229
+                },
+                "rotation": {
+                    "x": 33.917,
+                    "y": 274.6425,
+                    "z": 105.367
+                },
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_1"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": -17.7871,
+                    "y": -43.4094,
+                    "z": -21.821
+                },
+                "rotation": {
+                    "x": 75.635,
+                    "y": 269.5826,
+                    "z": 93.8807
+                },
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_2"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": 12.4334,
+                    "y": -72.4635,
+                    "z": -23.4823
+                },
+                "rotation": {
+                    "x": 61.2876,
+                    "y": 98.8911,
+                    "z": 277.5599
+                },
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_3"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": -8.4211,
+                    "y": -73.7734,
+                    "z": -23.3221
+                },
+                "rotation": {
+                    "x": 29.0794,
+                    "y": 90.017,
+                    "z": 270.6734
+                },
+                "scale": 2.5,
+                "rename": "Future_Alpine_Trees_A_4"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": -104.5092,
+                    "y": -30.6123,
+                    "z": -22.2831
+                },
+                "rotation": {
+                    "x": 332.3639,
+                    "y": 88.8588,
+                    "z": 269.7947
+                },
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_5"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": -90.6287,
+                    "y": -114.7182,
+                    "z": -23.4864
+                },
+                "rotation": {
+                    "x": 84.2511,
+                    "y": 89.6857,
+                    "z": 271.091
+                },
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_6"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": -65.2808,
+                    "y": -170.9133,
+                    "z": -23.7473
+                },
+                "rotation": {
+                    "x": 36.6779,
+                    "y": 272.1281,
+                    "z": 96.9909
+                },
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_7"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": -176.0349,
+                    "y": -64.0081,
+                    "z": -24.8237
+                },
+                "rotation": {
+                    "x": 295.4303,
+                    "y": 280.0894,
+                    "z": 77.1221
+                },
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_8"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": 4.402,
+                    "y": -177.3097,
+                    "z": -23.3014
+                },
+                "rotation": {
+                    "x": 305.2562,
+                    "y": 268.7474,
+                    "z": 88.7322
+                },
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_9"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": -24.81,
+                    "y": -146.0004,
+                    "z": -25.2254
+                },
+                "rotation": {
+                    "x": 345.3465,
+                    "y": 88.7802,
+                    "z": 268.1887
+                },
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_10"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": 67.3963,
+                    "y": -125.8577,
+                    "z": -22.9472
+                },
+                "rotation": {
+                    "x": 50.9603,
+                    "y": 272.6435,
+                    "z": 97.1838
+                },
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_11"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": 58.6282,
+                    "y": -169.0348,
+                    "z": -22.4756
+                },
+                "rotation": {
+                    "x": 329.0515,
+                    "y": 274.1447,
+                    "z": 86.5331
+                },
+                "scale": 2.5,
+                "rename": "Future_Alpine_Trees_A_12"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": 121.1582,
+                    "y": -133.7774,
+                    "z": -23.4404
+                },
+                "rotation": {
+                    "x": 293.7043,
+                    "y": 284.8896,
+                    "z": 77.5376
+                },
+                "scale": 3,
+                "rename": "Future_Alpine_Trees_A_13"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_A.prefab",
+                "position": {
+                    "x": -36.0753,
+                    "y": -201.1369,
+                    "z": -23.0671
+                },
+                "rotation": {
+                    "x": 45.454,
+                    "y": 269.4387,
+                    "z": 89.9118
+                },
+                "scale": 2,
+                "rename": "Future_Alpine_Trees_A_14"
+            },
+            {
+                "assetBundle": "planets/Assets/Bundles/Props_Bundle/props",
+                "path": "Assets/Prefabs_Art/Foliage/Prefabs/Foliage_Trees/Future_Alpine_Trees_B.prefab",
+                "position": {
+                    "x": 4.3093,
+                    "y": -142.9464,
+                    "z": -25.4419
+                },
+                "rotation": {
+                    "x": 338.7161,
+                    "y": 348.0934,
+                    "z": 348.608
+                },
+                "scale": 2,
+                "rename": "Future_Alpine_Trees_B_1"
+            }
+        ],
+        "campfires": [
+            {
+                "rename": "WelcomeMountainCampfire",
+                "position": {
+                    "x": -22.526,
+                    "y": -140.6618,
+                    "z": 24.91541
+                },
+                "rotation": {
+                    "x": 287.7584,
+                    "y": 86.16642,
+                    "z": 90.41293
+                },
+                "initialState": "unlit",
+                "canSleepHere": true
+            },
+            {
+                "rename": "PomaiBlueLakeCampfire",
+                "position": {
+                    "x": -145.7449,
+                    "y": 75.894,
+                    "z": 30.67036
+                },
+                "rotation": {
+                    "x": 48.94999,
+                    "y": 81.78637,
+                    "z": 83.80332
+                },
+                "initialState": "unlit",
+                "canSleepHere": true
+            },
+            {
+                "rename": "PomaiCityCampfire",
+                "position": {
+                    "x": -5.901211,
+                    "y": 33.70358,
+                    "z": 31.7487
+                },
+                "rotation": {
+                    "x": 16.84968,
+                    "y": 270,
+                    "z": 269.9999
+                },
+                "initialState": "unlit",
+                "canSleepHere": true
+            },
+            {
+                "rename": "FomaiCityCampfire",
+                "position": {
+                    "x": 15.39036,
+                    "y": 24.04629,
+                    "z": -22.32573
+                },
+                "rotation": {
+                    "x": 301.954,
+                    "y": 90.32652,
+                    "z": 269.3534
+                },
+                "initialState": "unlit",
+                "canSleepHere": true
+            }
+        ],
+        "fuelTanks": [
+            {
+                "rename": "WelcomeMountainFuelTank",
+                "position": {
+                    "x": -21.39832,
+                    "y": -141.2996,
+                    "z": 24.9818
+                },
+                "rotation": {
+                    "x": 20.14903,
+                    "y": 86.60587,
+                    "z": 90.13416
+                },
+                "type": "preCrashNomaiTank"
+            },
+            {
+                "rename": "PomaiBlueLakeFuelTank",
+                "position": {
+                    "x": -142.5468,
+                    "y": 77.14165,
+                    "z": 30.55191
+                },
+                "rotation": {
+                    "x": 79.92484,
+                    "y": 41.65238,
+                    "z": 39.96154
+                },
+                "type": "preCrashNomaiTank"
+            },
+            {
+                "rename": "PomaiCityFuelTank",
+                "position": {
+                    "x": -11.79963,
+                    "y": 34.83296,
+                    "z": 31.74869
+                },
+                "rotation": {
+                    "x": 356.1694,
+                    "y": 89.99997,
+                    "z": 90.00002
+                },
+                "type": "preCrashNomaiTank"
+            },
+            {
+                "rename": "SundialFuelTank",
+                "position": {
+                    "x": 167.8078,
+                    "y": 90.2089,
+                    "z": 25.8927
+                },
+                "rotation": {
+                    "x": 341.715,
+                    "y": 87.95209,
+                    "z": 87.342
+                },
+                "type": "preCrashNomaiTank"
+            },
+            {
+                "rename": "TelescopeFuelTank",
+                "position": {
+                    "x": 76.78214,
+                    "y": 82.1953,
+                    "z": -22.671
+                },
+                "rotation": {
+                    "x": 333.4299,
+                    "y": 268.3909,
+                    "z": 90.3395
+                },
+                "type": "preCrashNomaiTank"
+            },
+            {
+                "rename": "FomaiTowerFuelTank",
+                "position": {
+                    "x": -21.98393,
+                    "y": 10.3484,
+                    "z": -22.35266
+                },
+                "rotation": {
+                    "x": 330.0842,
+                    "y": 271.0417,
+                    "z": 90.99753
+                },
+                "type": "preCrashNomaiTank"
+            }
+        ],
+        "signals": [
+            // TELESCOPE
+            {
+                "rename": "TelescopeSignal",
+                "frequency": "$TeamFred.Nomai_Technology",
+                "name": "$TeamFred.Telescope",
+                "rename": "TelescopeSignal",
+                "audio": "planets/Assets/Audio/Jam_6_Telescope.ogg",
+                "sourceRadius": 10,
+                "position": {
+                    "x": 124.4507,
+                    "y": 91.19663,
+                    "z": -72.42654
+                },
+                "identificationRadius": 85,
+                "detectionRadius": 270,
+                "onlyAudibleToScope": true
+            }
+        ],
+        "translatorText": [
+            // Blue Lake Camp Recorder
+            {
+                "rename": "BlueLakeCampRecorder",
+                "xmlFile": "nomai/BlueLakeCampRecorder.xml",
+                "position": {
+                    "x": -140.391,
+                    "y": 76.16172,
+                    "z": 30.79156
+                },
+                "rotation": {
+                    "x": 34.64666,
+                    "y": 272.7168,
+                    "z": 280.3542
+                },
+                "normal": {
+                    "x": -0.05543816,
+                    "y": 0.1478612,
+                    "z": 0.9874531
+                },
+                "type": "preCrashRecorder",
+                "seed": 245840159
+                //All adult text, so no ArcInfo needed
+            },
+            // BlueLakeLookout - commenting on the lake color
+            {
+                "rename": "BlueLakeLookout",
+                "xmlFile": "nomai/BlueLakeLookout.xml",
+                "position": {
+                    "x": -88.86682,
+                    "y": 26.91541,
+                    "z": 51.3
+                },
+                "rotation": {
+                    "x": 289.0797,
+                    "y": 270,
+                    "z": 270
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "type": "wall",
+                "seed": 245840159
+                //All adult text, so no ArcInfo needed
+            },
+            // BlueLakeScroll
+            {
+                "rename": "BlueLakeScroll",
+                "xmlFile": "nomai/BlueLakeScroll.xml",
+                "position": {
+                    "x": -145.5299,
+                    "y": 65.80897,
+                    "z": 30.94978
+                },
+                "rotation": {
+                    "x": 306.4604,
+                    "y": 242.9661,
+                    "z": 281.101
+                },
+                "normal": {
+                    "x": -0.3080807,
+                    "y": 0.1144194,
+                    "z": 0.9444546
+                },
+                "type": "scroll",
+                "seed": 840285992,
+                "arcInfo": [
+                    //1
+                    {
+                        "type": "adult"
+                    },
+                    //2
+                    {
+                        "type": "adult"
+                    },
+                    //3 - Branch 1
+                    {
+                        "type": "adult",
+                        "mirror": true,
+                        "position": {
+                            "x": -0.25,
+                            "y": 1.625
+                        },
+                        "zRotation": 50
+                    },
+                    //4 - Branch 2
+                    {
+                        "type": "adult"
+                    },
+                    //5
+                    {
+                        "type": "adult"
+                    },
+                    //6
+                    {
+                        "type": "adult"
+                    }
+                ]
+            },
+            // BlueLakeLookout - Empty Whiteboard
+            {
+                "rename": "BlueLakeScrollWhiteboard",
+                "position": {
+                    "x": -89.275,
+                    "y": 28.7671,
+                    "z": 51.68
+                },
+                "rotation": {
+                    "x": 59.573,
+                    "y": 270,
+                    "z": 270
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "type": "whiteboard"
+            },
+            // Expo Hall - TODO : MUST IMPLEMENT (NEED GROUND)
+            // Expo Hall Oldest Nomai Text
+            {
+                "rename": "ExpoHallOldestNomaiText",
+                "xmlFile": "nomai/ExpoHallOldestNomaiText.xml",
+                "position": {
+                    "x": 0.5503769,
+                    "y": 0.1565914,
+                    "z": -155.3074
+                },
+                "rotation": {
+                    "x": 5.096992E-05,
+                    "y": 138.0156,
+                    "z": -5.80123E-05
+                },
+                "normal": {
+                    "x": 1.08474E-07,
+                    "y": 1,
+                    "z": -1.634161E-06
+                },
+                "type": "wall",
+                "seed": 1600275628
+            },
+            // Expo Pedestal - TODO : MUST IMPLEMENT (NEED GROUND)
+            // Fomai Base
+            {
+                "rename": "FomaiBase",
+                "xmlFile": "nomai/FomaiBase.xml",
+                "position": {
+                    "x": -20.81392,
+                    "y": 17.08634,
+                    "z": -22.4856
+                },
+                "rotation": {
+                    "x": 317.1419,
+                    "y": 270.7432,
+                    "z": 91.161
+                },
+                "normal": {
+                    "x": -0.02674963,
+                    "y": -0.01485283,
+                    "z": -0.9995318
+                },
+                "type": "whiteboard",
+                "seed": 267894144
+                //All adult text, so no ArcInfo needed
+            },
+            // Fomai Wall A
+            {
+                "rename": "FomaiWallA",
+                "xmlFile": "nomai/FomaiWallA.xml",
+                "position": {
+                    "x": 34.60301,
+                    "y": 0.5795494,
+                    "z": -91.10143
+                },
+                "rotation": {
+                    "x": 355.6039,
+                    "y": 270,
+                    "z": 90.00001
+                },
+                "normal": {
+                    "x": 7.450581E-09,
+                    "y": -1.78814E-07,
+                    "z": -1
+                },
+                "type": "whiteboard",
+                "seed": 851217981
+                //All adult text, so no ArcInfo needed
+            },
+            // Fomai Wall B
+            {
+                "rename": "FomaiWallB",
+                "xmlFile": "nomai/FomaiWallB.xml",
+                "position": {
+                    "x": -35.03045,
+                    "y": -0.1282246,
+                    "z": -91.10144
+                },
+                "rotation": {
+                    "x": 3.570446,
+                    "y": 90,
+                    "z": 270
+                },
+                "normal": {
+                    "x": 0,
+                    "y": -1.78814E-07,
+                    "z": -1
+                },
+                "type": "whiteboard",
+                "seed": 1314754286
+                //All adult text, so no ArcInfo needed
+            },
+            // Fomai Wall (Floor text) below Expo Hall
+            {
+                "rename": "FomaiWallBelowExpo",
+                "xmlFile": "nomai/FomaiWallBelowExpo.xml",
+                "position": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -134.7422
+                },
+                "rotation": {
+                    "x": 280.2318,
+                    "y": 90.00003,
+                    "z": 270
+                },
+                "normal": {
+                    "x": 2.980232E-08,
+                    "y": -1.78814E-07,
+                    "z": -1
+                },
+                "type": "wall",
+                "seed": 211768403
+                //All adult text, so no ArcInfo needed
+            },
+            // Garden
+            {
+                "rename": "Garden",
+                "xmlFile": "nomai/Garden.xml",
+                "position": {
+                    "x": 31.49366,
+                    "y": -23.42227,
+                    "z": 33.17842
+                },
+                "rotation": {
+                    "x": 358.8462,
+                    "y": 0.6663197,
+                    "z": 59.99344
+                },
+                "normal": {
+                    "x": -0.8660267,
+                    "y": 0.4999977,
+                    "z": 7.450581E-07
+                },
+                "type": "wall",
+                "seed": 1046998503,
+                "arcInfo": [
+                    //1
+                    {
+                        "type": "adult"
+                    },
+                    //2 - Branch 1
+                    {
+                        "type": "adult"
+                    },
+                    //3
+                    {
+                        "type": "adult"
+                    },
+                    //4 - Branch 1.1
+                    {
+                        "type": "adult"
+                    },
+                    //5 - Branch 1.2
+                    {
+                        "type": "adult"
+                    },
+                    //6 - Branch 2
+                    {
+                        "type": "adult"
+                    },
+                    //7
+                    {
+                        "type": "adult"
+                    },
+                    //8
+                    {
+                        "type": "adult",
+                        "position": {
+                            "x": 1.1,
+                            "y": 2.3
+                        },
+                        "zRotation": 320
+                    },
+                    //9
+                    {
+                        "type": "adult"
+                    },
+                    //10
+                    {
+                        "type": "adult"
+                    },
+                    //11 -Branch 3
+                    {
+                        "type": "adult"
+                    },
+                    //12 - Branch 2
+                    {
+                        "type": "adult",
+                        "mirror": true,
+                        "position": {
+                            "x": 0.5,
+                            "y": -0.45
+                        },
+                        "zRotation": 200
+                    },
+                    //13
+                    {
+                        "type": "adult",
+                        "mirror": true,
+                        "position": {
+                            "x": 1.65,
+                            "y": -0.9
+                        },
+                        "zRotation": 267
+                    }
+                ]
+            },
+            // GravityRoom - deprecated (no window to gravity room)
+            /*{
                 "rename": "GravityRoom",
                 "xmlFile": "nomai/GravityRoom.xml",
                 "position": {
@@ -1217,775 +1241,775 @@
                     }
                 ]
             },*/
-    // (Very) Memey text
-    {
-      "rename": "MemeText",
-      "xmlFile": "nomai/MemeText.xml",
-      "position": {
-        "x": 6.477556,
-        "y": 26.48339,
-        "z": 33.38583
-      },
-      "rotation": {
-        "x": 339.232,
-        "y": 318.9407,
-        "z": 157.8511
-      },
-      "normal": {
-        "x": -0.4999992,
-        "y": -0.866026,
-        "z": -4.712492E-07
-      },
-      "seed": 7,
-      "arcInfo": [
-        //1
-        {
-          "type": "child"
-        }
-      ]
+            // (Very) Memey text
+            {
+                "rename": "MemeText",
+                "xmlFile": "nomai/MemeText.xml",
+                "position": {
+                    "x": 6.477556,
+                    "y": 26.48339,
+                    "z": 33.38583
+                },
+                "rotation": {
+                    "x": 339.232,
+                    "y": 318.9407,
+                    "z": 157.8511
+                },
+                "normal": {
+                    "x": -0.4999992,
+                    "y": -0.866026,
+                    "z": -4.712492E-07
+                },
+                "seed": 7,
+                "arcInfo": [
+                    //1
+                    {
+                        "type": "child"
+                    }
+                ]
+            },
+            // MemorialForestCairnA
+            {
+                "rename": "MemorialForestCairnA",
+                "xmlFile": "nomai/MemorialForestCairnA.xml",
+                "position": {
+                    "x": -2.340934,
+                    "y": -115.4418,
+                    "z": -24.81992
+                },
+                "rotation": {
+                    "x": 27.36347,
+                    "y": 94.00957,
+                    "z": 274.4762
+                },
+                "normal": {
+                    "x": -0.03392571,
+                    "y": 0.06931197,
+                    "z": -0.997018
+                },
+                "type": "cairnBH"
+            },
+            // MemorialForestCairnB
+            {
+                "rename": "MemorialForestCairnB",
+                "xmlFile": "nomai/MemorialForestCairnB.xml",
+                "position": {
+                    "x": 11.20282,
+                    "y": -110.545,
+                    "z": -24.96196
+                },
+                "rotation": {
+                    "x": 69.01901,
+                    "y": 263.3949,
+                    "z": 80.21722
+                },
+                "normal": {
+                    "x": -0.04424268,
+                    "y": 0.06083895,
+                    "z": -0.9971666
+                },
+                "type": "cairnBH"
+            },
+            // MemorialForestCairnC
+            {
+                "rename": "MemorialForestCairnC",
+                "xmlFile": "nomai/MemorialForestCairnC.xml",
+                "position": {
+                    "x": 3.169703,
+                    "y": -128.1232,
+                    "z": -25.49176
+                },
+                "rotation": {
+                    "x": 295.7748,
+                    "y": 89.39825,
+                    "z": 270.1636
+                },
+                "normal": {
+                    "x": 0.007930487,
+                    "y": 0.001241903,
+                    "z": -0.9999678
+                },
+                "type": "cairnBH"
+            },
+            // MemorialForestCairnD
+            {
+                "rename": "MemorialForestCairnD",
+                "xmlFile": "nomai/MemorialForestCairnD.xml",
+                "position": {
+                    "x": 13.89637,
+                    "y": -125.421,
+                    "z": -25.39917
+                },
+                "rotation": {
+                    "x": 328.7552,
+                    "y": 269.6089,
+                    "z": 89.85175
+                },
+                "normal": {
+                    "x": 0.00816837,
+                    "y": 0.002212189,
+                    "z": -0.9999642
+                },
+                "type": "cairnBH"
+            },
+            // MemorialForestCairnE
+            {
+                "rename": "MemorialForestCairnE",
+                "xmlFile": "nomai/MemorialForestCairnE.xml",
+                "position": {
+                    "x": 7.214657,
+                    "y": -131.0384,
+                    "z": -25.43987
+                },
+                "rotation": {
+                    "x": 281.2126,
+                    "y": 254.979,
+                    "z": 104.0516
+                },
+                "normal": {
+                    "x": 0.02139297,
+                    "y": -0.04721142,
+                    "z": -0.9986558
+                },
+                "type": "cairnBH"
+            },
+            // MemorialForest Floor Near Cairn E
+            {
+                "rename": "MemorialForestFloorNearCairnE",
+                "xmlFile": "nomai/MemorialForestFloorNearCairnE.xml",
+                "position": {
+                    "x": 10.03089,
+                    "y": -130.6285,
+                    "z": -25.69228
+                },
+                "rotation": {
+                    "x": 337.2751,
+                    "y": 269.5851,
+                    "z": 89.86259
+                },
+                "normal": {
+                    "x": 0.008168384,
+                    "y": 0.00221219,
+                    "z": -0.9999642
+                },
+                "type": "wall",
+                "seed": 1614678795,
+                "arcInfo": [
+                    //1
+                    {
+                        "type": "adult"
+                    },
+                    //2
+                    {
+                        "type": "adult"
+                    },
+                    //3 - crying so teenager
+                    {
+                        "type": "teenager"
+                    }
+                ]
+            },
+            // MemorialForestNook
+            {
+                "rename": "MemorialForestNook",
+                "xmlFile": "nomai/MemorialForestNook.xml",
+                "position": {
+                    "x": -7.480652,
+                    "y": -177.3649,
+                    "z": -23.91762
+                },
+                "rotation": {
+                    "x": 86.74442,
+                    "y": 261.278,
+                    "z": 84.42207
+                },
+                "normal": {
+                    "x": 0.05500224,
+                    "y": 0.005520287,
+                    "z": -0.998471
+                },
+                "type": "wall",
+                "seed": 575938094,
+                "arcInfo": [
+                    //1
+                    {
+                        "type": "teenager"
+                    },
+                    //2
+                    {
+                        "type": "teenager"
+                    },
+                    //3
+                    {
+                        "type": "teenager"
+                    },
+                    //4
+                    {
+                        "type": "teenager"
+                    },
+                    //5
+                    {
+                        "type": "teenager"
+                    },
+                    //6
+                    {
+                        "type": "teenager"
+                    },
+                    //7
+                    {
+                        "type": "teenager"
+                    },
+                    //8
+                    {
+                        "type": "teenager"
+                    }
+                ]
+            },
+            // Memorial Forest Recorder
+            {
+                "rename": "MemorialForestRecorder",
+                "xmlFile": "nomai/MemorialForestRecorder.xml",
+                "position": {
+                    "x": -15.25446,
+                    "y": -174.9933,
+                    "z": -24.54163
+                },
+                "rotation": {
+                    "x": 84.14961,
+                    "y": 340.2345,
+                    "z": 162.6389
+                },
+                "normal": {
+                    "x": 0.04027084,
+                    "y": -0.09728721,
+                    "z": -0.9944412
+                },
+                "type": "preCrashRecorder",
+                "seed": 618407928
+            },
+            // Memorial Forest Signpost
+            {
+                "rename": "MemorialForestSignpost",
+                "xmlFile": "nomai/MemorialForestSignpost.xml",
+                "position": {
+                    "x": 3.097643,
+                    "y": -110.2462,
+                    "z": -24.57655
+                },
+                "rotation": {
+                    "x": 72.04655,
+                    "y": 120.9174,
+                    "z": 300.9068
+                },
+                "normal": {
+                    "x": -0.02164274,
+                    "y": 0.1583274,
+                    "z": -0.9871495
+                },
+                "type": "trailmarker"
+            },
+            // Nookdial
+            {
+                "rename": "Nookdial",
+                "xmlFile": "nomai/Nookdial.xml",
+                "position": {
+                    "x": 34.34785,
+                    "y": 15.70154,
+                    "z": 33.58207
+                },
+                "rotation": {
+                    "x": 342.2183,
+                    "y": 90.00001,
+                    "z": 90
+                },
+                "normal": {
+                    "x": 5.960464E-08,
+                    "y": 1.78814E-07,
+                    "z": 1
+                },
+                "type": "whiteboard",
+                "seed": 1470383893,
+                "arcInfo": [
+                    //1
+                    {
+                        "type": "teenager"
+                    },
+                    //2
+                    {
+                        "type": "teenager"
+                    },
+                    //3
+                    {
+                        "type": "teenager"
+                    },
+                    //4
+                    {
+                        "type": "teenager"
+                    },
+                    //5
+                    {
+                        "type": "teenager"
+                    },
+                    //6
+                    {
+                        "type": "teenager"
+                    },
+                    //7
+                    {
+                        "type": "teenager"
+                    },
+                    //8
+                    {
+                        "type": "teenager"
+                    },
+                    //9
+                    {
+                        "type": "teenager",
+                        "position": {
+                            "x": 2.05,
+                            "y": -0.76
+                        },
+                        "zRotation": 135
+                    },
+                    //10
+                    {
+                        "type": "teenager",
+                        "position": {
+                            "x": 0.85,
+                            "y": -0.7
+                        },
+                        "zRotation": 130
+                    }
+                ]
+            },
+            // PomaiHouseA
+            {
+                "rename": "PomaiHouseA",
+                "xmlFile": "nomai/PomaiHouseA.xml",
+                "position": {
+                    "x": -26.1407,
+                    "y": 23.79746,
+                    "z": 33.0493
+                },
+                "rotation": {
+                    "x": 14.10048,
+                    "y": 14.54791,
+                    "z": 316.8085
+                },
+                "normal": {
+                    "x": 0.7071098,
+                    "y": 0.707104,
+                    "z": 0
+                },
+                "type": "wall",
+                "seed": 300346983
+                //All adult text, so no ArcInfo needed
+            },
+            // PomaiHouseB
+            {
+                "rename": "PomaiHouseB",
+                "xmlFile": "nomai/PomaiHouseB.xml",
+                "position": {
+                    "x": -25.22123,
+                    "y": -2.2,
+                    "z": 41.29122
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 15.89452,
+                    "z": 0
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 1,
+                    "z": 0
+                },
+                "type": "wall",
+                "seed": 177970421
+                //All adult text, so no ArcInfo needed
+            },
+            // PomaiHouseC
+            {
+                "rename": "PomaiHouseC",
+                "xmlFile": "nomai/PomaiHouseC.xml",
+                "position": {
+                    "x": 30.45195,
+                    "y": -3.844787,
+                    "z": 31.73215
+                },
+                "rotation": {
+                    "x": 285.9944,
+                    "y": 270,
+                    "z": 270
+                },
+                "normal": {
+                    "x": -1.490116E-08,
+                    "y": 1.78814E-07,
+                    "z": 1
+                },
+                "type": "wall",
+                "seed": 479475223
+                //All adult text, so no ArcInfo needed
+            },
+            // PomaiHouseD
+            {
+                "rename": "PomaiHouseD",
+                "xmlFile": "nomai/PomaiHouseD.xml",
+                "position": {
+                    "x": 26.46816,
+                    "y": 17,
+                    "z": 33.5177
+                },
+                "rotation": {
+                    "x": 8.682055,
+                    "y": 339.9853,
+                    "z": 22.50924
+                },
+                "normal": {
+                    "x": -0.4074399,
+                    "y": 0.913232,
+                    "z": 7.152557E-07
+                },
+                "type": "wall",
+                "seed": 244777025
+                //All adult text, so no ArcInfo needed
+            },
+            // Radiotelescope
+            {
+                "rename": "RadiotelescopeRecorder",
+                "xmlFile": "nomai/RadiotelescopeRecorder.xml",
+                "position": {
+                    "x": 134.2839,
+                    "y": 90.60836,
+                    "z": -26.53959
+                },
+                "rotation": {
+                    "x": 53.00916,
+                    "y": 96.12599,
+                    "z": 272.4679
+                },
+                "normal": {
+                    "x": -0.07241952,
+                    "y": 0.0259083,
+                    "z": -0.9970378
+                },
+                "type": "preCrashRecorder",
+                "seed": 1850839691
+                //All adult text, so no ArcInfo needed
+            },
+            // Scheduling Room Computer
+            {
+                "rename": "SchedulingRoomComputer",
+                "xmlFile": "nomai/SchedulingRoomComputer.xml",
+                "position": {
+                    "x": 5.73851,
+                    "y": 28.73047,
+                    "z": 31.73213
+                },
+                "rotation": {
+                    "x": 294.7932,
+                    "y": 270,
+                    "z": 270
+                },
+                "normal": {
+                    "x": -1.490116E-08,
+                    "y": 1.78814E-07,
+                    "z": 1
+                },
+                "type": "computer",
+                "seed": 318603642
+                //All adult text, so no ArcInfo needed
+            },
+            // Record near wall of text in Some House of the Pomai City
+            {
+                "rename": "SomeHouseRecorder",
+                "xmlFile": "nomai/SomeHouseRecorder.xml",
+                "position": {
+                    "x": 4.0835,
+                    "y": -27.6121,
+                    "z": 31.8087
+                },
+                "rotation": {
+                    "x": 50.43446,
+                    "y": 270,
+                    "z": 270
+                },
+                "normal": {
+                    "x": -2.756715E-07,
+                    "y": -5.960464E-08,
+                    "z": 1
+                },
+                "type": "preCrashRecorder"
+            },
+            // Wall of text in Some House of the Pomai City
+            {
+                "rename": "SomeHouseWall",
+                "xmlFile": "nomai/SomeHouseWall.xml",
+                "position": {
+                    "x": -1.3448,
+                    "y": -28.2442,
+                    "z": 31.9
+                },
+                "rotation": {
+                    "x": 270.0396,
+                    "y": 180.0482,
+                    "z": 0
+                },
+                "normal": {
+                    "x": -4.395843E-07,
+                    "y": -6.55651E-07,
+                    "z": 1
+                },
+                "type": "wall",
+                "seed": 0,
+                "arcInfo": [
+                    //1
+                    {
+                        "type": "teenager",
+                        "position": {
+                            "x": -1.27,
+                            "y": -1.25
+                        },
+                        "zRotation": 15
+                    },
+                    //2
+                    {
+                        "type": "teenager",
+                        "mirror": true,
+                        "position": {
+                            "x": -1.3,
+                            "y": -0.5
+                        },
+                        "zRotation": 45
+                    },
+                    //3
+                    {
+                        "type": "teenager",
+                        "position": {
+                            "x": -2.5,
+                            "y": -0.4
+                        },
+                        "zRotation": 46
+                    },
+                    //4
+                    {
+                        "type": "teenager",
+                        "mirror": true,
+                        "position": {
+                            "x": -2.4,
+                            "y": 0.9
+                        },
+                        "zRotation": 310
+                    },
+                    //5
+                    {
+                        "type": "teenager",
+                        "position": {
+                            "x": -2.2,
+                            "y": 2.2
+                        },
+                        "zRotation": 330
+                    },
+                    //6
+                    {
+                        "type": "teenager",
+                        "position": {
+                            "x": -0.95,
+                            "y": 2.2
+                        },
+                        "zRotation": 250
+                    },
+                    //7 - Branch 1
+                    {
+                        "type": "teenager",
+                        "position": {
+                            "x": -0.78,
+                            "y": 2.15
+                        },
+                        "zRotation": 340
+                    },
+                    //8
+                    {
+                        "type": "teenager",
+                        "mirror": true,
+                        "position": {
+                            "x": 0.375,
+                            "y": 2.17
+                        },
+                        "zRotation": 240
+                    },
+                    //9
+                    {
+                        "type": "teenager",
+                        "position": {
+                            "x": 1.35,
+                            "y": 2.45
+                        },
+                        "zRotation": 260
+                    },
+                    //10
+                    {
+                        "type": "teenager",
+                        "mirror": true,
+                        "position": {
+                            "x": 2.1,
+                            "y": 1.3
+                        },
+                        "zRotation": 200
+                    },
+                    //11
+                    {
+                        "type": "teenager",
+                        "position": {
+                            "x": 2.55,
+                            "y": 0.6
+                        },
+                        "zRotation": 200
+                    },
+                    //12 - Branch 2
+                    {
+                        "type": "teenager",
+                        "mirror": true,
+                        "position": {
+                            "x": -0.25,
+                            "y": 1.25
+                        },
+                        "zRotation": 200
+                    },
+                    //13
+                    {
+                        "type": "teenager",
+                        "position": {
+                            "x": 0.6,
+                            "y": 0.6
+                        },
+                        "zRotation": 225
+                    }
+                ]
+            },
+            // Sundial
+            {
+                "rename": "SundialWhiteboard",
+                "xmlFile": "nomai/Sundial.xml",
+                "position": {
+                    "x": 144.7338,
+                    "y": 88.6835,
+                    "z": 30.5525
+                },
+                "rotation": {
+                    "x": 79.3782,
+                    "y": 270,
+                    "z": 270
+                },
+                "normal": {
+                    "x": -1.490116E-07,
+                    "y": 3.0659E-07,
+                    "z": 0.9999999
+                },
+                "type": "whiteboard",
+                "seed": 1028565930
+                //All adult text, so no ArcInfo needed
+            },
+            // WelcomeMountainHidingSpot
+            {
+                "rename": "WelcomeMountainHidingSpot",
+                "xmlFile": "nomai/WelcomeMountainHidingSpot.xml",
+                "position": {
+                    "x": 84.22577,
+                    "y": -172.8609,
+                    "z": 87.86769
+                },
+                "rotation": {
+                    "x": 278.2973,
+                    "y": 256.1116,
+                    "z": 284.3184
+                },
+                "normal": {
+                    "x": 0.004992604,
+                    "y": 0.03568935,
+                    "z": 0.9993503
+                },
+                "type": "whiteboard",
+                "seed": 1323343560,
+                "arcInfo": [
+                    //1
+                    {
+                        "type": "teenager"
+                    },
+                    //2
+                    {
+                        "type": "teenager"
+                    },
+                    //3
+                    {
+                        "type": "teenager"
+                    },
+                    //4
+                    {
+                        "type": "teenager"
+                    },
+                    //5
+                    {
+                        "type": "teenager"
+                    },
+                    //6
+                    {
+                        "type": "teenager"
+                    },
+                    //7
+                    {
+                        "type": "teenager"
+                    }
+                ]
+            },
+            // WelcomeMountainRecorder
+            {
+                "rename": "WelcomeMountainRecorder",
+                "xmlFile": "nomai/WelcomeMountainRecorder.xml",
+                "position": {
+                    "x": -30.65461,
+                    "y": -149.8381,
+                    "z": 95.56367
+                },
+                "rotation": {
+                    "x": 24.3175,
+                    "y": 90.00003,
+                    "z": 90.00005
+                },
+                "normal": {
+                    "x": 2.980232E-08,
+                    "y": -5.406326E-07,
+                    "z": 0.9999999
+                },
+                "type": "preCrashRecorder",
+                "seed": 219460023
+                //All adult text, so no ArcInfo needed
+            },
+            // WelcomeMountainScroll
+            {
+                "rename": "WelcomeMountainScroll",
+                "xmlFile": "nomai/WelcomeMountainScroll.xml",
+                "position": {
+                    "x": -18.45212,
+                    "y": -164.8335,
+                    "z": 99.58868
+                },
+                "rotation": {
+                    "x": 28.81297,
+                    "y": 270,
+                    "z": 270
+                },
+                "normal": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "type": "whiteboard",
+                "seed": 534703137
+                //All adult text, so no ArcInfo needed
+            }
+        ]
     },
-    // MemorialForestCairnA
-    {
-      "rename": "MemorialForestCairnA",
-      "xmlFile": "nomai/MemorialForestCairnA.xml",
-      "position": {
-        "x": -2.340934,
-        "y": -115.4418,
-        "z": -24.81992
-      },
-      "rotation": {
-        "x": 27.36347,
-        "y": 94.00957,
-        "z": 274.4762
-      },
-      "normal": {
-        "x": -0.03392571,
-        "y": 0.06931197,
-        "z": -0.997018
-      },
-      "type": "cairnBH"
-    },
-    // MemorialForestCairnB
-    {
-      "rename": "MemorialForestCairnB",
-      "xmlFile": "nomai/MemorialForestCairnB.xml",
-      "position": {
-        "x": 11.20282,
-        "y": -110.545,
-        "z": -24.96196
-      },
-      "rotation": {
-        "x": 69.01901,
-        "y": 263.3949,
-        "z": 80.21722
-      },
-      "normal": {
-        "x": -0.04424268,
-        "y": 0.06083895,
-        "z": -0.9971666
-      },
-      "type": "cairnBH"
-    },
-    // MemorialForestCairnC
-    {
-      "rename": "MemorialForestCairnC",
-      "xmlFile": "nomai/MemorialForestCairnC.xml",
-      "position": {
-        "x": 3.169703,
-        "y": -128.1232,
-        "z": -25.49176
-      },
-      "rotation": {
-        "x": 295.7748,
-        "y": 89.39825,
-        "z": 270.1636
-      },
-      "normal": {
-        "x": 0.007930487,
-        "y": 0.001241903,
-        "z": -0.9999678
-      },
-      "type": "cairnBH"
-    },
-    // MemorialForestCairnD
-    {
-      "rename": "MemorialForestCairnD",
-      "xmlFile": "nomai/MemorialForestCairnD.xml",
-      "position": {
-        "x": 13.89637,
-        "y": -125.421,
-        "z": -25.39917
-      },
-      "rotation": {
-        "x": 328.7552,
-        "y": 269.6089,
-        "z": 89.85175
-      },
-      "normal": {
-        "x": 0.00816837,
-        "y": 0.002212189,
-        "z": -0.9999642
-      },
-      "type": "cairnBH"
-    },
-    // MemorialForestCairnE
-    {
-      "rename": "MemorialForestCairnE",
-      "xmlFile": "nomai/MemorialForestCairnE.xml",
-      "position": {
-        "x": 7.214657,
-        "y": -131.0384,
-        "z": -25.43987
-      },
-      "rotation": {
-        "x": 281.2126,
-        "y": 254.979,
-        "z": 104.0516
-      },
-      "normal": {
-        "x": 0.02139297,
-        "y": -0.04721142,
-        "z": -0.9986558
-      },
-      "type": "cairnBH"
-    },
-    // MemorialForest Floor Near Cairn E
-    {
-      "rename": "MemorialForestFloorNearCairnE",
-      "xmlFile": "nomai/MemorialForestFloorNearCairnE.xml",
-      "position": {
-        "x": 10.03089,
-        "y": -130.6285,
-        "z": -25.69228
-      },
-      "rotation": {
-        "x": 337.2751,
-        "y": 269.5851,
-        "z": 89.86259
-      },
-      "normal": {
-        "x": 0.008168384,
-        "y": 0.00221219,
-        "z": -0.9999642
-      },
-      "type": "wall",
-      "seed": 1614678795,
-      "arcInfo": [
-        //1
-        {
-          "type": "adult"
-        },
-        //2
-        {
-          "type": "adult"
-        },
-        //3 - crying so teenager
-        {
-          "type": "teenager"
-        }
-      ]
-    },
-    // MemorialForestNook
-    {
-      "rename": "MemorialForestNook",
-      "xmlFile": "nomai/MemorialForestNook.xml",
-      "position": {
-        "x": -3.960885,
-        "y": -175.6002,
-        "z": -23.71397
-      },
-      "rotation": {
-        "x": 335.4857,
-        "y": 86.70274,
-        "z": 270.3476
-      },
-      "normal": {
-        "x": 0.05500231,
-        "y": 0.005519605,
-        "z": -0.998471
-      },
-      "type": "wall",
-      "seed": 575938094,
-      "arcInfo": [
-        //1
-        {
-          "type": "teenager"
-        },
-        //2
-        {
-          "type": "teenager"
-        },
-        //3
-        {
-          "type": "teenager"
-        },
-        //4
-        {
-          "type": "teenager"
-        },
-        //5
-        {
-          "type": "teenager"
-        },
-        //6
-        {
-          "type": "teenager"
-        },
-        //7
-        {
-          "type": "teenager"
-        },
-        //8
-        {
-          "type": "teenager"
-        }
-      ]
-    },
-    // Memorial Forest Recorder
-    {
-      "rename": "MemorialForestRecorder",
-      "xmlFile": "nomai/MemorialForestRecorder.xml",
-      "position": {
-        "x": -8.608826,
-        "y": -172.3346,
-        "z": -24.16151
-      },
-      "rotation": {
-        "x": 283.3709,
-        "y": 252.8327,
-        "z": 102.3742
-      },
-      "normal": {
-        "x": 0.08910814,
-        "y": -0.04955676,
-        "z": -0.9947883
-      },
-      "type": "preCrashRecorder",
-      "seed": 618407928
-    },
-    // Memorial Forest Signpost
-    {
-      "rename": "MemorialForestSignpost",
-      "xmlFile": "nomai/MemorialForestSignpost.xml",
-      "position": {
-        "x": 3.097643,
-        "y": -110.2462,
-        "z": -24.57655
-      },
-      "rotation": {
-        "x": 72.04655,
-        "y": 120.9174,
-        "z": 300.9068
-      },
-      "normal": {
-        "x": -0.02164274,
-        "y": 0.1583274,
-        "z": -0.9871495
-      },
-      "type": "trailmarker"
-    },
-    // Nookdial
-    {
-      "rename": "Nookdial",
-      "xmlFile": "nomai/Nookdial.xml",
-      "position": {
-        "x": 34.34785,
-        "y": 15.70154,
-        "z": 33.58207
-      },
-      "rotation": {
-        "x": 342.2183,
-        "y": 90.00001,
-        "z": 90
-      },
-      "normal": {
-        "x": 5.960464E-08,
-        "y": 1.78814E-07,
-        "z": 1
-      },
-      "type": "whiteboard",
-      "seed": 1470383893,
-      "arcInfo": [
-        //1
-        {
-          "type": "teenager"
-        },
-        //2
-        {
-          "type": "teenager"
-        },
-        //3
-        {
-          "type": "teenager"
-        },
-        //4
-        {
-          "type": "teenager"
-        },
-        //5
-        {
-          "type": "teenager"
-        },
-        //6
-        {
-          "type": "teenager"
-        },
-        //7
-        {
-          "type": "teenager"
-        },
-        //8
-        {
-          "type": "teenager"
-        },
-        //9
-        {
-          "type": "teenager",
-          "position": {
-            "x": 2.05,
-            "y": -0.76
-          },
-          "zRotation": 135
-        },
-        //10
-        {
-          "type": "teenager",
-          "position": {
-            "x": 0.85,
-            "y": -0.7
-          },
-          "zRotation": 130
-        }
-      ]
-    },
-    // PomaiHouseA
-    {
-      "rename": "PomaiHouseA",
-      "xmlFile": "nomai/PomaiHouseA.xml",
-      "position": {
-        "x": -26.1407,
-        "y": 23.79746,
-        "z": 33.0493
-      },
-      "rotation": {
-        "x": 14.10048,
-        "y": 14.54791,
-        "z": 316.8085
-      },
-      "normal": {
-        "x": 0.7071098,
-        "y": 0.707104,
-        "z": 0
-      },
-      "type": "wall",
-      "seed": 300346983
-      //All adult text, so no ArcInfo needed
-    },
-    // PomaiHouseB
-    {
-      "rename": "PomaiHouseB",
-      "xmlFile": "nomai/PomaiHouseB.xml",
-      "position": {
-        "x": -25.22123,
-        "y": -2.2,
-        "z": 41.29122
-      },
-      "rotation": {
-        "x": 0,
-        "y": 15.89452,
-        "z": 0
-      },
-      "normal": {
-        "x": 0,
-        "y": 1,
-        "z": 0
-      },
-      "type": "wall",
-      "seed": 177970421
-      //All adult text, so no ArcInfo needed
-    },
-    // PomaiHouseC
-    {
-      "rename": "PomaiHouseC",
-      "xmlFile": "nomai/PomaiHouseC.xml",
-      "position": {
-        "x": 30.45195,
-        "y": -3.844787,
-        "z": 31.73215
-      },
-      "rotation": {
-        "x": 285.9944,
-        "y": 270,
-        "z": 270
-      },
-      "normal": {
-        "x": -1.490116E-08,
-        "y": 1.78814E-07,
-        "z": 1
-      },
-      "type": "wall",
-      "seed": 479475223
-      //All adult text, so no ArcInfo needed
-    },
-    // PomaiHouseD
-    {
-      "rename": "PomaiHouseD",
-      "xmlFile": "nomai/PomaiHouseD.xml",
-      "position": {
-        "x": 26.46816,
-        "y": 17,
-        "z": 33.5177
-      },
-      "rotation": {
-        "x": 8.682055,
-        "y": 339.9853,
-        "z": 22.50924
-      },
-      "normal": {
-        "x": -0.4074399,
-        "y": 0.913232,
-        "z": 7.152557E-07
-      },
-      "type": "wall",
-      "seed": 244777025
-      //All adult text, so no ArcInfo needed
-    },
-    // Radiotelescope
-    {
-      "rename": "RadiotelescopeRecorder",
-      "xmlFile": "nomai/RadiotelescopeRecorder.xml",
-      "position": {
-        "x": 134.2839,
-        "y": 90.60836,
-        "z": -26.53959
-      },
-      "rotation": {
-        "x": 53.00916,
-        "y": 96.12599,
-        "z": 272.4679
-      },
-      "normal": {
-        "x": -0.07241952,
-        "y": 0.0259083,
-        "z": -0.9970378
-      },
-      "type": "preCrashRecorder",
-      "seed": 1850839691
-      //All adult text, so no ArcInfo needed
-    },
-    // Scheduling Room Computer
-    {
-      "rename": "SchedulingRoomComputer",
-      "xmlFile": "nomai/SchedulingRoomComputer.xml",
-      "position": {
-        "x": 5.73851,
-        "y": 28.73047,
-        "z": 31.73213
-      },
-      "rotation": {
-        "x": 294.7932,
-        "y": 270,
-        "z": 270
-      },
-      "normal": {
-        "x": -1.490116E-08,
-        "y": 1.78814E-07,
-        "z": 1
-      },
-      "type": "computer",
-      "seed": 318603642
-      //All adult text, so no ArcInfo needed
-    },
-    // Record near wall of text in Some House of the Pomai City
-    {
-      "rename": "SomeHouseRecorder",
-      "xmlFile": "nomai/SomeHouseRecorder.xml",
-      "position": {
-        "x": 4.0835,
-        "y": -27.6121,
-        "z": 31.8087
-      },
-      "rotation": {
-        "x": 50.43446,
-        "y": 270,
-        "z": 270
-      },
-      "normal": {
-        "x": -2.756715E-07,
-        "y": -5.960464E-08,
-        "z": 1
-      },
-      "type": "preCrashRecorder"
-    },
-    // Wall of text in Some House of the Pomai City
-    {
-      "rename": "SomeHouseWall",
-      "xmlFile": "nomai/SomeHouseWall.xml",
-      "position": {
-        "x": -1.3448,
-        "y": -28.2442,
-        "z": 31.9
-      },
-      "rotation": {
-        "x": 270.0396,
-        "y": 180.0482,
-        "z": 0
-      },
-      "normal": {
-        "x": -4.395843E-07,
-        "y": -6.55651E-07,
-        "z": 1
-      },
-      "type": "wall",
-      "seed": 0,
-      "arcInfo": [
-        //1
-        {
-          "type": "teenager",
-          "position": {
-            "x": -1.27,
-            "y": -1.25
-          },
-          "zRotation": 15
-        },
-        //2
-        {
-          "type": "teenager",
-          "mirror": true,
-          "position": {
-            "x": -1.3,
-            "y": -0.5
-          },
-          "zRotation": 45
-        },
-        //3
-        {
-          "type": "teenager",
-          "position": {
-            "x": -2.5,
-            "y": -0.4
-          },
-          "zRotation": 46
-        },
-        //4
-        {
-          "type": "teenager",
-          "mirror": true,
-          "position": {
-            "x": -2.4,
-            "y": 0.9
-          },
-          "zRotation": 310
-        },
-        //5
-        {
-          "type": "teenager",
-          "position": {
-            "x": -2.2,
-            "y": 2.2
-          },
-          "zRotation": 330
-        },
-        //6
-        {
-          "type": "teenager",
-          "position": {
-            "x": -0.95,
-            "y": 2.2
-          },
-          "zRotation": 250
-        },
-        //7 - Branch 1
-        {
-          "type": "teenager",
-          "position": {
-            "x": -0.78,
-            "y": 2.15
-          },
-          "zRotation": 340
-        },
-        //8
-        {
-          "type": "teenager",
-          "mirror": true,
-          "position": {
-            "x": 0.375,
-            "y": 2.17
-          },
-          "zRotation": 240
-        },
-        //9
-        {
-          "type": "teenager",
-          "position": {
-            "x": 1.35,
-            "y": 2.45
-          },
-          "zRotation": 260
-        },
-        //10
-        {
-          "type": "teenager",
-          "mirror": true,
-          "position": {
-            "x": 2.1,
-            "y": 1.3
-          },
-          "zRotation": 200
-        },
-        //11
-        {
-          "type": "teenager",
-          "position": {
-            "x": 2.55,
-            "y": 0.6
-          },
-          "zRotation": 200
-        },
-        //12 - Branch 2
-        {
-          "type": "teenager",
-          "mirror": true,
-          "position": {
-            "x": -0.25,
-            "y": 1.25
-          },
-          "zRotation": 200
-        },
-        //13
-        {
-          "type": "teenager",
-          "position": {
-            "x": 0.6,
-            "y": 0.6
-          },
-          "zRotation": 225
-        }
-      ]
-    },
-    // Sundial
-    {
-      "rename": "SundialWhiteboard",
-      "xmlFile": "nomai/Sundial.xml",
-      "position": {
-        "x": 144.7338,
-        "y": 88.6835,
-        "z": 30.5525
-      },
-      "rotation": {
-        "x": 79.3782,
-        "y": 270,
-        "z": 270
-      },
-      "normal": {
-        "x": -1.490116E-07,
-        "y": 3.0659E-07,
-        "z": 0.9999999
-      },
-      "type": "whiteboard",
-      "seed": 1028565930
-      //All adult text, so no ArcInfo needed
-    },
-    // WelcomeMountainHidingSpot
-    {
-      "rename": "WelcomeMountainHidingSpot",
-      "xmlFile": "nomai/WelcomeMountainHidingSpot.xml",
-      "position": {
-        "x": 80.42038,
-        "y": -170.2253,
-        "z": 89.0389
-      },
-      "rotation": {
-        "x": 29.9391,
-        "y": 121.7593,
-        "z": 100.8196
-      },
-      "normal": {
-        "x": 0.4373367,
-        "y": -0.1626682,
-        "z": 0.8844634
-      },
-      "type": "wall",
-      "seed": 1323343560,
-      "arcInfo": [
-        //1
-        {
-          "type": "teenager"
-        },
-        //2
-        {
-          "type": "teenager"
-        },
-        //3
-        {
-          "type": "teenager"
-        },
-        //4
-        {
-          "type": "teenager"
-        },
-        //5
-        {
-          "type": "teenager"
-        },
-        //6
-        {
-          "type": "teenager"
-        },
-        //7
-        {
-          "type": "teenager"
-        }
-      ]
-    },
-    // WelcomeMountainRecorder
-    {
-      "rename": "WelcomeMountainRecorder",
-      "xmlFile": "nomai/WelcomeMountainRecorder.xml",
-      "position": {
-        "x": -30.65461,
-        "y": -149.8381,
-        "z": 95.56367
-      },
-      "rotation": {
-        "x": 24.3175,
-        "y": 90.00003,
-        "z": 90.00005
-      },
-      "normal": {
-        "x": 2.980232E-08,
-        "y": -5.406326E-07,
-        "z": 0.9999999
-      },
-      "type": "preCrashRecorder",
-      "seed": 219460023
-      //All adult text, so no ArcInfo needed
-    },
-    // WelcomeMountainScroll
-    {
-      "rename": "WelcomeMountainScroll",
-      "xmlFile": "nomai/WelcomeMountainScroll.xml",
-      "position": {
-        "x": -18.45212,
-        "y": -164.8335,
-        "z": 99.58868
-      },
-      "rotation": {
-        "x": 28.81297,
-        "y": 270,
-        "z": 270
-      },
-      "normal": {
-        "x": 0,
-        "y": 0,
-        "z": 1
-      },
-      "type": "whiteboard",
-      "seed": 534703137
-      //All adult text, so no ArcInfo needed
-    }
-  ]
-},
     "Volumes": {
         "audioVolumes": [
             {
@@ -2072,7 +2096,7 @@
             },
             {
                 //Volume for maintenance tunnels, has lower priority than past and future so defaults to this
-                "audio": "planets/Assets/Audio/Jam_6_ExpoHall.ogg",
+                "audio": "planets/Assets/Audio/Jam_6_Future_Is_Now.ogg",
                 "parentPath": "Sector/Sector_ExpoHall",
                 //Cylinder shape
                 "shape": {
@@ -2090,6 +2114,28 @@
                     "z": 17.56
                 },
                 "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "track": "music",
+                "loop": true,
+                "priority": 4,
+                "volume": 1,
+                "pauseOnFadeOut": true,
+                "isRelativeToParent": true
+            },
+            {
+                //Volume for future area
+                "audio": "planets/Assets/Audio/Jam_6_ExpoHall.ogg",
+                "parentPath": "Sector/Sector_ExpoHall",
+                //Cylinder shape
+                "shape": {
+                    "useShape": true,
+                    "type": "sphere",
+                    "radius": 17.5
+                },
+                "position": {
                     "x": 0,
                     "y": 0,
                     "z": 0

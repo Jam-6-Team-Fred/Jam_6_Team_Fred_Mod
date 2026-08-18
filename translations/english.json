@@ -1,6 +1,9 @@
 {
     "$schema": "https://raw.githubusercontent.com/outer-wilds-new-horizons/new-horizons/main/NewHorizons/Schemas/translation_schema.json",
     "DialogueDictionary": {
+        "$BlueLakeCampRecorder01": "ADENA: I propose we make camp here.",
+        "$BlueLakeCampRecorder02": "NEEM: But our ship is waiting for us outside! Would you not rather rest in a proper bed?",
+        "$BlueLakeCampRecorder03": "ADENA: Would you not rather spend more time in this marvellous place?",
         "$BlueLakeLookout01": "NEEM: Why do you think this is called the \"<![CDATA[<color=orange>Blue Lake</color>]]>\"? It strikes me as gray, more than my color-blindness would cause.",
         "$BlueLakeLookout02": "ADENA: It isn't remarkably blue, you're correct. Hypothesis: during its prime, it contained some strongly-colored chemical.",
         "$BlueLakeLookout03": "NEEM: To help with cooling? I cannot imagine this structure didn't generate considerable heat.",
@@ -10,7 +13,7 @@
         "$BlueLakeScroll01": "VERAT: Stem has recently asked me which constellation is the <![CDATA[<color=orange>Jelly</color>]]>, but I didn't remember either - could anyone explain it? For both their sake, and mine!",
         "$BlueLakeScroll02": "OPHRYS: That one is symmetrical and thin, with tendrils following it along the sky. Stem could do with paying attention to my lectures!",
         "$BlueLakeScroll03": "PHYSALIS: We all have our interests, sister (Not to mention, your lectures are hardly entertaining for someone their age!)",
-        "$BlueLakeScroll04": "VERAT: An update: Bao and Leersi (the other children) now ask me how to find it easily. I believe it's visible from the <![CDATA[<color=orange>Astronomical Site</color>]]> at around four after sunset, but I fear I might have misremembered.",
+        "$BlueLakeScroll04": "VERAT: An update: Bao and Leersi (the other children) now ask me how to find it easily. I believe it's visible from the <![CDATA[<color=orange>Astronomical Site</color>]]> at around three after sunset, but I fear I might have misremembered.",
         "$BlueLakeScroll05": "PHYSALIS: The <![CDATA[<color=orange>Jelly</color>]]> is visible at four after sunset! My sister (your mentor) has insisted I share some of her thoroughness in my knowledge...",
         "$BlueLakeScroll06": "VERAT: My gratitude, Physalis I shall tell the children as soon as possible (And perhaps you could do with apprenticing under her too).",
         "$ExpoHall01": "NEEM: This is it, then. We have explored this exhibit to its conclusion.",
@@ -95,7 +98,7 @@
         "$NOMAI_OBJECT_HATCHLING01": "Yeah?",
         "$NOMAI_OBJECT_SLATE01": "Slate: Oh, before you go, did you notice that thing <![CDATA[<color=orange>past</color>]]> the elevator?",
         "$NOMAI_OBJECT_SLATE02": "Hornfels said it drifted into our solar system recently, <![CDATA[<color=orange>and</color>]]> doesn't seem to be a rogue planet.",
-        "$NOMAI_OBJECT_SLATE03": "They would appreciate it if you'd check it out in the near <![CDATA[<color=orange>future</color>]]>",
+        "$NOMAI_OBJECT_SLATE03": "They would appreciate it if you'd check it out in the near <![CDATA[<color=orange>future</color>]]>.",
         "$Nookdial01": "LEERSI: I think this is the spot, but I don't see Stem's clue...",
         "$Nookdial02": "BAO: Perhaps we are mistaken. Their \"clue\" was hardly understandable anyway.",
         "$Nookdial03": "LEERSI: Be kinder to them, Bao! They prepared this whole thing for us.",
