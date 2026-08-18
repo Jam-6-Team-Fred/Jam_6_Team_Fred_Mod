@@ -1,0 +1,184 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>FRED_WORLD</ID>
+
+    <Entry>
+        <ID>FRED_GRAND_EXHIBIT</ID>
+        <Name>$The_Grand_Exhibit</Name>
+
+        <Curiosity>COINWORLD</Curiosity>
+        <IsCuriosity />
+
+        <RumorFact>
+            <ID>COINWORLD_HORNFELS</ID>
+            <RumorName>$Rogue_Object</RumorName>
+            <Text>$Rogue_Object_Rumor_Fact</Text>
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>EXHIBIT_ENTRY</ID>
+            <Text>$Rogue_Object_Explore_Fact</Text>
+        </ExploreFact>
+    </Entry>
+
+    <Entry>
+        <ID>FRED_WELCOME_MOUNTAIN</ID>
+        <Name>$Welcome_Mountain</Name>
+
+        <Curiosity>COINWORLD</Curiosity>
+
+        <ExploreFact>
+            <ID>MOUNTAIN_CORE</ID>
+            <Text>$Welcome_Mountain_Explore_Fact</Text>
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>FRED_ANCIENT_CITY</ID>
+        <Name>$Ancient_City</Name>
+
+        <Curiosity>COINWORLD</Curiosity>
+
+        <ExploreFact>
+            <ID>ANCIENTCITY_CORE</ID>
+            <Text>$Ancient_City_Explore_Fact</Text>
+        </ExploreFact>
+        <Entry>
+            <ID>SHEDULING_ROOM</ID>
+            <Name>$Scheduling_Room</Name>
+
+            <Curiosity>COINWORLD</Curiosity>
+
+            <ExploreFact>
+                <ID>ANCIENTCITY_SCHEDULING</ID>
+                <Text>$Scheduling_Room_Explore_Fact</Text>
+            </ExploreFact>
+        </Entry>
+    </Entry>
+    <Entry>
+        <ID>FRED_SERVICE_TUNNELS</ID>
+        <Name>$Service_Tunnels</Name>
+
+        <Curiosity>COINWORLD</Curiosity>
+
+        <ExploreFact>
+            <ID>SERVICE_TUNNELS_CORE</ID>
+            <Text>$Service_Tunnels_Explore_Fact</Text>
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>FRED_FOMAI_CITY</ID>
+        <Name>$City_of_the_Future</Name>
+
+        <Curiosity>COINWORLD</Curiosity>
+
+        <ExploreFact>
+            <ID>FUTURECITY_CORE</ID>
+            <Text>$City_of_the_Future_Explore_Fact</Text>
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>FRED_RADIOTELESCOPE</ID>
+        <Name>$Radiotelescope</Name>
+
+        <Curiosity>COINWORLD</Curiosity>
+
+        <ExploreFact>
+            <ID>RADIOTELESCOPE_CORE</ID>
+            <Text>$Radiotelescope_Explore_Fact</Text>
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>FRED_BLUE_LAKE</ID>
+        <Name>$Blue_Lake</Name>
+
+        <Curiosity>COINWORLD</Curiosity>
+
+        <ExploreFact>
+            <ID>BLUELAKE_CORE</ID>
+            <Text>$Blue_Lake_Explore_Fact</Text>
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>FRED_SUNDIAL</ID>
+        <Name>$Sundial</Name>
+
+        <Curiosity>COINWORLD</Curiosity>
+
+        <ExploreFact>
+            <ID>SUNDIAL_CORE</ID>
+            <Text>$Sundial_Explore_Fact</Text>
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>FRED_FOREST</ID>
+        <Name>$Memorial_Forest</Name>
+
+        <Curiosity>COINWORLD</Curiosity>
+
+        <ExploreFact>
+            <ID>MEMORIAL_CORE</ID>
+            <Text>$Memorial_Forest_Explore_Fact</Text>
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>FRED_CLUE_HUNT</ID>
+        <Name>$Clue_Hunt</Name>
+
+        <Curiosity>COINWORLD</Curiosity>
+
+        <ExploreFact>
+            <ID>CLUE_HUNT</ID>
+            <Text>$Clue_Hunt_Explore_Fact</Text>
+        </ExploreFact>
+        <Entry>
+            <ID>CLUE_HUNT_1</ID>
+            <Name>$First_Clue</Name>
+
+            <Curiosity>COINWORLD</Curiosity>
+
+            <ExploreFact>
+                <ID>CLUE1</ID>
+                <Text>$First_Clue_Explore_Fact</Text>
+            </ExploreFact>
+        </Entry>
+        <Entry>
+            <ID>CLUE_HUNT_2</ID>
+            <Name>$Second_Clue</Name>
+
+            <Curiosity>COINWORLD</Curiosity>
+
+            <ExploreFact>
+                <ID>CLUE2</ID>
+                <Text>$Second_Clue_Explore_Fact</Text>
+            </ExploreFact>
+        </Entry>
+        <Entry>
+            <ID>CLUE_HUNT_3</ID>
+            <Name>$Third_Clue</Name>
+
+            <Curiosity>COINWORLD</Curiosity>
+
+            <ExploreFact>
+                <ID>CLUE3</ID>
+                <Text>$Third_Clue_Explore_Fact</Text>
+            </ExploreFact>
+        </Entry>
+    </Entry>
+    <Entry>
+        <ID>FRED_EXPO_HALL</ID>
+        <Name>$Past_and_Future</Name>
+
+        <Curiosity>COINWORLD</Curiosity>
+
+        <RumorFact>
+            <ID>EXPO_CORE</ID>
+            <RumorName>$Exposition_Hall</RumorName>
+            <Text>$Exposition_Hall_Rumor_Fact</Text>
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>EXPOHALL_EXPLORE</ID>
+            <Text>I have seen past and future, I have seen the last and the forgotten. I have seen all there is to see in this drifting capsule, a gift from reality.</Text>
+        </ExploreFact>
+    </Entry>
+</AstroObjectEntry>
