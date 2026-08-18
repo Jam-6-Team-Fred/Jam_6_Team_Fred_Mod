@@ -34,22 +34,31 @@ namespace Jam6
             SchedulingSocket.DeactivateScheduledEvent += Deactivate;
             OrbSwitch.ZeroG += ZeroGWeatherHandler;
             OrbSwitch.NormalG += NormalGWeatherHandler;
+            Jam6.Instance.NewHorizons.GetBodyLoadedEvent().AddListener(FindWeather);
         }
 
         public void OnDestroy()
         {
             SchedulingSocket.ActivateScheduledEvent -= Activate;
             SchedulingSocket.DeactivateScheduledEvent -= Deactivate;
+            Jam6.Instance.NewHorizons.GetBodyLoadedEvent().RemoveListener(FindWeather);
         }
 
         public void Start()
         {
-            weatherHandler = SearchUtilities.Find("Disc_Body/Sector/Atmosphere_Holder");
-            weatherHandler?.SetActive(false);
             rainZeroG = weatherHandler.transform.Find("Atmosphere_Rain_0g").gameObject;
             rainNormalG = weatherHandler.transform.Find("Atmosphere_Rain").gameObject;
             snowZeroG = weatherHandler.transform.Find("Atmosphere_Snow_0g").gameObject;
             snowNormalG = weatherHandler.transform.Find("Atmosphere_Snow").gameObject;
+        }
+
+        public void FindWeather(string planetName)
+        {
+            if (planetName == "Disc_Body")
+            {
+                weatherHandler = SearchUtilities.Find("Disc_Body/Sector/Atmosphere_Holder");
+                weatherHandler?.SetActive(false);
+            }
         }
 
         public void Activate(SchedulingItem item, bool isAlwaysActive)
