@@ -46,6 +46,7 @@ namespace Jam6
         {
             if (!_powerOn)
             {
+                Jam6.Instance.ModHelper.Console.WriteLine("Low Gravity...", OWML.Common.MessageType.Info);
                 _powerOn = true;
 
                 ZeroG();
@@ -61,6 +62,7 @@ namespace Jam6
         {
             if (_powerOn)
             {
+                Jam6.Instance.ModHelper.Console.WriteLine("Normal Gravity...", OWML.Common.MessageType.Info);
                 _powerOn = false;
 
                 NormalG();

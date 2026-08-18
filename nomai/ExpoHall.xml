@@ -2,9 +2,9 @@
                   xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/text_schema.xsd">
   <!--
     Text tree format
-    1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9
-                |               |
-                10              11
+    1 - 2 - 3 - 5 - 6 - 7 - 8
+            |               |
+            10              11
   -->
   <TextBlock>
     <ID>1</ID>
@@ -21,13 +21,8 @@
     <Text>$ExpoHall03</Text>
   </TextBlock>
   <TextBlock>
-    <ID>4</ID>
-    <ParentID>3</ParentID>
-    <Text>$ExpoHall04</Text>
-  </TextBlock>
-  <TextBlock>
     <ID>5</ID>
-    <ParentID>4</ParentID>
+    <ParentID>3</ParentID>
     <Text>$ExpoHall05</Text>
   </TextBlock>
   <TextBlock>
@@ -46,13 +41,8 @@
     <Text>$ExpoHall08</Text>
   </TextBlock>
   <TextBlock>
-    <ID>9</ID>
-    <ParentID>8</ParentID>
-    <Text>$ExpoHall09</Text>
-  </TextBlock>
-  <TextBlock>
     <ID>10</ID>
-    <ParentID>4</ParentID>
+    <ParentID>3</ParentID>
     <Text>$ExpoHall10</Text>
   </TextBlock>
   <TextBlock>

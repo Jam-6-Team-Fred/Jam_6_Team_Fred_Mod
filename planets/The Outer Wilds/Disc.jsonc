@@ -11,10 +11,10 @@
     // Name of the planet in game
     "name": "Disc",
     // Testing Spawn Location: Uncomment below line
-    /*"Spawn": {
+    "Spawn": {
         "playerSpawnPoints": [
             //Welcome Center Spawn
-            {
+            /*{
                 "isDefault": true,
                 "startWithSuit": true,
                 "position": {
@@ -27,9 +27,9 @@
                     "y": 270.0033,
                     "z": 269.9967
                 }
-            }
+            }*/
             // Fomai Path
-            {
+            /*{
                 "isDefault": true,
                 "startWithSuit": true,
                 "position": {
@@ -42,9 +42,24 @@
                     "y": 89.60559,
                     "z": 270.3755
                 }
+            }*/
+            // Expo Hall
+            {
+                "isDefault": true,
+                "startWithSuit": true,
+                "position": {
+                    "x": -5.453194,
+                    "y": -11.90701,
+                    "z": -151.3514
+                },
+                "rotation": {
+                    "x": 285.5176,
+                    "y": 90.00002,
+                    "z": 270
+                }
             }
         ]
-    },*/
+    },
     "Atmosphere": {
         "size": 230,
         "fogTint": {
@@ -753,14 +768,14 @@
             {
                 "rename": "FomaiCityCampfire",
                 "position": {
-                    "x": 15.39036,
-                    "y": 24.04629,
-                    "z": -22.32573
+                    "x": -17.22139,
+                    "y": 20.04816,
+                    "z": -22.62576
                 },
                 "rotation": {
-                    "x": 301.954,
-                    "y": 90.32652,
-                    "z": 269.3534
+                    "x": 349.028,
+                    "y": 271.368,
+                    "z": 90.86689
                 },
                 "initialState": "unlit",
                 "canSleepHere": true
@@ -858,7 +873,6 @@
                 "rename": "TelescopeSignal",
                 "frequency": "$TeamFred.Nomai_Technology",
                 "name": "$TeamFred.Telescope",
-                "rename": "TelescopeSignal",
                 "audio": "planets/Assets/Audio/Jam_6_Telescope.ogg",
                 "sourceRadius": 10,
                 "position": {
@@ -992,43 +1006,85 @@
                 },
                 "type": "whiteboard"
             },
-            // Expo Hall - TODO : MUST IMPLEMENT (NEED GROUND)
+            // Expo Hall Floor
+            {
+                "rename": "ExpoHall",
+                "xmlFile": "nomai/ExpoHall.xml",
+                "position": {
+                    "x": 0.4989471,
+                    "y": -12.5,
+                    "z": -151.3515
+                },
+                "rotation": {
+                    "x": 300,
+                    "y": 90,
+                    "z": 270
+                },
+                "normal": {
+                    "x": -2.980232E-08,
+                    "y": -1.78814E-07,
+                    "z": -1
+                },
+                "type": "wall",
+                "seed": 678564943
+            },
             // Expo Hall Oldest Nomai Text
             {
                 "rename": "ExpoHallOldestNomaiText",
                 "xmlFile": "nomai/ExpoHallOldestNomaiText.xml",
                 "position": {
-                    "x": 0.5503769,
-                    "y": 0.1565914,
-                    "z": -155.3074
+                    "x": 0.5113106,
+                    "y": -0.1434093,
+                    "z": -155.4451
                 },
                 "rotation": {
-                    "x": 5.096992E-05,
-                    "y": 138.0156,
-                    "z": -5.80123E-05
+                    "x": 8.938982E-05,
+                    "y": 173.3698,
+                    "z": 0
                 },
                 "normal": {
-                    "x": 1.08474E-07,
-                    "y": 1,
-                    "z": -1.634161E-06
+                    "x": -6.316725E-08,
+                    "y": -1,
+                    "z": 1.547001E-06
                 },
                 "type": "wall",
                 "seed": 1600275628
             },
-            // Expo Pedestal - TODO : MUST IMPLEMENT (NEED GROUND)
+            // Expo Pedestal (Near Oldest Text)
+            {
+                "rename": "ExpoPedestal",
+                "xmlFile": "nomai/ExpoPedestal.xml",
+                "position": {
+                    "x": -1.543243,
+                    "y": -1.760004,
+                    "z": -154.7448
+                },
+                "rotation": {
+                    "x": 33.64413,
+                    "y": 90.00001,
+                    "z": 270
+                },
+                "normal": {
+                    "x": -5.960464E-08,
+                    "y": -1.540567E-07,
+                    "z": -0.9999999
+                },
+                "type": "trailmarker",
+                "seed": 1600275628
+            },
             // Fomai Base
             {
                 "rename": "FomaiBase",
                 "xmlFile": "nomai/FomaiBase.xml",
                 "position": {
-                    "x": -20.81392,
-                    "y": 17.08634,
-                    "z": -22.4856
+                    "x": 15.39036,
+                    "y": 24.04629,
+                    "z": -22.32573
                 },
                 "rotation": {
-                    "x": 317.1419,
-                    "y": 270.7432,
-                    "z": 91.161
+                    "x": 301.954,
+                    "y": 90.32652,
+                    "z": 269.3534
                 },
                 "normal": {
                     "x": -0.02674963,
