@@ -26,13 +26,13 @@ public class Jam6 : ModBehaviour
     public void Start()
     {
         // Starting here, you'll have access to OWML's mod helper.
-        ModHelper.Console.WriteLine($"My mod {nameof(Jam6)} is loaded!", MessageType.Success);
+        ModHelper.Console.WriteLine($"My mod Through The Ages is loaded!", MessageType.Success);
 
         // Get the New Horizons API and load configs
         NewHorizons = ModHelper.Interaction.TryGetModApi<INewHorizons>("xen.NewHorizons");
         NewHorizons.LoadConfigs(this);
 
-        new Harmony("TeamFred.Jam6").PatchAll(Assembly.GetExecutingAssembly());
+        new Harmony("TeamFred.ThroughTheAges").PatchAll(Assembly.GetExecutingAssembly());
 
         // Example of accessing game code.
         OnCompleteSceneLoad(OWScene.TitleScreen, OWScene.TitleScreen); // We start on title screen

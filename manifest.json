@@ -2,9 +2,9 @@
   "$schema": "https://raw.githubusercontent.com/ow-mods/owml/master/schemas/manifest_schema.json",
   "filename": "Jam6.dll",
   "author": "TeamFred",
-  "name": "Jam6",
-  "uniqueName": "TeamFred.Jam6",
-  "version": "0.1.0",
+  "name": "Through The Ages",
+  "uniqueName": "TeamFred.ThroughTheAges",
+  "version": "1.0.0",
   "owmlVersion": "2.15.1",
   "dependencies": ["xen.NewHorizons"]
 }
