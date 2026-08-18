@@ -15,7 +15,7 @@ permissions:
 
 env:
   PROJ_USERNAME: TeamFred
-  PROJ_NAME: Jam6
+  PROJ_NAME: ThroughTheAges
 
 jobs:
   pre_job:
