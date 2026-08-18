@@ -44,20 +44,17 @@ namespace Jam6
             Jam6.Instance.NewHorizons.GetBodyLoadedEvent().RemoveListener(FindWeather);
         }
 
-        public void Start()
-        {
-            rainZeroG = weatherHandler.transform.Find("Atmosphere_Rain_0g").gameObject;
-            rainNormalG = weatherHandler.transform.Find("Atmosphere_Rain").gameObject;
-            snowZeroG = weatherHandler.transform.Find("Atmosphere_Snow_0g").gameObject;
-            snowNormalG = weatherHandler.transform.Find("Atmosphere_Snow").gameObject;
-        }
-
         public void FindWeather(string planetName)
         {
-            if (planetName == "Disc_Body")
+            if (planetName == "Disc")
             {
                 weatherHandler = SearchUtilities.Find("Disc_Body/Sector/Atmosphere_Holder");
                 weatherHandler?.SetActive(false);
+
+                rainZeroG = weatherHandler.transform.Find("Atmosphere_Rain_0g").gameObject;
+                rainNormalG = weatherHandler.transform.Find("Atmosphere_Rain").gameObject;
+                snowZeroG = weatherHandler.transform.Find("Atmosphere_Snow_0g").gameObject;
+                snowNormalG = weatherHandler.transform.Find("Atmosphere_Snow").gameObject;
             }
         }
 
@@ -103,7 +100,7 @@ namespace Jam6
 
         public void Update()
         {
-            if (!isOnAnAlwaysActivePedestal && weatherHandler.activeSelf && TimeLoop.GetSecondsElapsed() - timeStamp >= 360f)
+            if (weatherHandler != null && weatherHandler.activeSelf && !isOnAnAlwaysActivePedestal && TimeLoop.GetSecondsElapsed() - timeStamp >= 360f)
             {
                 weatherHandler?.SetActive(false);
             }

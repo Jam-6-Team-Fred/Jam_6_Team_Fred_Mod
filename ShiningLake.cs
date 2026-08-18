@@ -49,7 +49,7 @@ namespace Jam6
         public Color currentColor;
 
 
-        public float hourAmount = 1;
+        public float hourAmount = 5.5f;
 
         public void Awake()
         {
@@ -115,8 +115,6 @@ namespace Jam6
             //I can apparently Lerp the whole color??? Hello???
             currentColor = Color.Lerp(fromColor, toColor, Mathf.SmoothStep(0f, 1f, num));
 
-            mod.ModHelper.Console.WriteLine($"Current color: {currentColor}");
-
             //Applying the whole color
             lakeMaterial.SetColor("_FogColor", currentColor);
         }
@@ -128,7 +126,6 @@ namespace Jam6
 
             //The Lerp
             spotLightLight.intensity = Mathf.Lerp(fromIntensity, toIntensity, Mathf.SmoothStep(0f, 1f, num));
-            mod.ModHelper.Console.WriteLine($"Current intensity: {spotLightLight.intensity}");
         }
     }
 }

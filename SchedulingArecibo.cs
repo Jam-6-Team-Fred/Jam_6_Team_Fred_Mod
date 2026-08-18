@@ -52,9 +52,9 @@ namespace Jam6
 
         public void FindSignal(string planetName)
         {
-            if (planetName == "Disc_Body")
+            if (planetName == "Disc")
             {
-                mod.ModHelper.Console.WriteLine("Found Disc Body");
+                mod.ModHelper.Console.WriteLine("Found Disc", OWML.Common.MessageType.Success);
                 signalSource = SearchUtilities.Find("Disc_Body/Sector/TelescopeSignal").GetComponent<AudioSignal>();
                 signalSource?.SetSignalActivation(false, 0f);
             }

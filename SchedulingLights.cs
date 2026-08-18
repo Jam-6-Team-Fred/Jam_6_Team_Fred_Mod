@@ -44,7 +44,6 @@ namespace Jam6
             {
                 lightController = GetComponent<OWLightController>();
             }
-            mod.ModHelper.Console.WriteLine($"Light Controller: {lightController}");
             lightController.SetIntensity(0f);
         }
 
