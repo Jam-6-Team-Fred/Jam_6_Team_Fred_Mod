@@ -1,4 +1,5 @@
 ﻿using NewHorizons.Utility;
+using NewHorizons;
 using OWML.ModHelper;
 using OWML.Utils;
 using System;
@@ -26,17 +27,19 @@ namespace Jam6
         {
             mod = Jam6.Instance;
             SchedulingSocket.ActivateScheduledEvent += FireSignal;
+            Jam6.Instance.NewHorizons.GetBodyLoadedEvent().AddListener(FindSignal);
         }
 
         public void OnDestroy()
         {
             SchedulingSocket.ActivateScheduledEvent -= FireSignal;
+            Jam6.Instance.NewHorizons.GetBodyLoadedEvent().RemoveListener(FindSignal);
         }
 
         public void Start()
         {
-            signalSource = SearchUtilities.Find("Disc_Body/Sector/TelescopeSignal").GetComponent<AudioSignal>();
-            signalSource?.SetSignalActivation(false, 0f);
+            //signalSource = SearchUtilities.Find("Disc_Body/Sector/TelescopeSignal").GetComponent<AudioSignal>();
+            //signalSource?.SetSignalActivation(false, 0f);
             if (meshCollider == null)
             {
                 meshCollider = GetComponent<MeshCollider>();
@@ -44,6 +47,16 @@ namespace Jam6
             if (meshRenderer == null)
             {
                 meshRenderer = GetComponent<MeshRenderer>();
+            }
+        }
+
+        public void FindSignal(string planetName)
+        {
+            if (planetName == "Disc")
+            {
+                mod.ModHelper.Console.WriteLine("Found Disc", OWML.Common.MessageType.Success);
+                signalSource = SearchUtilities.Find("Disc_Body/Sector/TelescopeSignal").GetComponent<AudioSignal>();
+                signalSource?.SetSignalActivation(false, 0f);
             }
         }
 
