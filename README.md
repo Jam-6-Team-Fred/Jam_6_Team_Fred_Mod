@@ -17,8 +17,10 @@ TimeSaver - Turn off "Start with Suit" for best play experience
 - **Gay Coffee**: Lead Writer
 - **Hamstry**: Lead Unity developer, Programming, Constellation Art
 - **The Phantom Driver**: Nomai Ruin Architect, Modeller, Some Programming
-- **Solec**: Logo Designer, Ancient Text creator, Initial Shiplog layout
 - **T3rtu**: Lead Modeller
+
+## Additional Credits:
+- **Solec**: Logo Designer
 
 Made with Love, by Humans <3
 
