@@ -133,6 +133,7 @@
         "$SchedulingRoomComputer01": "Looking up schedule...",
         "$SchedulingRoomComputer02": "One event found",
         "$SchedulingRoomComputer03": "$TEAMFRED_EXPO_TIME",
+        "$SchedulingRoomInstructions": "Place an event device into a slot to schedule an event. The middle slot schedules the event for all hours.",
         "$SomeHouseRecord01": "ADENA: Is Leersi not the name of one of your ancestors, my love?",
         "$SomeHouseRecord02": "NEEM: Indeed it is! Of my great-great-grandmother, I believe.",
         "$SomeHouseRecord03": "ADENA: It is so unusual to find undisturbed writing from so many generations ago. How do you feel?",
