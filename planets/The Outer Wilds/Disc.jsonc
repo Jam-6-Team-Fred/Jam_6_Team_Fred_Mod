@@ -951,14 +951,14 @@
             {
                 "rename": "FomaiTowerFuelTank",
                 "position": {
-                    "x": -21.98393,
-                    "y": 10.3484,
-                    "z": -22.35266
+                    "x": -16.32343,
+                    "y": 22.4361,
+                    "z": -22.68528
                 },
                 "rotation": {
-                    "x": 330.0842,
-                    "y": 271.0417,
-                    "z": 90.99753
+                    "x": 303.6755,
+                    "y": 270.2555,
+                    "z": 91.53496
                 },
                 "type": "preCrashNomaiTank"
             }
@@ -1872,6 +1872,27 @@
                 "seed": 318603642
                 //All adult text, so no ArcInfo needed
             },
+            // Instructions in Scheduling Room
+            {
+                "rename": "SchedulingRoomInstructions",
+                "xmlFile": "nomai/SchedulingRoomInstructions.xml",
+                "position": {
+                    "x": 9.223975,
+                    "y": 22.05614,
+                    "z": 31.74869
+                },
+                "rotation": {
+                    "x": 280.2659,
+                    "y": 270.0001,
+                    "z": 269.9999
+                },
+                "normal": {
+                    "x": 5.960464E-08,
+                    "y": -3.483146E-07,
+                    "z": 1
+                },
+                "type": "trailmarker"
+            },
             // Record near wall of text in Some House of the Pomai City
             {
                 "rename": "SomeHouseRecorder",
@@ -2044,9 +2065,9 @@
                 "rename": "SundialWhiteboard",
                 "xmlFile": "nomai/Sundial.xml",
                 "position": {
-                    "x": 144.7338,
-                    "y": 88.6835,
-                    "z": 30.5525
+                    "x": 155.3915,
+                    "y": 87.3668,
+                    "z": 30.7214
                 },
                 "rotation": {
                     "x": 79.3782,

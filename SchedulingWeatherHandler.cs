@@ -32,8 +32,8 @@ namespace Jam6
             mod = Jam6.Instance;
             SchedulingSocket.ActivateScheduledEvent += Activate;
             SchedulingSocket.DeactivateScheduledEvent += Deactivate;
-            OrbSwitch.ZeroG += ZeroGWeatherHandler;
-            OrbSwitch.NormalG += NormalGWeatherHandler;
+            //OrbSwitch.ZeroG += ZeroGWeatherHandler;
+            //OrbSwitch.NormalG += NormalGWeatherHandler;
             Jam6.Instance.NewHorizons.GetBodyLoadedEvent().AddListener(FindWeather);
         }
 

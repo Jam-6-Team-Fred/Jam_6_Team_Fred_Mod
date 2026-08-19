@@ -4,7 +4,7 @@
   "author": "TeamFred",
   "name": "Through The Ages",
   "uniqueName": "TeamFred.ThroughTheAges",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "owmlVersion": "2.15.1",
   "dependencies": ["xen.NewHorizons"]
 }
