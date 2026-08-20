@@ -1,5 +1,4 @@
 ﻿using NewHorizons.Utility;
-using NewHorizons;
 using OWML.ModHelper;
 using OWML.Utils;
 using System;
@@ -12,9 +11,7 @@ namespace Jam6
     public class SchedulingArecibo : MonoBehaviour
     {
         [SerializeField]
-        public MeshRenderer meshRenderer;
-        [SerializeField]
-        public MeshCollider meshCollider;
+        public GameObject tunnelCovers;
 
         [NonSerialized]
         public ModBehaviour mod;
@@ -27,36 +24,20 @@ namespace Jam6
         {
             mod = Jam6.Instance;
             SchedulingSocket.ActivateScheduledEvent += FireSignal;
-            Jam6.Instance.NewHorizons.GetBodyLoadedEvent().AddListener(FindSignal);
         }
 
         public void OnDestroy()
         {
             SchedulingSocket.ActivateScheduledEvent -= FireSignal;
-            Jam6.Instance.NewHorizons.GetBodyLoadedEvent().RemoveListener(FindSignal);
         }
 
         public void Start()
         {
-            //signalSource = SearchUtilities.Find("Disc_Body/Sector/TelescopeSignal").GetComponent<AudioSignal>();
-            //signalSource?.SetSignalActivation(false, 0f);
-            if (meshCollider == null)
+            signalSource = SearchUtilities.Find("Disc_Body/Sector/TelescopeSignal").GetComponent<AudioSignal>();
+            signalSource?.SetSignalActivation(false, 0f);
+            if (tunnelCovers == null)
             {
-                meshCollider = GetComponent<MeshCollider>();
-            }
-            if (meshRenderer == null)
-            {
-                meshRenderer = GetComponent<MeshRenderer>();
-            }
-        }
-
-        public void FindSignal(string planetName)
-        {
-            if (planetName == "Disc")
-            {
-                mod.ModHelper.Console.WriteLine("Found Disc", OWML.Common.MessageType.Success);
-                signalSource = SearchUtilities.Find("Disc_Body/Sector/TelescopeSignal").GetComponent<AudioSignal>();
-                signalSource?.SetSignalActivation(false, 0f);
+                tunnelCovers = transform.Find("Tunnel Covers").gameObject;
             }
         }
 
@@ -65,8 +46,7 @@ namespace Jam6
             if (!isAlwaysActive)
             {
                 signalSource?.SetSignalActivation(true, 2f);
-                meshRenderer?.enabled = false;
-                meshCollider?.enabled = false;
+                tunnelCovers.SetActive(false);
                 timeStamp = TimeLoop.GetSecondsElapsed();
             }
         }
@@ -78,8 +58,7 @@ namespace Jam6
                 if (signalSource._active && TimeLoop.GetSecondsElapsed() - timeStamp >= 20f)
                 {
                     signalSource?.SetSignalActivation(false, 2f);
-                    meshRenderer?.enabled = true;
-                    meshCollider?.enabled = true;
+                    tunnelCovers.SetActive(true);
                 }
             }
         }
