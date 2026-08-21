@@ -2188,7 +2188,7 @@
             {
                 //Volume for past area
                 "audio": "planets/Assets/Audio/Jam_6_PastGlory.ogg",
-                "parentPath": "Disc_Body/Sector/Disc",
+                "parentPath": "Sector/Disc",
                 //Cylinder shape
                 "shape": {
                     "useShape": true,
@@ -2216,7 +2216,7 @@
             {
                 //Volume for future area
                 "audio": "planets/Assets/Audio/Jam_6_BrightFuture.ogg",
-                "parentPath": "Disc_Body/Sector/Disc",
+                "parentPath": "Sector/Disc",
                 //Cylinder shape
                 "shape": {
                     "useShape": true,
@@ -2244,7 +2244,7 @@
             {
                 //Volume for maintenance tunnels, has lower priority than past and future so defaults to this
                 "audio": "planets/Assets/Audio/Jam_6_Corridors.ogg",
-                "parentPath": "Disc_Body/Sector/Disc",
+                "parentPath": "Sector/Disc",
                 //Cylinder shape
                 "shape": {
                     "useShape": true,

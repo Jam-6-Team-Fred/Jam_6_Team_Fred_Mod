@@ -9,14 +9,19 @@ namespace Jam6
 {
     public class ZeroGravity : MonoBehaviour
     {
+        [Space]
         [SerializeField]
         public DirectionalForceVolume gravity;
         [SerializeField]
         public bool disableAligment;
+        [Space]
+        [SerializeField]
+        public float normalMagnitude = 18f;
+        [SerializeField]
+        public float lowMagnitude = 3.6f;
+
         [NonSerialized]
         public ModBehaviour mod;
-        [NonSerialized]
-        public MeshRenderer meshRenderer;
 
         public void Awake()
         {
@@ -30,6 +35,7 @@ namespace Jam6
             {
                 gravity = GetComponent<DirectionalForceVolume>();
             }
+            gravity.SetFieldMagnitude(normalMagnitude);
         }
 
         public void OnDestroy()
@@ -40,12 +46,12 @@ namespace Jam6
 
         public void TurnOffGravity()
         {
-            gravity.SetFieldMagnitude(3.6f);
+            gravity.SetFieldMagnitude(lowMagnitude);
         }
 
         public void TurnOnGravity()
         {
-            gravity.SetFieldMagnitude(12);
+            gravity.SetFieldMagnitude(normalMagnitude);
         }
     }
 }

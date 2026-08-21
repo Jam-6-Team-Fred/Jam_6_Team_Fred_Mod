@@ -25,7 +25,7 @@ namespace Jam6
         [NonSerialized]
         public float timeStamp;
         [NonSerialized]
-        public bool isOnAnAlwaysActivePedestal;
+        public bool isOnAnAlwaysActivePedestal = false;
 
         public void Awake()
         {
