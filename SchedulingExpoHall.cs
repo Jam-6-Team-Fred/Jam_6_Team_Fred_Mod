@@ -20,8 +20,8 @@ namespace Jam6
         public void Awake()
         {
             mod = Jam6.Instance;
-            SchedulingSocket.ActivateScheduledEvent += Disappear;
-            SchedulingSocket.DeactivateScheduledEvent += Appear;
+            SchedulingSocket.ActivateScheduledEvent += Open;
+            SchedulingSocket.DeactivateScheduledEvent += Close;
         }
 
         public void Start()
@@ -38,11 +38,11 @@ namespace Jam6
 
         public void OnDestroy()
         {
-            SchedulingSocket.ActivateScheduledEvent -= Disappear;
-            SchedulingSocket.DeactivateScheduledEvent -= Appear;
+            SchedulingSocket.ActivateScheduledEvent -= Open;
+            SchedulingSocket.DeactivateScheduledEvent -= Close;
         }
 
-        public void Disappear(SchedulingItem item, bool doesntMatter)
+        public void Open(SchedulingItem item, bool doesntMatter)
         {
             if (item.itemID == "ExpoHall")
             {
@@ -52,7 +52,7 @@ namespace Jam6
             }
         }
 
-        public void Appear(SchedulingItem item, bool doesntMatter)
+        public void Close(SchedulingItem item, bool doesntMatter)
         {
             if (item.itemID == "ExpoHall")
             {

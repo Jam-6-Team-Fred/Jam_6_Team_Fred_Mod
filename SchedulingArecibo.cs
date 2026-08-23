@@ -122,11 +122,11 @@ namespace Jam6
                         {
                             case LerpState.Start:
                                 //Y move
-                                MoveTunnelCover(timeStamp, startPosition, endPositionY, durationToMoveY, LerpState.EndY);
+                                MovePresentCover(timeStamp, startPosition, endPositionY, durationToMoveY, LerpState.EndY);
                                 break;
                             case LerpState.EndY:
                                 //X move
-                                MoveTunnelCover(timeStamp, endPositionY, endPositionX, durationToMoveX, LerpState.EndX);
+                                MovePresentCover(timeStamp, endPositionY, endPositionX, durationToMoveX, LerpState.EndX);
                                 break;
                             case LerpState.EndX:
                                 isLerping = false;
@@ -139,11 +139,11 @@ namespace Jam6
                         {
                             case LerpState.EndX:
                                 //X move
-                                MoveTunnelCover(timeStamp, endPositionX, endPositionY, durationToMoveX, LerpState.EndY);
+                                MovePresentCover(timeStamp, endPositionX, endPositionY, durationToMoveX, LerpState.EndY);
                                 break;
                             case LerpState.EndY:
                                 //Y move
-                                MoveTunnelCover(timeStamp, endPositionY, startPosition, durationToMoveY, LerpState.Start);
+                                MovePresentCover(timeStamp, endPositionY, startPosition, durationToMoveY, LerpState.Start);
                                 break;
                             case LerpState.Start:
                                 isLerping = false;
@@ -155,7 +155,7 @@ namespace Jam6
             }
         }
 
-        public void MoveTunnelCover(float startTime, Vector3 start, Vector3 end, float duration, LerpState nextState)
+        public void MovePresentCover(float startTime, Vector3 start, Vector3 end, float duration, LerpState nextState)
         {
             //The funny thing
             float num = Mathf.InverseLerp(startTime, startTime + duration, currentTime);
