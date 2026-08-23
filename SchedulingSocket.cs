@@ -20,9 +20,12 @@ namespace Jam6
         public bool hasScheduledTimeCome = false;
         [NonSerialized]
         public bool hasThisGoneOffYet = false;
+        [NonSerialized]
+        public bool hasAreciboGoneOffYet = false;
         public delegate void ScheduledEvent(SchedulingItem item, bool isAlwaysActive);
         public static event ScheduledEvent ActivateScheduledEvent;
         public static event ScheduledEvent DeactivateScheduledEvent;
+        public static event ScheduledEvent BeforeAScheduledEvent;
 
         [SerializeField]
         public int activationHour;
@@ -109,6 +112,16 @@ namespace Jam6
                     mod.ModHelper.Console.WriteLine($"It isnt null, ill try activating...", OWML.Common.MessageType.Success);
                     ActivateScheduledEvent((SchedulingItem)heldItem, isAlwaysActive);
                     hasThisGoneOffYet = true;
+                }
+            }
+
+            if (!hasAreciboGoneOffYet && TimeLoop.GetSecondsElapsed() >= (activationHour * 120f) - 20f)
+            {
+                if (heldItem != null)
+                {
+                    mod.ModHelper.Console.WriteLine($"It isnt null, ill try areciboing...", OWML.Common.MessageType.Success);
+                    BeforeAScheduledEvent(null, isAlwaysActive);
+                    hasAreciboGoneOffYet = true;
                 }
             }
         }

@@ -14,6 +14,8 @@ namespace Jam6
         public GameObject spotLight;
         [SerializeField]
         public GameObject lakeSurface;
+        [SerializeField]
+        public Material[] volumetricLightsMaterials;
         [Space]
         [SerializeField]
         public Color normalColor = new Color(61, 84, 81);
@@ -26,6 +28,8 @@ namespace Jam6
         public float durationToShine = 5f;
         [SerializeField]
         public float endSpotLightIntensity = 5;
+        [SerializeField]
+        public float endVolumetricLightMaterialAlpha = 0.1568628f;
 
         [NonSerialized]
         public ModBehaviour mod;
@@ -47,6 +51,8 @@ namespace Jam6
         public float startTime;
         [NonSerialized]
         public Color currentColor;
+        [NonSerialized]
+        public float currentAlpha;
 
 
         public float hourAmount = 5.5f;
@@ -62,6 +68,7 @@ namespace Jam6
             spotLightLight = spotLight.GetComponent<Light>();
             lakeMaterial.SetColor("_FogColor", normalColor);
             spotLightLight.intensity = 0;
+            SetVolMaterialsAlpha(0);
         }
 
         public void Update()
@@ -84,7 +91,7 @@ namespace Jam6
             }
             if (didItShine && currentTime <= (hourAmount + 1) * 120f + durationToShine)
             {
-                UpdateSpotLightIntensity(0, endSpotLightIntensity);
+                UpdateLightShine(0, endSpotLightIntensity, 0, endVolumetricLightMaterialAlpha);
             }
             if (!didItUnShine && currentTime >= (hourAmount + 2) * 120f)
             {
@@ -93,7 +100,7 @@ namespace Jam6
             }
             if (didItUnShine && currentTime <= (hourAmount + 2) * 120f + durationToShine)
             {
-                UpdateSpotLightIntensity(endSpotLightIntensity, 0);
+                UpdateLightShine(endSpotLightIntensity, 0, endVolumetricLightMaterialAlpha, 0);
             }
             if (!didItUnBlue && currentTime >= (hourAmount + 3) * 120f)
             {
@@ -119,13 +126,25 @@ namespace Jam6
             lakeMaterial.SetColor("_FogColor", currentColor);
         }
 
-        public void UpdateSpotLightIntensity(float fromIntensity, float toIntensity)
+        public void UpdateLightShine(float fromIntensity, float toIntensity, float fromAlpha, float toAlpha)
         {
             //Funny smooooth curve thing
             float num = Mathf.InverseLerp(startTime, startTime + durationToShine, currentTime);
+            float smoothStep = Mathf.SmoothStep(0f, 1f, num);
 
-            //The Lerp
-            spotLightLight.intensity = Mathf.Lerp(fromIntensity, toIntensity, Mathf.SmoothStep(0f, 1f, num));
+            //The Lerps
+            spotLightLight.intensity = Mathf.Lerp(fromIntensity, toIntensity, smoothStep);
+            currentAlpha = Mathf.Lerp(fromAlpha, toAlpha, smoothStep);
+
+            SetVolMaterialsAlpha(currentAlpha);
+        }
+
+        public void SetVolMaterialsAlpha(float alpha)
+        {
+            foreach (Material volLightMat in volumetricLightsMaterials)
+            {
+                volLightMat.SetAlpha(alpha);
+            }
         }
     }
 }
