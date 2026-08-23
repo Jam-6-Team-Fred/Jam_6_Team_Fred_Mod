@@ -38,7 +38,7 @@
     <None Include="dialogue\**\*.*">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="translations\**\*.*">
+    <None Include="translations\**\*.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="addon-manifest.json" Condition="Exists('addon-manifest.json')">

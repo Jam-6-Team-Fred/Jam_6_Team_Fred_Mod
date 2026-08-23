@@ -19,11 +19,11 @@
                 "remoteTrigger": {
                     "rename": "NomaiObjectTrigger",
                     "position": {
-                        "x": 15.79771,
-                        "y": -43.66083,
-                        "z": 185.1358
+                        "x": 9.847731,
+                        "y": -42.32644,
+                        "z": 186.2923
                     },
-                    "radius": 2.5
+                    "radius": 3
                 }
             }
         ]
