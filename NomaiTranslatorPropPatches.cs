@@ -20,7 +20,7 @@ namespace Jam6
             var text = __instance._textNodeToDisplay;
             if (text.Contains("$TEAMFRED_EXPO_"))
             {
-                text = text.Replace("$TEAMFRED_EXPO_TIME", "foobar");
+                text = text.Replace("$TEAMFRED_EXPO_TIME", "Expo Hall Scheduled to open in <color=red>ERROR</color> hours");
                 __instance._textNodeToDisplay = text;
             }
         }

@@ -49,15 +49,11 @@ namespace Jam6
         public Color currentColor;
 
 
-        public float hourAmount = 1;
-
-        //float num = Mathf.InverseLerp(_fadeStartTime, _fadeStartTime + _fadeDuration, Time.time);
-        //_intensity = Mathf.Lerp(_fadeStartIntensity, _fadeTargetIntensity, Mathf.SmoothStep(0f, 1f, num));
+        public float hourAmount = 5.5f;
 
         public void Awake()
         {
             mod = Jam6.Instance;
-            //spotLight = SearchUtilities.Find("Disc_Body/Sector/Disc/Past/Lake/Lake Spotlight");
         }
 
         public void Start()
@@ -90,7 +86,7 @@ namespace Jam6
             {
                 UpdateSpotLightIntensity(0, endSpotLightIntensity);
             }
-            if (didItShine && currentTime >= (hourAmount + 2) * 120f)
+            if (!didItUnShine && currentTime >= (hourAmount + 2) * 120f)
             {
                 didItUnShine = true;
                 startTime = currentTime;
@@ -99,7 +95,7 @@ namespace Jam6
             {
                 UpdateSpotLightIntensity(endSpotLightIntensity, 0);
             }
-            if (didItBlue && currentTime >= (hourAmount + 3) * 120f)
+            if (!didItUnBlue && currentTime >= (hourAmount + 3) * 120f)
             {
                 didItUnBlue = true;
                 startTime = currentTime;
@@ -114,23 +110,10 @@ namespace Jam6
         public void UpdateColor(Color fromColor, Color toColor)
         {
             //Funny smooooth curve thing
-            //float num = Mathf.InverseLerp(startTime, startTime + durationToBlue, TimeLoop.GetSecondsElapsed());
-            float num = startTime / (startTime + durationToBlue);
+            float num = Mathf.InverseLerp(startTime, startTime + durationToBlue, currentTime);
 
-            //R
-            currentColor.r = Mathf.Lerp(fromColor.r, toColor.r, Mathf.SmoothStep(0f, 1f, num));
-
-            //mod.ModHelper.Console.WriteLine($"Red: {currentColor.r}", OWML.Common.MessageType.Info);
-
-            //G
-            currentColor.g = Mathf.Lerp(fromColor.g, toColor.g, Mathf.SmoothStep(0f, 1f, num));
-
-            //mod.ModHelper.Console.WriteLine($"Green: {currentColor.g}", OWML.Common.MessageType.Info);
-
-            //B
-            currentColor.b = Mathf.Lerp(fromColor.b, toColor.b, Mathf.SmoothStep(0f, 1f, num));
-
-            //mod.ModHelper.Console.WriteLine($"Blue: {currentColor.b}", OWML.Common.MessageType.Info);
+            //I can apparently Lerp the whole color??? Hello???
+            currentColor = Color.Lerp(fromColor, toColor, Mathf.SmoothStep(0f, 1f, num));
 
             //Applying the whole color
             lakeMaterial.SetColor("_FogColor", currentColor);
@@ -138,9 +121,11 @@ namespace Jam6
 
         public void UpdateSpotLightIntensity(float fromIntensity, float toIntensity)
         {
-            //float num2 = Mathf.InverseLerp(startTime, startTime + durationToShine, TimeLoop.GetSecondsElapsed());
-            float num2 = startTime / (startTime + durationToBlue);
-            spotLightLight.intensity = Mathf.Lerp(fromIntensity, toIntensity, Mathf.SmoothStep(0f, 1f, num2));
+            //Funny smooooth curve thing
+            float num = Mathf.InverseLerp(startTime, startTime + durationToShine, currentTime);
+
+            //The Lerp
+            spotLightLight.intensity = Mathf.Lerp(fromIntensity, toIntensity, Mathf.SmoothStep(0f, 1f, num));
         }
     }
 }

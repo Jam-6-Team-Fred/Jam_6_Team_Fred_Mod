@@ -2,6 +2,7 @@
 using OWML.ModHelper;
 using System;
 using System.ComponentModel.Design;
+using System.Diagnostics.Tracing;
 using UnityEngine;
 
 namespace Jam6
@@ -16,7 +17,9 @@ namespace Jam6
         [NonSerialized]
         public OWItem heldItem;
         [NonSerialized]
-        public bool didScheduledEventHappen;
+        public bool hasScheduledTimeCome = false;
+        [NonSerialized]
+        public bool hasThisGoneOffYet = false;
         public delegate void ScheduledEvent(SchedulingItem item, bool isAlwaysActive);
         public static event ScheduledEvent ActivateScheduledEvent;
         public static event ScheduledEvent DeactivateScheduledEvent;
@@ -34,33 +37,42 @@ namespace Jam6
             OnValidate();
             base.Awake();
             mod = Jam6.Instance;
-            mod.ModHelper.Console.WriteLine("A schedule board is created", OWML.Common.MessageType.Success);
-            OnSocketableDonePlacing += AddSchedulingItem;
+            mod.ModHelper.Console.WriteLine($"A schedule pedestal (ah:{activationHour}) is created", OWML.Common.MessageType.Success);
             OnSocketablePlaced += AddSchedulingItem;
             OnSocketableRemoved += RemoveSchedulingItem;
-            OnSocketableDoneRemoving += RemoveSchedulingItem;
+            Jam6.Instance.NewHorizons.GetBodyLoadedEvent().AddListener(SetHeldItem);
         }
 
         public override void Start()
         {
-            base.Start();
-            if (transform.GetChildCount() > 0)
+            //Base game bullshit fuck you man
+            if (_socketedItem != null)
             {
-                heldItem = transform.GetChild(0).gameObject.GetComponent<SchedulingItem>();
+                _socketedItem.MoveAndChildToTransform(_socketTransform);
             }
+        }
 
-            if (isAlwaysActive)
+        public void SetHeldItem(string planetName)
+        {
+            if (planetName == "Disc")
             {
-                activationHour = 0;
+                if (transform.childCount > 0)
+                {
+                    heldItem = transform.GetChild(0).gameObject.GetComponent<SchedulingItem>();
+                }
+
+                if (isAlwaysActive)
+                {
+                    activationHour = 0;
+                }
             }
         }
 
         public void OnDestroy()
         {
-            OnSocketableDonePlacing -= AddSchedulingItem;
             OnSocketablePlaced -= AddSchedulingItem;
             OnSocketableRemoved -= RemoveSchedulingItem;
-            OnSocketableDoneRemoving -= RemoveSchedulingItem;
+            Jam6.Instance.NewHorizons.GetBodyLoadedEvent().RemoveListener(SetHeldItem);
         }
 
         public void AddSchedulingItem(OWItem item)
@@ -70,7 +82,7 @@ namespace Jam6
                 heldItem = item;
             }
             mod.ModHelper.Console.WriteLine($"I now hold {heldItem.name}", OWML.Common.MessageType.Success);
-            if (didScheduledEventHappen)
+            if (hasScheduledTimeCome)
             {
                 ActivateScheduledEvent((SchedulingItem)heldItem, isAlwaysActive);
             }
@@ -83,15 +95,20 @@ namespace Jam6
             heldItem = null;
         }
 
-        public void Update()
+        public override void Update()
         {
-            if (!didScheduledEventHappen && TimeLoop.GetSecondsElapsed() >= activationHour*120f)
+            if (!hasThisGoneOffYet && TimeLoop.GetSecondsElapsed() >= activationHour*120f)
             {   
-                didScheduledEventHappen = true;
-                mod.ModHelper.Console.WriteLine($"It is {activationHour}:00, Im activating...", OWML.Common.MessageType.Success);
+                if (!hasScheduledTimeCome)
+                {
+                    mod.ModHelper.Console.WriteLine($"It is {activationHour}:00, Im activating...", OWML.Common.MessageType.Success);
+                }
+                hasScheduledTimeCome = true;
                 if (heldItem != null)
                 {
+                    mod.ModHelper.Console.WriteLine($"It isnt null, ill try activating...", OWML.Common.MessageType.Success);
                     ActivateScheduledEvent((SchedulingItem)heldItem, isAlwaysActive);
+                    hasThisGoneOffYet = true;
                 }
             }
         }
