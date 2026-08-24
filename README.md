@@ -8,6 +8,8 @@
 
 Through the Ages is a story mod built in 18 days by "Team Fred" during the [2026 Outer Wilds Summer Jam](https://outerwildsmods.com/jam/aug-2026/) (aka Jam 6)
 
+Made with Love, by Humans <3
+
 ## Mod Incompatibility List
 TimeSaver - Turn off "Start with Suit" for best play experience
 
@@ -22,7 +24,9 @@ TimeSaver - Turn off "Start with Suit" for best play experience
 ## Additional Credits:
 - **Solec**: Logo Designer
 
-Made with Love, by Humans <3
+# Contributing
+Team Fred developed this project strictly without the use of Generative AI.  
+We request any contributions (including translations) to be performed without the use of Generative AI.
 
 ---
 
