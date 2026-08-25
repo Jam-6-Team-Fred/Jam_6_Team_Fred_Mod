@@ -13,8 +13,6 @@ namespace Jam6
         [SerializeField]
         public GameObject tunnelCovers;
         [SerializeField]
-        public float signalDuration = 60f;
-        [SerializeField]
         public float amountToMoveY = 1.5f;
         [SerializeField]
         public float durationToMoveY = 1;
@@ -45,6 +43,8 @@ namespace Jam6
         public bool isLerping = false;
         [NonSerialized]
         public LerpType whatLerp;
+        [NonSerialized]
+        public float actualDuration;
 
         public enum LerpState
         {
@@ -83,10 +83,11 @@ namespace Jam6
             endPositionX = endPositionY + new Vector3(amountToMoveX, 0, 0);
         }
 
-        public void FireSignal(SchedulingItem item, bool isAlwaysActive)
+        public void FireSignal(SchedulingItem item, bool isAlwaysActive, float duration)
         {
             if (!isAlwaysActive)
             {
+                actualDuration = duration;
                 signalSource?.SetSignalActivation(true, 2f);
                 mod.ModHelper.Console.WriteLine($"Signal Source - {signalSource}, Active - {signalSource._active}");
                 timeStamp = currentTime;
@@ -103,7 +104,7 @@ namespace Jam6
             if (signalSource != null)
             {
                 currentTime = TimeLoop.GetSecondsElapsed();
-                if (signalSource._active && currentTime - signalStart >= signalDuration)
+                if (signalSource._active && currentTime - signalStart >= actualDuration)
                 {
                     signalSource?.SetSignalActivation(false, 2f);
                     timeStamp = currentTime;
