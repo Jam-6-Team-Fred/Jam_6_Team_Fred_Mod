@@ -5,10 +5,10 @@ using UnityEngine;
 
 namespace Jam6
 {
-    public class SectorLightSwitcher : Sector
+    public class SectorLightSwitcher : MonoBehaviour
     {
         [SerializeField]
-        public Sector sectorDome;
+        public Collider colliderDome;
         [SerializeField]
         public Light[] domeLights;
         [NonSerialized]
@@ -16,30 +16,20 @@ namespace Jam6
         [NonSerialized]
         public ModBehaviour mod;
 
-        public override void Awake()
+        public void Awake()
         {
-            base.Awake();
             mod = Jam6.Instance;
             foreach (Light l in domeLights)
             {
                 l.enabled = false;
             }
             sunLight = SearchUtilities.Find("Sun_Body/Sector_SUN/Effects_SUN/SunLight").GetComponent<Light>();
-            _owTriggerVolume.OnEntry += EnterLightSwitch;
-            _owTriggerVolume.OnExit += ExitLightSwitch;
         }
 
-        public void OnDestroy()
+        public void OnTriggerEnter(Collider other)
         {
-            _owTriggerVolume.OnEntry -= EnterLightSwitch;
-            _owTriggerVolume.OnExit -= ExitLightSwitch;
-        }
-
-        public void EnterLightSwitch(GameObject hitObj)
-        {
-            SectorDetector component = hitObj.GetComponent<SectorDetector>();
             mod.ModHelper.Console.WriteLine("Entered Dome", OWML.Common.MessageType.Success);
-            if (component.GetOccupantType() == DynamicOccupant.Player)
+            if (other.gameObject.name == "PlayerDetector")
             {
                 mod.ModHelper.Console.WriteLine("Its the player", OWML.Common.MessageType.Success);
                 sunLight.enabled = false;
@@ -50,11 +40,10 @@ namespace Jam6
             }
         }
 
-        public void ExitLightSwitch(GameObject hitObj)
+        public void OnTriggerExit(Collider other)
         {
-            SectorDetector component = hitObj.GetComponent<SectorDetector>();
             mod.ModHelper.Console.WriteLine("Exited Dome", OWML.Common.MessageType.Success);
-            if (component.GetOccupantType() == DynamicOccupant.Player)
+            if (other.gameObject.name == "PlayerDetector")
             {
                 mod.ModHelper.Console.WriteLine("Its the player", OWML.Common.MessageType.Success);
                 sunLight.enabled = true;
