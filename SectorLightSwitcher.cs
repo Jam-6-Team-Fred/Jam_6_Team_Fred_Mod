@@ -21,7 +21,7 @@ namespace Jam6
             mod = Jam6.Instance;
             foreach (Light l in domeLights)
             {
-                l.enabled = false;
+                l.enabled = true;
             }
             sunLight = SearchUtilities.Find("Sun_Body/Sector_SUN/Effects_SUN/SunLight").GetComponent<Light>();
         }
