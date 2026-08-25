@@ -9,6 +9,9 @@ namespace Jam6
 {
     public class SchedulingSocket : OWItemSocket
     {
+        [Space]
+        [SerializeField]
+        public int activationHour;
         [SerializeField]
         public bool isAlwaysActive;
 
@@ -26,9 +29,6 @@ namespace Jam6
         public static event ScheduledEvent ActivateScheduledEvent;
         public static event ScheduledEvent DeactivateScheduledEvent;
         public static event ScheduledEvent BeforeAScheduledEvent;
-
-        [SerializeField]
-        public int activationHour;
 
         public void OnValidate()
         {
@@ -52,6 +52,14 @@ namespace Jam6
             if (_socketedItem != null)
             {
                 _socketedItem.MoveAndChildToTransform(_socketTransform);
+            }
+            if (heldItem != null)
+            {
+                var schedulingItem = (SchedulingItem)heldItem;
+                if (schedulingItem.itemID == "ExpoHall")
+                {
+                    Jam6.Instance.expoHallOpeningHour = activationHour;
+                }
             }
         }
 

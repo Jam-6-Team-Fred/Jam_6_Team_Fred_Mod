@@ -10,6 +10,7 @@ public class Jam6 : ModBehaviour
 {
     public static Jam6 Instance;
     public INewHorizons NewHorizons;
+    public int? expoHallOpeningHour = null;
 
     public bool AllowSpawnOverride { get; private set; }
 
