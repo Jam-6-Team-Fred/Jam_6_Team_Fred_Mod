@@ -1,15 +1,7 @@
 {
-    //////////// NOTES ////////////
-    // In some places within this document, "planet" & "station" will be used interchangeable. These all refer to the same components.
-    // COIN will refer to specifically the rotating cyclinder
-    //   with points of interest
-    // DOUBLE DOME will refer to specifically the outer shell of the station
-    // (Currently since there is a single object for the combined coin &
-    //   double dome, there is not a distinction within this file)
-    //////////// END OF NOTES ////////////
     "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
     // Name of the planet in game
-    "name": "Grand Exhibit",
+    "name": "Dome",
     // Basic descriptors of the planet
     "Base": {
         "surfaceSize": 300,
@@ -83,13 +75,16 @@
     },
     // Will only want one of these between the Double Dome & the Coin, otherwise 2 different autopilot points will be set up
     "MapMarker": {
-        "enabled": true
+        "enabled": false,
+        "maxDisplayDistanceOverride": 1
+    },
+    "ReferenceFrame": {
+        "enabled": false,
+        "hideInMap": true
     },
     "ShipLog": {
-        "xmlFile": "shiplogs/Coinworld.xml",
         "mapMode": {
-            "revealedSprite": "sprites/Grand_Exhibit.png"
-        },
-        "spriteFolder": "sprites"
+            "remove": true
+        }
     }
 }

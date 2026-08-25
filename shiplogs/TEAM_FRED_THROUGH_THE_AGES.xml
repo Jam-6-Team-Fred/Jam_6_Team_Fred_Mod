@@ -1,0 +1,187 @@
+<AstroObjectEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/shiplog_schema.xsd">
+    <ID>TEAM_FRED_THROUGH_THE_AGES</ID>
+
+    <Entry>
+        <ID>THROUGH_THE_AGES_GRAND_EXHIBIT</ID>
+        <Name>$THROUGH_THE_AGES_Grand_Exhibit</Name>
+
+        <Curiosity>THROUGH_THE_AGES_COINWORLD</Curiosity>
+        <IsCuriosity />
+
+        <RumorFact>
+            <ID>THROUGH_THE_AGES_COINWORLD_HORNFELS</ID>
+            <RumorName>$THROUGH_THE_AGES_Rogue_Object</RumorName>
+            <Text>$THROUGH_THE_AGES_Rogue_Object_Rumor_Fact</Text>
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>THROUGH_THE_AGES_EXHIBIT_ENTRY</ID>
+            <Text>$THROUGH_THE_AGES_Rogue_Object_Explore_Fact</Text>
+        </ExploreFact>
+    </Entry>
+
+    <Entry>
+        <ID>THROUGH_THE_AGES_WELCOME_MOUNTAIN</ID>
+        <Name>$THROUGH_THE_AGES_Welcome_Mountain</Name>
+
+        <Curiosity>THROUGH_THE_AGES_COINWORLD</Curiosity>
+
+        <ExploreFact>
+            <ID>THROUGH_THE_AGES_MOUNTAIN_CORE</ID>
+            <Text>$THROUGH_THE_AGES_Welcome_Mountain_Explore_Fact</Text>
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>THROUGH_THE_AGES_ANCIENT_CITY</ID>
+        <Name>$THROUGH_THE_AGES_Ancient_City</Name>
+
+        <Curiosity>THROUGH_THE_AGES_COINWORLD</Curiosity>
+
+        <ExploreFact>
+            <ID>THROUGH_THE_AGES_ANCIENTCITY_CORE</ID>
+            <Text>$THROUGH_THE_AGES_Ancient_City_Explore_Fact</Text>
+        </ExploreFact>
+        <Entry>
+            <ID>THROUGH_THE_AGES_SHEDULING_ROOM</ID>
+            <Name>$THROUGH_THE_AGES_Scheduling_Room</Name>
+
+            <Curiosity>THROUGH_THE_AGES_COINWORLD</Curiosity>
+
+            <ExploreFact>
+                <ID>THROUGH_THE_AGES_ANCIENTCITY_SCHEDULING</ID>
+                <Text>$THROUGH_THE_AGES_Scheduling_Room_Explore_Fact</Text>
+            </ExploreFact>
+        </Entry>
+    </Entry>
+    <Entry>
+        <ID>THROUGH_THE_AGES_SERVICE_TUNNELS</ID>
+        <Name>$THROUGH_THE_AGES_Service_Tunnels</Name>
+
+        <Curiosity>THROUGH_THE_AGES_COINWORLD</Curiosity>
+
+        <ExploreFact>
+            <ID>THROUGH_THE_AGES_SERVICE_TUNNELS_CORE</ID>
+            <Text>$THROUGH_THE_AGES_Service_Tunnels_Explore_Fact</Text>
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>THROUGH_THE_AGES_FOMAI_CITY</ID>
+        <Name>$THROUGH_THE_AGES_City_of_the_Future</Name>
+
+        <Curiosity>THROUGH_THE_AGES_COINWORLD</Curiosity>
+
+        <ExploreFact>
+            <ID>THROUGH_THE_AGES_FUTURECITY_CORE</ID>
+            <Text>$THROUGH_THE_AGES_City_of_the_Future_Explore_Fact</Text>
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>THROUGH_THE_AGES_RADIOTELESCOPE</ID>
+        <Name>$THROUGH_THE_AGES_Radiotelescope</Name>
+
+        <Curiosity>THROUGH_THE_AGES_COINWORLD</Curiosity>
+
+        <ExploreFact>
+            <ID>THROUGH_THE_AGES_RADIOTELESCOPE_CORE</ID>
+            <Text>$THROUGH_THE_AGES_Radiotelescope_Explore_Fact</Text>
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>THROUGH_THE_AGES_BLUE_LAKE</ID>
+        <Name>$THROUGH_THE_AGES_Blue_Lake</Name>
+
+        <Curiosity>THROUGH_THE_AGES_COINWORLD</Curiosity>
+
+        <ExploreFact>
+            <ID>THROUGH_THE_AGES_BLUELAKE_CORE</ID>
+            <Text>$THROUGH_THE_AGES_Blue_Lake_Explore_Fact</Text>
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>THROUGH_THE_AGES_SUNDIAL</ID>
+        <Name>$THROUGH_THE_AGES_Sundial</Name>
+
+        <Curiosity>THROUGH_THE_AGES_COINWORLD</Curiosity>
+
+        <ExploreFact>
+            <ID>THROUGH_THE_AGES_SUNDIAL_CORE</ID>
+            <Text>$THROUGH_THE_AGES_Sundial_Explore_Fact</Text>
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>THROUGH_THE_AGES_FOREST</ID>
+        <Name>$THROUGH_THE_AGES_Memorial_Forest</Name>
+
+        <Curiosity>THROUGH_THE_AGES_COINWORLD</Curiosity>
+
+        <ExploreFact>
+            <ID>THROUGH_THE_AGES_MEMORIAL_CORE</ID>
+            <Text>$THROUGH_THE_AGES_Memorial_Forest_Explore_Fact</Text>
+        </ExploreFact>
+    </Entry>
+    <Entry>
+        <ID>THROUGH_THE_AGES_CLUE_HUNT</ID>
+        <Name>$THROUGH_THE_AGES_Clue_Hunt</Name>
+
+        <Curiosity>THROUGH_THE_AGES_COINWORLD</Curiosity>
+
+        <ExploreFact>
+            <ID>THROUGH_THE_AGES_CLUE_HUNT</ID>
+            <Text>$THROUGH_THE_AGES_Clue_Hunt_Explore_Fact</Text>
+        </ExploreFact>
+
+        <Entry>
+            <ID>THROUGH_THE_AGES_CLUE_HUNT_3</ID>
+            <Name>$THROUGH_THE_AGES_Third_Clue</Name>
+
+            <Curiosity>THROUGH_THE_AGES_COINWORLD</Curiosity>
+
+            <ExploreFact>
+                <ID>THROUGH_THE_AGES_CLUE3</ID>
+                <Text>$THROUGH_THE_AGES_Third_Clue_Explore_Fact</Text>
+            </ExploreFact>
+        </Entry>
+
+        <Entry>
+            <ID>THROUGH_THE_AGES_CLUE_HUNT_2</ID>
+            <Name>$THROUGH_THE_AGES_Second_Clue</Name>
+
+            <Curiosity>THROUGH_THE_AGES_COINWORLD</Curiosity>
+
+            <ExploreFact>
+                <ID>THROUGH_THE_AGES_CLUE2</ID>
+                <Text>$THROUGH_THE_AGES_Second_Clue_Explore_Fact</Text>
+            </ExploreFact>
+        </Entry>
+
+        <Entry>
+            <ID>THROUGH_THE_AGES_CLUE_HUNT_1</ID>
+            <Name>$THROUGH_THE_AGES_First_Clue</Name>
+
+            <Curiosity>THROUGH_THE_AGES_COINWORLD</Curiosity>
+
+            <ExploreFact>
+                <ID>THROUGH_THE_AGES_CLUE1</ID>
+                <Text>$THROUGH_THE_AGES_First_Clue_Explore_Fact</Text>
+            </ExploreFact>
+        </Entry>
+    </Entry>
+    <Entry>
+        <ID>THROUGH_THE_AGES_EXPO_HALL</ID>
+        <Name>$THROUGH_THE_AGES_Past_and_Future</Name>
+
+        <Curiosity>THROUGH_THE_AGES_COINWORLD</Curiosity>
+
+        <RumorFact>
+            <ID>THROUGH_THE_AGES_EXPO_CORE</ID>
+            <RumorName>$THROUGH_THE_AGES_Exposition_Hall</RumorName>
+            <Text>$THROUGH_THE_AGES_Exposition_Hall_Rumor_Fact</Text>
+        </RumorFact>
+
+        <ExploreFact>
+            <ID>THROUGH_THE_AGES_EXPOHALL_EXPLORE</ID>
+            <Text>I have seen past and future, I have seen the last and the forgotten. I have seen all there is to see in this drifting capsule, a gift from reality.</Text>
+        </ExploreFact>
+    </Entry>
+</AstroObjectEntry>

@@ -1,15 +1,7 @@
 {
-    //////////// NOTES ////////////
-    // In some places within this document, "planet" & "station" will be used interchangeable. These all refer to the same components.
-    // COIN will refer to specifically the rotating cyclinder
-    //   with points of interest
-    // DOUBLE DOME will refer to specifically the outer shell of the station
-    // (Currently since there is a single object for the combined coin &
-    //   double dome, there is not a distinction within this file)
-    //////////// END OF NOTES ////////////
     "$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/body_schema.json",
     // Name of the planet in game
-    "name": "Disc",
+    "name": "Grand Exhibit",
     // Testing Spawn Location: Uncomment below line
     /*"Spawn": {
         "playerSpawnPoints": [
@@ -2324,16 +2316,21 @@
     },
     // Will only want one of these between the Double Dome & the Coin, otherwise 2 different autopilot points will be set up
     "MapMarker": {
-        "enabled": false,
-        "maxDisplayDistanceOverride": 1
-    },
-    "ReferenceFrame": {
-        "enabled": false,
-        "hideInMap": true
+        "enabled": true
     },
     "ShipLog": {
+        "xmlFile": "shiplogs/TEAM_FRED_THROUGH_THE_AGES.xml",
         "mapMode": {
-            "remove": true
-        }
+            "revealedSprite": "sprites/Grand_Exhibit.png",
+            "manualPosition": {
+                "x": 650,
+                "y": 350
+            },
+            "manualNavigationPosition": {
+                "x": 1,
+                "y": 3
+            }
+        },
+        "spriteFolder": "sprites"
     }
 }

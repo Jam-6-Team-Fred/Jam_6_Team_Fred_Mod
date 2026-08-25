@@ -1,5 +1,146 @@
 {
 	"$schema": "https://raw.githubusercontent.com/Outer-Wilds-New-Horizons/new-horizons/main/NewHorizons/Schemas/star_system_schema.json",
+	"entryPositions": [
+		{
+			"id": "THROUGH_THE_AGES_GRAND_EXHIBIT",
+			"position": {
+				"x": 600,
+				"y": 1800
+			}
+		},
+		{
+			"id": "THROUGH_THE_AGES_WELCOME_MOUNTAIN",
+			"position": {
+				"x": 440,
+				"y": 1350
+			}
+		},
+		{
+			"id": "THROUGH_THE_AGES_ANCIENT_CITY",
+			"position": {
+				"x": 750,
+				"y": 1300
+			}
+		},
+		{
+			"id": "THROUGH_THE_AGES_SHEDULING_ROOM",
+			"position": {
+				"x": 800,
+				"y": 1240
+			}
+		},
+		{
+			"id": "THROUGH_THE_AGES_RADIOTELESCOPE",
+			"position": {
+				"x": 1000,
+				"y": 1260
+			}
+		},
+		{
+			"id": "THROUGH_THE_AGES_FOREST",
+			"position": {
+				"x": 1500,
+				"y": 1550
+			}
+		},
+		{
+			"id": "THROUGH_THE_AGES_BLUE_LAKE",
+			"position": {
+				"x": 1190,
+				"y": 1000
+			}
+		},
+		{
+			"id": "THROUGH_THE_AGES_SUNDIAL",
+			"position": {
+				"x": 910,
+				"y": 900
+			}
+		},
+		{
+			"id": "THROUGH_THE_AGES_FOMAI_CITY",
+			"position": {
+				"x": 1280,
+				"y": 1400
+			}
+		},
+		{
+			"id": "THROUGH_THE_AGES_CLUE_HUNT",
+			"position": {
+				"x": 950,
+				"y": 1550
+			}
+		},
+		{
+			"id": "THROUGH_THE_AGES_SERVICE_TUNNELS",
+			"position": {
+				"x": 1180,
+				"y": 1680
+			}
+		},
+		{
+			"id": "THROUGH_THE_AGES_CLUE_HUNT_1",
+			"position": {
+				"x": 880,
+				"y": 1490
+			}
+		},
+		{
+			"id": "THROUGH_THE_AGES_CLUE_HUNT_2",
+			"position": {
+				"x": 950,
+				"y": 1490
+			}
+		},
+		{
+			"id": "THROUGH_THE_AGES_CLUE_HUNT_3",
+			"position": {
+				"x": 1020,
+				"y": 1490
+			}
+		},
+		{
+			"id": "THROUGH_THE_AGES_EXPO_HALL",
+			"position": {
+				"x": 550,
+				"y": 1000
+			}
+		}
+	],
+	"curiosities": [
+		{
+			"id": "THROUGH_THE_AGES_COINWORLD",
+			"color": {
+				"r": 136,
+				"g": 247,
+				"b": 136,
+				"a": 255
+			},
+			"highlightColor": {
+				"r": 195,
+				"g": 247,
+				"b": 295,
+				"a": 255
+			}
+		}
+	],
+	"initialReveal": [
+		"THROUGH_THE_AGES_COINWORLD_HORNFELS",
+		"THROUGH_THE_AGES_MOUNTAIN_CORE",
+		"THROUGH_THE_AGES_FUTURECITY_CORE",
+		"THROUGH_THE_AGES_SUNDIAL_CORE",
+		"THROUGH_THE_AGES_SERVICE_TUNNELS_CORE",
+		"THROUGH_THE_AGES_RADIOTELESCOPE_CORE",
+		"THROUGH_THE_AGES_ANCIENTCITY_SCHEDULING",
+		"THROUGH_THE_AGES_BLUELAKE_CORE",
+		"THROUGH_THE_AGES_MEMORIAL_CORE",
+		"THROUGH_THE_AGES_EXPO_CORE",
+		"THROUGH_THE_AGES_CLUE_HUNT",
+		"THROUGH_THE_AGES_CLUE1",
+		"THROUGH_THE_AGES_CLUE2",
+		"THROUGH_THE_AGES_CLUE3",
+		"THROUGH_THE_AGES_ANCIENTCITY_CORE"
+	],
 	"GlobalMusic": {
 		"endTimesAudio": "planets/Assets/Audio/Jam_6_EndTimes.ogg"
 	}
