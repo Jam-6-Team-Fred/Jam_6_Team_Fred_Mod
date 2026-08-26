@@ -1,4 +1,4 @@
-﻿using NewHorizons.Components.Props;
+using NewHorizons.Components.Props;
 using OWML.ModHelper;
 using System;
 using System.ComponentModel.Design;
@@ -9,8 +9,17 @@ namespace Jam6
 {
     public class SchedulingSocket : OWItemSocket
     {
+        [Space]
+        [SerializeField]
+        public int activationHour;
         [SerializeField]
         public bool isAlwaysActive;
+        [SerializeField]
+        public float areciboSignalDurationBefore = 20f;
+        [SerializeField]
+        public float areciboSignalDurationAfter = 40f;
+        [SerializeField]
+        public float areciboSignalDuration;
 
         [NonSerialized]
         public ModBehaviour mod;
@@ -20,12 +29,15 @@ namespace Jam6
         public bool hasScheduledTimeCome = false;
         [NonSerialized]
         public bool hasThisGoneOffYet = false;
+        [NonSerialized]
+        public bool hasAreciboGoneOffYet = false;
+        [NonSerialized]
+        public bool hasAreciboFinished = false;
         public delegate void ScheduledEvent(SchedulingItem item, bool isAlwaysActive);
+        public delegate void BeforeScheduledEvent(SchedulingItem item, bool isAlwaysActive, float duration);
         public static event ScheduledEvent ActivateScheduledEvent;
         public static event ScheduledEvent DeactivateScheduledEvent;
-
-        [SerializeField]
-        public int activationHour;
+        public static event BeforeScheduledEvent BeforeAScheduledEvent;
 
         public void OnValidate()
         {
@@ -41,6 +53,7 @@ namespace Jam6
             OnSocketablePlaced += AddSchedulingItem;
             OnSocketableRemoved += RemoveSchedulingItem;
             Jam6.Instance.NewHorizons.GetBodyLoadedEvent().AddListener(SetHeldItem);
+            areciboSignalDuration = areciboSignalDurationBefore + areciboSignalDurationAfter;
         }
 
         public override void Start()
@@ -49,6 +62,14 @@ namespace Jam6
             if (_socketedItem != null)
             {
                 _socketedItem.MoveAndChildToTransform(_socketTransform);
+            }
+            if (heldItem != null)
+            {
+                var schedulingItem = (SchedulingItem)heldItem;
+                if (schedulingItem.itemID == "ExpoHall")
+                {
+                    Jam6.Instance.expoHallOpeningHour = activationHour;
+                }
             }
         }
 
@@ -86,6 +107,10 @@ namespace Jam6
             {
                 ActivateScheduledEvent((SchedulingItem)heldItem, isAlwaysActive);
             }
+            if (hasAreciboGoneOffYet && !hasAreciboFinished)
+            {
+                BeforeAScheduledEvent((SchedulingItem)heldItem, isAlwaysActive, areciboSignalDuration-(TimeLoop.GetSecondsElapsed()-(activationHour*120f)));
+            }
         }
 
         public void RemoveSchedulingItem(OWItem item)
@@ -110,6 +135,20 @@ namespace Jam6
                     ActivateScheduledEvent((SchedulingItem)heldItem, isAlwaysActive);
                     hasThisGoneOffYet = true;
                 }
+            }
+
+            if (!hasAreciboGoneOffYet && TimeLoop.GetSecondsElapsed() >= (activationHour * 120f) - areciboSignalDurationBefore)
+            {
+                if (heldItem != null)
+                {
+                    mod.ModHelper.Console.WriteLine($"It isnt null, ill try areciboing...", OWML.Common.MessageType.Success);
+                    BeforeAScheduledEvent(null, isAlwaysActive, 60f);
+                }
+                hasAreciboGoneOffYet = true;
+            }
+            if (hasAreciboGoneOffYet && !hasAreciboGoneOffYet && TimeLoop.GetSecondsElapsed() >= (activationHour * 120f) + areciboSignalDurationAfter)
+            {
+                hasAreciboFinished = true;
             }
         }
     }

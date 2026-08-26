@@ -1,4 +1,4 @@
-﻿using OWML.ModHelper;
+using OWML.ModHelper;
 using OWML.Utils;
 using System;
 using System.Reflection;
@@ -15,8 +15,8 @@ namespace Jam6
         [SerializeField]
         public bool disableAligment;
         [Space]
-        [SerializeField]
-        public float normalMagnitude = 18f;
+        [NonSerialized]
+        public float normalMagnitude = 12f;
         [SerializeField]
         public float lowMagnitude = 3.6f;
 
@@ -31,6 +31,7 @@ namespace Jam6
         
         public void Start()
         {
+            normalMagnitude = 12f;
             if (gravity == null)
             {
                 gravity = GetComponent<DirectionalForceVolume>();

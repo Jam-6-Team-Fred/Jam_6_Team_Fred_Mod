@@ -71,7 +71,7 @@
         "$GravityRoom03": "BAO: No! I merely wish to observe the <![CDATA[<color=orange>Gravity Controls</color>]]> more closely!",
         "$GravityRoom04": "STEM: Well, either way, I think I have something that might interest you. Meet me at our spot (Under the stairs in the <![CDATA[<color=orange>Ancient City</color>]]>). Bring Leersi!",
         "$MemeText": "The <![CDATA[<color=orange>Past & Future</color>]]> were the friends we made along the way •:)",
-        "$MemorialForestCairnA": "Escall: You and your clan disappeared without trace. We hope your journey took you far.",
+        "$MemorialForestCairnA": "Escall: You and your clan Opened without trace. We hope your journey took you far.",
         "$MemorialForestCairnB": "Sai: You were taken by an untimely accident. We hope you learned what you wished.",
         "$MemorialForestCairnC": "Curatella: You were taken by age. We thank you for the stories you told.",
         "$MemorialForestCairnD": "Liche: You were taken by illness. We thank you for so bravely fighting disease in others.",
@@ -179,11 +179,20 @@
         "$WelcomeMountainScroll05": "GEUM: The <![CDATA[<color=orange>Exposition Hall</color>]]> is also where our greatest find is exhibited!",
         "$WelcomeMountainScroll06": "PHYSALIS: Including what (we believe) might have been the homeworld of our species, many millennia ago."
     },
-  "UIDictionary": {
-    "$TeamFred.Nomai_Technology": "Nomai Technology",
-    "$TeamFred.Telescope": "Telescope",
-    "$TeamFred.ExpoHall": "ExpoHall !!!!",
-    "$TeamFred.Rain": "Rain !!!!",
-    "$TeamFred.Lights" : "Lights !!!!"
-  }
+    "UIDictionary": {
+        "$TeamFred.Nomai_Technology": "Nomai Technology",
+        "$TeamFred.Telescope": "Telescope",
+        "$TeamFred.ExpoHall": "Exposition Hall Scheduling Marker",
+        "$TeamFred.Weather": "Weather Scheduling Marker",
+        "$TeamFred.Lights": "Lights Scheduling Marker"
+    },
+    //Leave stuff in curly brackets: {} unchanged or it won't work
+    //Though you can move it around in the sentence
+    "OtherDictionary": {
+        //{amountOfHoursFormatted} - amount of hours (until opening or how many hours ago opened) (colored blue in code already)
+        "$TeamFred.ExpoHall_Past": "Exposition Hall opened {amountOfHoursFormatted} hours ago",
+        "$TeamFred.ExpoHall_Future": "Exposition Hall Scheduled to open in {amountOfHoursFormatted} hours",
+        "$TeamFred.ExpoHall_Present": "Exposition Hall just opened",
+        "$TeamFred.ExpoHall_Error": "<color=red>ERROR: No schedule found for the Exposition Hall</color>"
+    }
 }

@@ -1,4 +1,4 @@
-﻿using NewHorizons.Utility;
+using NewHorizons.Utility;
 using OWML.ModHelper;
 using OWML.Utils;
 using System;
@@ -10,20 +10,25 @@ namespace Jam6
 {
     public class SchedulingWeatherHandler : MonoBehaviour
     {
+        [SerializeField]
+        public float weatherLength = 1.5f;
+
         [NonSerialized]
         public ModBehaviour mod;
         [NonSerialized]
         public GameObject weatherHandler;
-        [NonSerialized]
-        public GameObject rainZeroG;
-        [NonSerialized]
-        public GameObject rainNormalG;
-        [NonSerialized]
-        public GameObject snowZeroG;
-        [NonSerialized]
-        public GameObject snowNormalG;
+        //[NonSerialized]
+        //public GameObject rainZeroG;
+        //[NonSerialized]
+        //public GameObject rainNormalG;
+        //[NonSerialized]
+        //public GameObject snowZeroG;
+        //[NonSerialized]
+        //public GameObject snowNormalG;
         [NonSerialized]
         public float timeStamp;
+        [NonSerialized]
+        public bool startedRaining = false;
         [NonSerialized]
         public bool isOnAnAlwaysActivePedestal = false;
 
@@ -41,6 +46,8 @@ namespace Jam6
         {
             SchedulingSocket.ActivateScheduledEvent -= Activate;
             SchedulingSocket.DeactivateScheduledEvent -= Deactivate;
+            //OrbSwitch.ZeroG -= ZeroGWeatherHandler;
+            //OrbSwitch.NormalG -= NormalGWeatherHandler;
             Jam6.Instance.NewHorizons.GetBodyLoadedEvent().RemoveListener(FindWeather);
         }
 
@@ -51,10 +58,10 @@ namespace Jam6
                 weatherHandler = SearchUtilities.Find("Disc_Body/Sector/Atmosphere_Holder");
                 weatherHandler?.SetActive(false);
 
-                rainZeroG = weatherHandler.transform.Find("Atmosphere_Rain_0g").gameObject;
-                rainNormalG = weatherHandler.transform.Find("Atmosphere_Rain").gameObject;
-                snowZeroG = weatherHandler.transform.Find("Atmosphere_Snow_0g").gameObject;
-                snowNormalG = weatherHandler.transform.Find("Atmosphere_Snow").gameObject;
+                //rainZeroG = weatherHandler.transform.Find("Atmosphere_Rain_0g").gameObject;
+                //rainNormalG = weatherHandler.transform.Find("Atmosphere_Rain").gameObject;
+                //snowZeroG = weatherHandler.transform.Find("Atmosphere_Snow_0g").gameObject;
+                //snowNormalG = weatherHandler.transform.Find("Atmosphere_Snow").gameObject;
             }
         }
 
@@ -68,6 +75,7 @@ namespace Jam6
                 if (!isOnAnAlwaysActivePedestal)
                 {
                     timeStamp = TimeLoop.GetSecondsElapsed();
+                    startedRaining = true;
                 }
             }
         }
@@ -82,25 +90,25 @@ namespace Jam6
             }
         }
 
-        public void ZeroGWeatherHandler()
-        {
-            rainNormalG?.SetActive(false);
-            rainZeroG?.SetActive(true);
-            snowNormalG?.SetActive(false);
-            snowZeroG?.SetActive(true);
-        }
+        //public void ZeroGWeatherHandler()
+        //{
+        //    rainNormalG?.SetActive(false);
+        //    rainZeroG?.SetActive(true);
+        //    snowNormalG?.SetActive(false);
+        //    snowZeroG?.SetActive(true);
+        //}
 
-        public void NormalGWeatherHandler()
-        {
-            rainNormalG?.SetActive(true);
-            rainZeroG?.SetActive(false);
-            snowNormalG?.SetActive(true);
-            snowZeroG?.SetActive(false);
-        }
+        //public void NormalGWeatherHandler()
+        //{
+        //    rainNormalG?.SetActive(true);
+        //    rainZeroG?.SetActive(false);
+        //    snowNormalG?.SetActive(true);
+        //    snowZeroG?.SetActive(false);
+        //}
 
         public void Update()
         {
-            if (weatherHandler != null && weatherHandler.activeSelf && !isOnAnAlwaysActivePedestal && TimeLoop.GetSecondsElapsed() - timeStamp >= 360f)
+            if (weatherHandler != null && weatherHandler.activeSelf && !isOnAnAlwaysActivePedestal && startedRaining && TimeLoop.GetSecondsElapsed() - timeStamp >= weatherLength * 120f)
             {
                 weatherHandler?.SetActive(false);
             }
