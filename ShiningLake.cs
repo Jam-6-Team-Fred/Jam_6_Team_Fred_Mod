@@ -92,6 +92,7 @@ namespace Jam6
             {
                 //mod.ModHelper.Console.WriteLine("Trying to change color", OWML.Common.MessageType.Info);
                 UpdateSurfaceColor(normalSurfaceColor, shiningSurfaceColor);
+                UpdateFogColor(normalFogColor, shiningFogColor);
             }
             if (!didItShine && currentTime >= (hourAmount+0.5f)*120f)
             {
@@ -119,7 +120,7 @@ namespace Jam6
             if (didItUnBlue && currentTime <= (hourAmount+2.5f) * 120f + durationToBlue)
             {
                 UpdateSurfaceColor(shiningSurfaceColor, normalSurfaceColor);
-
+                UpdateFogColor(shiningFogColor, normalFogColor);
             }
         }
 
