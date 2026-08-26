@@ -36,11 +36,11 @@ namespace Jam6
                     else if (amountOfHours > 0)
                     {
                         amountOfHoursFormatted = $"<color=cyan>{amountOfHours}</color>";
-                        text = text.Replace("$TEAMFRED_EXPO_TIME", Jam6.Instance.NewHorizons.GetTranslationForOtherText("$TEAMFRED.ExpoHall_Future").Replace("{amountOfHoursHormatted}", amountOfHoursFormatted));
+                        text = text.Replace("$TEAMFRED_EXPO_TIME", Jam6.Instance.NewHorizons.GetTranslationForOtherText("$TeamFred.ExpoHall_Future").Replace("{amountOfHoursFormatted}", amountOfHoursFormatted));
                     }
                     else
                     {
-                        text = text.Replace("$TEAMFRED_EXPO_TIME", Jam6.Instance.NewHorizons.GetTranslationForOtherText("$TEAMFRED.ExpoHall_Present").Replace("{amountOfHoursHormatted}", amountOfHoursFormatted));
+                        text = text.Replace("$TEAMFRED_EXPO_TIME", Jam6.Instance.NewHorizons.GetTranslationForOtherText("$TeamFred.ExpoHall_Present").Replace("{amountOfHoursFormatted}", amountOfHoursFormatted));
                     }
                 }
                 else

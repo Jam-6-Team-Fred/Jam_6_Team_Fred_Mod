@@ -25,6 +25,7 @@
     <ParentID>3</ParentID>
     <Text>$RadiotelescopeRecorder04</Text>
   </TextBlock>
+  <!-- No longer needed
   <TextBlock>
     <ID>5</ID>
     <ParentID>4</ParentID>
@@ -45,4 +46,5 @@
     <ParentID>7</ParentID>
     <Text>$RadiotelescopeDevNote04</Text>
   </TextBlock>
+  -->
 </NomaiObject>

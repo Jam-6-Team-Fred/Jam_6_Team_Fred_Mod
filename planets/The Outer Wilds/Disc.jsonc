@@ -122,7 +122,7 @@
                     "y": 0,
                     "z": 0
                 },
-              "keepLoaded": true
+                "keepLoaded": true
             },
             //rain and snow effects
             {
@@ -813,6 +813,23 @@
                 },
                 "scale": 2,
                 "rename": "Future_Alpine_Trees_B_1"
+            },
+            // ---------
+            // Tunnel platform
+            // ---------
+            {
+                "rename": "Scheduling_Bridge",
+                "path": "BrittleHollow_Body/Sector_BH/Sector_OldSettlement/OldSettlement_Interactables/Structure_NOM_BH_OldSettleBridge_Placements/Structure_NOM_BH_OldSettleBridge16",
+                "position": {
+                    "x": 19.34883,
+                    "y": 31.5574,
+                    "z": 26.75
+                },
+                "rotation": {
+                    "x": 0,
+                    "y": 90,
+                    "z": 90
+                }
             }
         ],
         "campfires": [
@@ -1188,8 +1205,46 @@
                     "z": -0.9995318
                 },
                 "type": "whiteboard",
-                "seed": 267894144
-                //All adult text, so no ArcInfo needed
+                "seed": 267894144,
+                "arcInfo": [
+                    //1
+                    {
+                        "type": "adult"
+                    },
+                    //2
+                    {
+                        "type": "adult"
+                    },
+                    //3
+                    {
+                        "type": "adult"
+                    },
+                    //4
+                    {
+                        "type": "adult"
+                    },
+                    //5
+                    {
+                        "type": "adult"
+                    },
+                    //6
+                    {
+                        "type": "adult",
+                        "position": {
+                            "x": 1.25,
+                            "y": 1.45
+                        },
+                        "zRotation": 270
+                    },
+                    //7
+                    {
+                        "type": "adult"
+                    },
+                    //8
+                    {
+                        "type": "adult"
+                    }
+                ]
             },
             // Fomai Wall A
             {
@@ -2127,7 +2182,12 @@
                     },
                     //6
                     {
-                        "type": "teenager"
+                        "type": "teenager",
+                        "position": {
+                            "x": 2.25,
+                            "y": 0.45
+                        },
+                        "zRotation": 200
                     },
                     //7
                     {

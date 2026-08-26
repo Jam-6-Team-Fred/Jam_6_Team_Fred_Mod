@@ -93,30 +93,30 @@ namespace Jam6
                 //mod.ModHelper.Console.WriteLine("Trying to change color", OWML.Common.MessageType.Info);
                 UpdateSurfaceColor(normalSurfaceColor, shiningSurfaceColor);
             }
-            if (!didItShine && currentTime >= (hourAmount+1)*120f)
+            if (!didItShine && currentTime >= (hourAmount+0.5f)*120f)
             {
                 didItShine = true;
                 startTime = currentTime;
             }
-            if (didItShine && currentTime <= (hourAmount + 1) * 120f + durationToShine)
+            if (didItShine && currentTime <= (hourAmount+0.5f) * 120f + durationToShine)
             {
                 UpdateLightShine(0, endSpotLightIntensity, 0, materialAlpha);
             }
-            if (!didItUnShine && currentTime >= (hourAmount + 2) * 120f)
+            if (!didItUnShine && currentTime >= (hourAmount+1.5f) * 120f)
             {
                 didItUnShine = true;
                 startTime = currentTime;
             }
-            if (didItUnShine && currentTime <= (hourAmount + 2) * 120f + durationToShine)
+            if (didItUnShine && currentTime <= (hourAmount+1.5f) * 120f + durationToShine)
             {
                 UpdateLightShine(endSpotLightIntensity, 0, materialAlpha, 0);
             }
-            if (!didItUnBlue && currentTime >= (hourAmount + 3) * 120f)
+            if (!didItUnBlue && currentTime >= (hourAmount+2.5f) * 120f)
             {
                 didItUnBlue = true;
                 startTime = currentTime;
             }
-            if (didItUnBlue && currentTime <= (hourAmount + 3) * 120f + durationToBlue)
+            if (didItUnBlue && currentTime <= (hourAmount+2.5f) * 120f + durationToBlue)
             {
                 UpdateSurfaceColor(shiningSurfaceColor, normalSurfaceColor);
 

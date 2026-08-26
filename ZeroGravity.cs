@@ -16,7 +16,7 @@ namespace Jam6
         public bool disableAligment;
         [Space]
         [SerializeField]
-        public float normalMagnitude = 18f;
+        public float normalMagnitude = 15.6f;
         [SerializeField]
         public float lowMagnitude = 3.6f;
 

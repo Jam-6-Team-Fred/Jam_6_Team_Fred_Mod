@@ -190,9 +190,9 @@
   //Though you can move it around in the sentence
   "OtherDictionary": {
     //{amountOfHoursFormatted} - amount of hours (until opening or how many hours ago opened) (colored blue in code already)
-    "$TeamFred.ExpoHall_Future": "Exposition Hall opened {amountOfHoursFormatted} hours ago",
-    "$TeamFred.ExpoHall_Past": "Exposition Hall Scheduled to open in {amountOfHoursFormatted} hours",
+    "$TeamFred.ExpoHall_Past": "Exposition Hall opened {amountOfHoursFormatted} hours ago",
+    "$TeamFred.ExpoHall_Future": "Exposition Hall Scheduled to open in {amountOfHoursFormatted} hours",
     "$TeamFred.ExpoHall_Present": "Exposition Hall just opened",
-    "$TeamFred.ExpoHall_Error": "<color=red>ERROR</color>"
+    "$TeamFred.ExpoHall_Error": "<color=red>ERROR: No schedule found for the Exposition Hall</color>"
   }
 }
