@@ -1,4 +1,4 @@
-﻿using NewHorizons.Components.Props;
+using NewHorizons.Components.Props;
 using OWML.ModHelper;
 using System;
 using System.ComponentModel.Design;

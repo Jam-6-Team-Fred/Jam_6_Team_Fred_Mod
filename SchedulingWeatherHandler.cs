@@ -1,4 +1,4 @@
-﻿using NewHorizons.Utility;
+using NewHorizons.Utility;
 using OWML.ModHelper;
 using OWML.Utils;
 using System;
