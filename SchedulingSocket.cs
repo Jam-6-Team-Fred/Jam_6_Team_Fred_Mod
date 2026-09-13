@@ -103,6 +103,18 @@ namespace Jam6
                 heldItem = item;
             }
             mod.ModHelper.Console.WriteLine($"I now hold {heldItem.name}", OWML.Common.MessageType.Success);
+            var schedulingItem = (SchedulingItem)heldItem;
+            if (schedulingItem.itemID == "ExpoHall")
+            {
+                if (hasScheduledTimeCome)
+                {
+                    Jam6.Instance.expoHallOpeningHour = (int)TimeLoop.GetSecondsElapsed()/120;
+                }
+                else
+                {
+                    Jam6.Instance.expoHallOpeningHour = activationHour;
+                }
+            }
             if (hasScheduledTimeCome)
             {
                 ActivateScheduledEvent((SchedulingItem)heldItem, isAlwaysActive);
