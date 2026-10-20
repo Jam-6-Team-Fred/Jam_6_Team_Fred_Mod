@@ -12,57 +12,83 @@ namespace Jam6
     {
         [SerializeField]
         public GameObject spotLight;
+
         [SerializeField]
         public Material lakeSurfaceMaterial;
+
         [SerializeField]
         public Material lakeFogMaterial;
+
         [SerializeField]
         public Material[] volumetricLightsMaterials;
+
         [Space]
+
         [SerializeField]
         public Color normalSurfaceColor = new Color(61, 84, 81);
+
         [SerializeField]
         public Color shiningSurfaceColor = new Color(66, 183, 167);
+
         [Space]
+
         [SerializeField]
+
         public Color normalFogColor = new Color(24, 33, 32);
+
         [SerializeField]
+
         public Color shiningFogColor = new Color(48, 133, 121);
+
         [Space]
+
         [SerializeField]
         public float durationToBlue = 10f;
+
         [SerializeField]
         public float durationToShine = 5f;
+
         [SerializeField]
         public float endSpotLightIntensity = 5;
+
         [SerializeField]
         public int endVolumetricLightMaterialAlpha = 40;
 
         [NonSerialized]
         public ModBehaviour mod;
+
         [NonSerialized]
         public Light spotLightLight;
+
         [NonSerialized]
         public bool didItBlue;
+
         [NonSerialized]
         public bool didItUnBlue;
+
         [NonSerialized]
         public bool didItShine;
+
         [NonSerialized]
         public bool didItUnShine;
+
         [NonSerialized]
         public float currentTime;
+
         [NonSerialized]
         public float startTime;
+
         [NonSerialized]
         public Color currentSurfaceColor;
+
         [NonSerialized]
         public Color currentFogColor;
+
         [NonSerialized]
         public float currentAlpha;
+
         [NonSerialized]
         public float materialAlpha;
-
 
         public float hourAmount = 5.5f;
 
@@ -74,7 +100,8 @@ namespace Jam6
         public void Start()
         {
             spotLightLight = spotLight.GetComponent<Light>();
-            lakeSurfaceMaterial.SetColor("_FogColor", normalSurfaceColor);
+            lakeSurfaceMaterial?.SetColor("_FogColor", normalSurfaceColor);
+            lakeFogMaterial?.SetColor("_FogColor", normalFogColor);
             spotLightLight.intensity = 0;
             SetVolMaterialsAlpha(0);
             materialAlpha = (float)endVolumetricLightMaterialAlpha/255;
@@ -129,7 +156,6 @@ namespace Jam6
             //Funny smooooth curve thing
             float num = Mathf.InverseLerp(startTime, startTime + durationToBlue, currentTime);
 
-            //I can apparently Lerp the whole color??? Hello???
             currentSurfaceColor = Color.Lerp(fromColor, toColor, Mathf.SmoothStep(0f, 1f, num));
 
             //Applying the color
@@ -141,11 +167,10 @@ namespace Jam6
             //Funny smooooth curve thing
             float num = Mathf.InverseLerp(startTime, startTime + durationToBlue, currentTime);
 
-            //I can apparently Lerp the whole color??? Hello???
             currentFogColor = Color.Lerp(fromColor, toColor, Mathf.SmoothStep(0f, 1f, num));
 
             //Applying the color
-            lakeSurfaceMaterial.SetColor("_FogColor", currentFogColor);
+            lakeFogMaterial.SetColor("_FogColor", currentFogColor);
         }
 
         public void UpdateLightShine(float fromIntensity, float toIntensity, float fromAlpha, float toAlpha)

@@ -27,7 +27,7 @@ public class Jam6 : ModBehaviour
     public void Start()
     {
         // Starting here, you'll have access to OWML's mod helper.
-        ModHelper.Console.WriteLine($"My mod Through The Ages is loaded!", MessageType.Success);
+        ModHelper.Console.WriteLine($"Our mod Through The Ages is loaded!", MessageType.Success);
 
         // Get the New Horizons API and load configs
         NewHorizons = ModHelper.Interaction.TryGetModApi<INewHorizons>("xen.NewHorizons");
