@@ -1,3 +1,4 @@
+using NAudio.Utils;
 using NewHorizons.Utility;
 using OWML.ModHelper;
 using UnityEngine;
@@ -8,12 +9,10 @@ namespace Jam6
 	{
 		public enum State
 		{
-			OFF = 0,
 			FORWARD = 1,
 			REVERSE = 2
 		}
 
-		[SerializeField]
 		private State _initialState;
 
         public enum Position
@@ -22,56 +21,66 @@ namespace Jam6
             LOWER = 1,
         }
 
-		[SerializeField]
 		public Position _position;
 
-        [SerializeField]
-		private TractorBeamController[] _tractorBeams;
+        public GameObject tractorBeam;
 
-		[SerializeField]
-		private TractorBeamSwitch[] _linkedSwitches;
+        public TractorBeamController tractorBeamController;
 
-		private TractorBeamSwitch linkedSwitch;
+		public TractorBeamSwitch linkedSwitch;
 
-        [SerializeField]
-		private NomaiInterfaceSlot _forwardSlot;
+		public NomaiInterfaceSlot _forwardSlot;
 
-		[SerializeField]
-		private NomaiInterfaceSlot _reverseSlot;
+		public NomaiInterfaceSlot _reverseSlot;
 
-		[SerializeField]
-		private NomaiInterfaceSlot _offSlot;
-
-		[SerializeField]
-		private NomaiInterfaceOrb _orb;
+		public NomaiInterfaceOrb _orb;
 
 		private void Awake()
 		{
 			_forwardSlot.OnSlotActivated += OnActivated;
 			_reverseSlot.OnSlotActivated += OnActivated;
-			_offSlot.OnSlotActivated += OnActivated;
 			_forwardSlot.OnSlotDeactivated += OnDeactivated;
 			_reverseSlot.OnSlotDeactivated += OnDeactivated;
 		}
 
 		private void Start()
-		{
-			switch (_position)
-			{
-				case Position.UPPER:
-					linkedSwitch = SearchUtilities.Find("Disc/Past/Mountain/Welcome Center/Docking_Tractor_Beam/Docking_Tractor_Beam (1)/TractorBeamSwitch_Lower").GetComponent<TractorBeamSwitch>();
-                    break;
-				case Position.LOWER:
-                    linkedSwitch = SearchUtilities.Find("Disc/Past/Mountain/Welcome Center/Docking_Tractor_Beam/Docking_Tractor_Beam (1)/TractorBeamSwitch_Upper").GetComponent<TractorBeamSwitch>();
-                    break;
+        {
+            if (tractorBeam == null)
+            {
+                tractorBeam = this.transform.parent.gameObject;
             }
-			_linkedSwitches[0] = linkedSwitch;
-			_tractorBeams[0] = SearchUtilities.Find("Disc/Past/Mountain/Welcome Center/Docking_Tractor_Beam/Docking_Tractor_Beam (1)/Tractor Beam (2)").GetComponent<TractorBeamController>();
+			if (tractorBeamController == null)
+			{
+				tractorBeamController = tractorBeam.GetComponent<TractorBeamController>();
+			}
+            if (linkedSwitch == null)
+			{
+				switch (_position)
+				{
+					case Position.UPPER:
+						//linkedSwitch = SearchUtilities.Find("Disc/Past/Mountain/Welcome Center/Docking_Tractor_Beam/Docking_Tractor_Beam (1)/TractorBeamSwitch_Lower").GetComponent<TractorBeamSwitch>();
+						foreach (GameObject child in tractorBeam.GetAllChildren())
+						{
+							if (child.name == "TractorBeamSwitch_Lower")
+							{
+								linkedSwitch = child.GetComponent<TractorBeamSwitch>();
+							}
+						}
+						break;
+					case Position.LOWER:
+						//linkedSwitch = SearchUtilities.Find("Disc/Past/Mountain/Welcome Center/Docking_Tractor_Beam/Docking_Tractor_Beam (1)/TractorBeamSwitch_Upper").GetComponent<TractorBeamSwitch>();
+                        foreach (GameObject child in tractorBeam.GetAllChildren())
+                        {
+                            if (child.name == "TractorBeamSwitch_Upper")
+                            {
+                                linkedSwitch = child.GetComponent<TractorBeamSwitch>();
+                            }
+                        }
+                        break;
+				}
+			}
             switch (_initialState)
 			{
-				case State.OFF:
-					MoveOrbToSlot(_offSlot);
-					break;
 				case State.FORWARD:
 					MoveOrbToSlot(_forwardSlot);
 					OnActivated(_forwardSlot);
@@ -87,7 +96,6 @@ namespace Jam6
 		{
 			_forwardSlot.OnSlotActivated -= OnActivated;
 			_reverseSlot.OnSlotActivated -= OnActivated;
-			_offSlot.OnSlotActivated -= OnActivated;
 			_forwardSlot.OnSlotDeactivated -= OnDeactivated;
 			_reverseSlot.OnSlotDeactivated -= OnDeactivated;
 		}
@@ -97,19 +105,15 @@ namespace Jam6
 			_initialState = state;
 		}
 
-		public void MoveOrbToSlot(bool beamActive, bool beamReversed)
+		public void MoveOrbToSlot( bool beamReversed)
 		{
-			if (beamActive && !beamReversed)
+			if (!beamReversed)
 			{
 				MoveOrbToSlot(_forwardSlot);
 			}
-			else if (beamActive && beamReversed)
-			{
-				MoveOrbToSlot(_reverseSlot);
-			}
 			else
 			{
-				MoveOrbToSlot(_offSlot);
+				MoveOrbToSlot(_reverseSlot);
 			}
 		}
 
@@ -120,26 +124,14 @@ namespace Jam6
 
 		private void OnActivated(NomaiInterfaceSlot slot)
 		{
-			for (int i = 0; i < _linkedSwitches.Length; i++)
-			{
-				_linkedSwitches[i].MoveOrbToSlot(slot != _offSlot, slot == _reverseSlot);
-			}
-			if (slot != _offSlot)
-			{
-				for (int j = 0; j < _tractorBeams.Length; j++)
-				{
-					_tractorBeams[j].SetActivation(active: true);
-					_tractorBeams[j].SetReversed(slot == _reverseSlot);
-				}
-			}
+			linkedSwitch.MoveOrbToSlot(slot == _reverseSlot);
+            tractorBeamController.SetActivation(active: true);
+            tractorBeamController.SetReversed(slot == _reverseSlot);
 		}
 
 		private void OnDeactivated(NomaiInterfaceSlot slot)
 		{
-			for (int i = 0; i < _tractorBeams.Length; i++)
-			{
-				_tractorBeams[i].SetActivation(active: false);
-			}
+            tractorBeamController.SetActivation(active: false);
 		}
 	}
 }
